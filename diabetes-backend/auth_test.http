@@ -1,0 +1,69 @@
+### =========================
+### CONFIG (fill after login)
+### =========================
+@baseUrl = http://localhost:3000/api/v1
+@accessToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsImVtYWlsIjoic3VmaWFhbndhcjE5NzVAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJwcm9maWxlQ29tcGxldGVkIjp0cnVlLCJpYXQiOjE3NjQ0Mjc3NjIsImV4cCI6MTc2NDQyODY2Mn0.erQMKoKeTnP8n1jWEca-BYD4Po8--mOtR5q7FVuhUWE
+@refreshToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsImp0aSI6Ijk1NmQ4MGJkLTM3ODItNDUxMi1iOTI0LWM1YTM5NGEyOTBkYyIsImlhdCI6MTc2NDQyNzc2MiwiZXhwIjoxNzY3MDE5NzYyfQ.tMsm0poGJkwegHulrrOVGANi5tDsG9eBrmDySSZjAnc
+
+
+### =========================
+### 1) LOGIN (use existing account)
+### =========================
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "email": "sufiaanwar1975@gmail.com",
+  "password": "Alvi8909!"
+}
+
+### After running:
+### - Copy "accessToken" → paste above
+### - Copy "refreshToken" → paste above
+
+
+### =========================
+### 2) GET PROFILE (should show saved info)
+### =========================
+GET {{baseUrl}}/auth/profile
+Authorization: Bearer {{accessToken}}
+
+
+### =========================
+### 3) UPDATE PROFILE (only send allowed fields)
+### IMPORTANT: Do NOT send diabetes_type yet
+### =========================
+PATCH {{baseUrl}}/auth/profile
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+
+{
+  "name": "Alvi",
+  "dob": "2001-05-10",
+  "sex": "male",
+  "location": "urban"
+}
+
+### After running:
+### → Run GET /auth/profile again to confirm values updated.
+
+
+### =========================
+### 4) REFRESH TOKENS
+### =========================
+POST {{baseUrl}}/auth/refresh
+Content-Type: application/json
+
+{
+  "refreshToken": "{{refreshToken}}"
+}
+
+### If you get new accessToken/refreshToken,
+### put them in the variables at top.
+
+
+### =========================
+### 5) (Optional) VERIFY EMAIL
+### ONLY if you have a token from backend
+### =========================
+GET {{baseUrl}}/auth/verify-email?token=PASTE_VERIFY_TOKEN_HERE

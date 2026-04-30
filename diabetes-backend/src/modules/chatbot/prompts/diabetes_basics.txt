@@ -1,0 +1,106 @@
+
+
+What is Diabetes?
+
+Description:
+Diabetes is a long-term condition where the body cannot properly use or make enough insulin — a hormone that helps sugar (glucose) move from the blood into the body’s cells for energy.
+When insulin doesn’t work well, sugar stays in the blood, leading to high blood sugar levels (hyperglycemia).
+
+Purpose:
+To help users understand the basic idea of diabetes in simple, friendly terms.
+
+Keywords: diabetes, blood sugar, insulin, hyperglycemia
+
+Details:
+
+Insulin acts like a key that unlocks cells so glucose can enter and give energy.
+
+When insulin is not working or missing, sugar builds up in the bloodstream.
+
+High sugar levels for a long time can damage eyes, kidneys, nerves, heart, and blood vessels.
+
+Example Q&A:
+
+Q: What is diabetes in simple terms?
+A: It means your body can’t use sugar properly. Sugar builds up in your blood instead of going into cells to give energy.
+
+Types of Diabetes
+
+Description:
+There are several kinds of diabetes depending on how the problem with insulin happens.
+
+Keywords: type 1, type 2, gestational, prediabetes
+
+Details:
+
+Type 1 Diabetes: The body stops making insulin. People need daily insulin injections.
+
+Type 2 Diabetes: The body still makes insulin but cannot use it properly. It’s the most common form and often linked to weight gain, poor diet, or low physical activity.
+
+Gestational Diabetes: Appears during pregnancy and usually goes away after birth, but increases the risk of future diabetes.
+
+Prediabetes: Blood sugar is higher than normal but not high enough for diabetes. With healthy habits, it can often be reversed.
+
+Example Q&A:
+
+Q: What is the most common type of diabetes?
+A: Type 2 diabetes. It often develops slowly and can sometimes be prevented by eating healthy and staying active.
+
+Causes and Risk Factors
+
+Description:
+Diabetes can affect anyone, but certain factors increase the risk.
+
+Keywords: obesity, lifestyle, family history, stress
+
+Details:
+
+Being overweight or not physically active.
+
+Eating too much white rice, fried food, or sugary drinks.
+
+Having a parent or sibling with diabetes.
+
+High blood pressure, high cholesterol, or PCOS (in women).
+
+Smoking, poor sleep, or long-term stress.
+
+In Bangladesh, Type 2 diabetes is more common in adults with office jobs and limited activity.
+
+Example Q&A:
+
+Q: How can I reduce my risk of diabetes?
+A: Maintain a healthy weight, walk regularly, eat more vegetables, and avoid sugary or oily foods.
+
+Major Complications of Diabetes
+
+Description:
+If blood sugar stays high for many years, it can damage many parts of the body. These are called complications.
+
+Keywords: eyes, kidney, nerves, heart, foot care
+
+Details:
+
+Heart Disease: High blood sugar damages blood vessels and increases risk of heart attack or stroke.
+
+Kidney Damage (Nephropathy): Sugar harms kidney filters, causing protein loss and swelling.
+
+Eye Damage (Retinopathy): Diabetes can damage small eye blood vessels and cause blurred vision or blindness.
+
+Nerve Damage (Neuropathy): Leads to tingling, numbness, or burning pain in feet and hands.
+
+Foot Problems: Poor blood flow and nerve damage can cause wounds that heal slowly.
+
+Skin & Mouth Issues: Infections are more common if sugar is not controlled.
+
+Example Q&A:
+
+Q: Can diabetes cause blindness or kidney disease?
+A: Yes, if sugar stays high for years. Regular checkups and good sugar control can prevent most of these problems.
+
+Summary for Basics
+
+Purpose:
+To help users understand what diabetes is, what causes it, and why managing it matters.
+Chatbot Goal:
+If a user asks “What is diabetes?”, “What causes it?”, “Is it curable?”, the chatbot can reply using this section in simple, empathetic language.

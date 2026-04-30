@@ -1,0 +1,844 @@
+[
+  {
+    "question": "What tests are used to diagnose diabetes?",
+    "expected_intent": "diagnosis_tests",
+    "expected_categories": [
+      "type2"
+    ],
+    "expected_chunk_ids": [
+      "type2_en_006",
+      "type2_en_019",
+      "type2_en_020",
+      "type2_en_021",
+      "type2_en_022"
+    ],
+    "expected_answer_keywords": [
+      "a1c",
+      "fasting",
+      "random blood sugar",
+      "oral glucose tolerance"
+    ]
+  },
+  {
+    "question": "What is the difference between prediabetes and diabetes?",
+    "expected_intent": "basics_info",
+    "expected_categories": [
+      "basics"
+    ],
+    "expected_chunk_ids": [
+      "general_en_004",
+      "type2_en_023"
+    ],
+    "expected_answer_keywords": [
+      "prediabetes",
+      "diabetes",
+      "blood sugar",
+      "higher than normal"
+    ]
+  },
+  {
+    "question": "Can diabetes be cured?",
+    "expected_intent": "basics_info",
+    "expected_categories": [
+      "basics"
+    ],
+    "expected_chunk_ids": [
+      "basics_en_027"
+    ],
+    "expected_answer_keywords": [
+      "not completely curable",
+      "controlled",
+      "remission",
+      "type 2 diabetes"
+    ]
+  },
+  {
+    "question": "How does high blood sugar damage the body?",
+    "expected_intent": "complications_general",
+    "expected_categories": [
+      "complications"
+    ],
+    "expected_chunk_ids": [
+      "complications_en_101"
+    ],
+    "expected_answer_keywords": [
+      "blood vessels",
+      "nerves",
+      "organs",
+      "damage"
+    ]
+  },
+  {
+    "question": "How does diabetes damage the eyes?",
+    "expected_intent": "complications_eyes",
+    "expected_categories": [
+      "complications"
+    ],
+    "expected_chunk_ids": [
+      "type2_en_030"
+    ],
+    "expected_answer_keywords": [
+      "retina",
+      "blood vessels",
+      "retinopathy",
+      "vision loss"
+    ]
+  },
+  {
+    "question": "Can diabetes damage the kidneys?",
+    "expected_intent": "complications_kidneys",
+    "expected_categories": [
+      "complications"
+    ],
+    "expected_chunk_ids": [
+      "type2_en_032"
+    ],
+    "expected_answer_keywords": [
+      "kidneys",
+      "blood vessels",
+      "filter waste",
+      "kidney damage"
+    ]
+  },
+  {
+    "question": "Why do people with diabetes feel tingling in their feet?",
+    "expected_intent": "complications_nerves",
+    "expected_categories": [
+      "complications"
+    ],
+    "expected_chunk_ids": [
+      "type2_en_031"
+    ],
+    "expected_answer_keywords": [
+      "nerve damage",
+      "neuropathy",
+      "tingling",
+      "numbness"
+    ]
+  },
+  {
+    "question": "Why is heart disease common in people with diabetes?",
+    "expected_intent": "complications_heart_vessels",
+    "expected_categories": [
+      "complications"
+    ],
+    "expected_chunk_ids": [
+      "type2_en_033"
+    ],
+    "expected_answer_keywords": [
+      "blood vessels",
+      "plaque",
+      "heart disease",
+      "stroke"
+    ]
+  },
+  {
+    "question": "Why do people with diabetes get foot problems?",
+    "expected_intent": "complications_feet",
+    "expected_categories": [
+      "complications"
+    ],
+    "expected_chunk_ids": [
+      "type2_en_034"
+    ],
+    "expected_answer_keywords": [
+      "poor circulation",
+      "loss of sensation",
+      "ulcers",
+      "infection"
+    ]
+  },
+  {
+    "question": "I am a beginner, how do I start exercise?",
+    "expected_intent": "exercise_guidance",
+    "expected_categories": [
+      "exercise",
+      "lifestyle"
+    ],
+    "expected_chunk_ids": [
+      "exercise_en_009",
+      "exercise_en_012"
+    ],
+    "expected_answer_keywords": [
+      "start slowly",
+      "walking",
+      "10 to 15 minutes",
+      "build gradually"
+    ]
+  },
+  {
+    "question": "What if sugar drops during workout?",
+    "expected_intent": "exercise_safety",
+    "expected_categories": [
+      "exercise",
+      "lifestyle"
+    ],
+    "expected_chunk_ids": [
+      "exercise_en_008"
+    ],
+    "expected_answer_keywords": [
+      "stop exercising",
+      "15 grams",
+      "fast-acting carbohydrate",
+      "15 minutes"
+    ]
+  },
+  {
+    "question": "When should I exercise?",
+    "expected_intent": "exercise_guidance",
+    "expected_categories": [
+      "exercise",
+      "lifestyle"
+    ],
+    "expected_chunk_ids": [
+      "exercise_en_007",
+      "exercise_en_013"
+    ],
+    "expected_answer_keywords": [
+      "after meals",
+      "blood sugar spikes",
+      "walking",
+      "best time"
+    ]
+  },
+  {
+    "question": "What food should I eat?",
+    "expected_intent": "nutrition_general",
+    "expected_categories": [
+      "nutrition"
+    ],
+    "expected_chunk_ids": [
+      "type2_en_009",
+      "nutrition_en_103",
+      "nutrition_en_101"
+    ],
+    "expected_answer_keywords": [
+      "vegetables",
+      "protein",
+      "rice or roti",
+      "portion"
+    ]
+  },
+  {
+    "question": "Give me a meal plan",
+    "expected_intent": "meal_plan_request",
+    "expected_categories": [
+      "nutrition"
+    ],
+    "expected_chunk_ids": [
+      "nutrition_en_201"
+    ],
+    "expected_answer_keywords": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ]
+  },
+  {
+    "question": "What can I eat at night?",
+    "expected_intent": "nutrition_night_eating",
+    "expected_categories": [
+      "nutrition"
+    ],
+    "expected_chunk_ids": [
+      "nutrition_en_305"
+    ],
+    "expected_answer_keywords": [
+      "light",
+      "milk",
+      "boiled egg",
+      "peanuts"
+    ]
+  },
+  {
+    "question": "What to eat outside?",
+    "expected_intent": "nutrition_eating_out",
+    "expected_categories": [
+      "nutrition"
+    ],
+    "expected_chunk_ids": [
+      "nutrition_en_306"
+    ],
+    "expected_answer_keywords": [
+      "grilled",
+      "vegetables",
+      "avoid fried foods",
+      "small portion"
+    ]
+  },
+  {
+    "question": "Why am I always hungry?",
+    "expected_intent": "nutrition_hunger_management",
+    "expected_categories": [
+      "nutrition"
+    ],
+    "expected_chunk_ids": [
+      "nutrition_en_307"
+    ],
+    "expected_answer_keywords": [
+      "protein",
+      "vegetables",
+      "regular meals",
+      "do not skip meals"
+    ]
+  },
+  {
+    "question": "Does stress affect sugar?",
+    "expected_intent": "mental_health_stress_anxiety",
+    "expected_categories": [
+      "mental_health"
+    ],
+    "expected_chunk_ids": [
+      "mental_en_001"
+    ],
+    "expected_answer_keywords": [
+      "stress",
+      "blood sugar",
+      "hormones",
+      "walking"
+    ]
+  },
+  {
+    "question": "I feel tired of diabetes",
+    "expected_intent": "mental_health_burnout",
+    "expected_categories": [
+      "mental_health"
+    ],
+    "expected_chunk_ids": [
+      "mental_en_011",
+      "mental_en_002"
+    ],
+    "expected_answer_keywords": [
+      "burnout",
+      "small step",
+      "slow breaths",
+      "one helpful action"
+    ]
+  },
+  {
+    "question": "I feel depressed",
+    "expected_intent": "mental_health_depression_hopelessness",
+    "expected_categories": [
+      "mental_health"
+    ],
+    "expected_chunk_ids": [
+      "mental_en_004",
+      "mental_en_006"
+    ],
+    "expected_answer_keywords": [
+      "low mood",
+      "routine",
+      "physical activity",
+      "seek help"
+    ]
+  },
+  {
+    "question": "I have no support",
+    "expected_intent": "mental_health_support_connection",
+    "expected_categories": [
+      "mental_health"
+    ],
+    "expected_chunk_ids": [
+      "mental_en_005"
+    ],
+    "expected_answer_keywords": [
+      "family",
+      "friends",
+      "support group",
+      "talk openly"
+    ]
+  },
+  {
+    "question": "Give me a 5 minute meditation for stress",
+    "expected_intent": "mental_health_relaxation_tools",
+    "expected_categories": [
+      "mental_health"
+    ],
+    "expected_chunk_ids": [
+      "mental_en_012",
+      "mental_en_007"
+    ],
+    "expected_answer_keywords": [
+      "5 minutes",
+      "breathe in",
+      "breathe out",
+      "slow breathing"
+    ]
+  },
+  {
+    "question": "Which blood tests can confirm type 2 diabetes?",
+    "expected_intent": "diagnosis_tests",
+    "expected_categories": [
+      "type2"
+    ],
+    "expected_chunk_ids": [
+      "type2_en_006",
+      "type2_en_019",
+      "type2_en_020",
+      "type2_en_021",
+      "type2_en_022"
+    ],
+    "expected_answer_keywords": [
+      "a1c",
+      "fasting",
+      "random blood sugar",
+      "oral glucose tolerance"
+    ]
+  },
+  {
+    "question": "Who should be screened for diabetes?",
+    "expected_intent": "diagnosis_tests",
+    "expected_categories": [
+      "type2"
+    ],
+    "expected_chunk_ids": [
+      "type2_en_019",
+      "type2_en_020",
+      "type2_en_021",
+      "type2_en_022"
+    ],
+    "expected_answer_keywords": [
+      "screened",
+      "risk",
+      "a1c",
+      "fasting"
+    ]
+  },
+  {
+    "question": "What are the warning signs of diabetes?",
+    "expected_intent": "symptoms_risk",
+    "expected_categories": [
+      "type2"
+    ],
+    "expected_chunk_ids": [
+      "type2_en_001",
+      "type2_en_002",
+      "type2_en_003"
+    ],
+    "expected_answer_keywords": [
+      "thirst",
+      "frequent urination",
+      "fatigue",
+      "blurred vision"
+    ]
+  },
+  {
+    "question": "I am always thirsty and urinate a lot, should I get tested?",
+    "expected_intent": "symptoms_risk",
+    "expected_categories": [
+      "type2"
+    ],
+    "expected_chunk_ids": [
+      "type2_en_001",
+      "type2_en_002",
+      "type2_en_003",
+      "type2_en_019"
+    ],
+    "expected_answer_keywords": [
+      "thirsty",
+      "urinate",
+      "tested",
+      "blood sugar"
+    ]
+  },
+  {
+    "question": "Am I high risk if I am overweight and have family history?",
+    "expected_intent": "symptoms_risk",
+    "expected_categories": [
+      "type2"
+    ],
+    "expected_chunk_ids": [
+      "type2_en_019",
+      "type2_en_020",
+      "type2_en_021",
+      "type2_en_022"
+    ],
+    "expected_answer_keywords": [
+      "family history",
+      "overweight",
+      "obesity",
+      "risk"
+    ]
+  },
+  {
+    "question": "What happens if diabetes is not treated for years?",
+    "expected_intent": "complications_general",
+    "expected_categories": [
+      "complications"
+    ],
+    "expected_chunk_ids": [
+      "complications_en_101"
+    ],
+    "expected_answer_keywords": [
+      "blood vessels",
+      "nerves",
+      "organs",
+      "damage"
+    ]
+  },
+  {
+    "question": "Can uncontrolled diabetes harm my organs?",
+    "expected_intent": "complications_general",
+    "expected_categories": [
+      "complications"
+    ],
+    "expected_chunk_ids": [
+      "complications_en_101"
+    ],
+    "expected_answer_keywords": [
+      "uncontrolled diabetes",
+      "organs",
+      "blood vessels",
+      "damage"
+    ]
+  },
+  {
+    "question": "Why can diabetes cause blurred vision?",
+    "expected_intent": "complications_eyes",
+    "expected_categories": [
+      "complications"
+    ],
+    "expected_chunk_ids": [
+      "type2_en_030"
+    ],
+    "expected_answer_keywords": [
+      "retina",
+      "blood vessels",
+      "blurred vision",
+      "retinopathy"
+    ]
+  },
+  {
+    "question": "How can diabetes affect the retina?",
+    "expected_intent": "complications_eyes",
+    "expected_categories": [
+      "complications"
+    ],
+    "expected_chunk_ids": [
+      "type2_en_030"
+    ],
+    "expected_answer_keywords": [
+      "retina",
+      "blood vessels",
+      "retinopathy",
+      "vision loss"
+    ]
+  },
+  {
+    "question": "What are kidney problems caused by diabetes?",
+    "expected_intent": "complications_kidneys",
+    "expected_categories": [
+      "complications"
+    ],
+    "expected_chunk_ids": [
+      "type2_en_032"
+    ],
+    "expected_answer_keywords": [
+      "kidneys",
+      "filter waste",
+      "protein in urine",
+      "kidney damage"
+    ]
+  },
+  {
+    "question": "Why is protein in urine dangerous for diabetic patients?",
+    "expected_intent": "complications_kidneys",
+    "expected_categories": [
+      "complications"
+    ],
+    "expected_chunk_ids": [
+      "type2_en_032"
+    ],
+    "expected_answer_keywords": [
+      "protein in urine",
+      "kidneys",
+      "filter waste",
+      "kidney damage"
+    ]
+  },
+  {
+    "question": "What is diabetic neuropathy?",
+    "expected_intent": "complications_nerves",
+    "expected_categories": [
+      "complications"
+    ],
+    "expected_chunk_ids": [
+      "type2_en_031"
+    ],
+    "expected_answer_keywords": [
+      "nerve damage",
+      "neuropathy",
+      "tingling",
+      "numbness"
+    ]
+  },
+  {
+    "question": "Why do my feet feel numb with diabetes?",
+    "expected_intent": "complications_nerves",
+    "expected_categories": [
+      "complications"
+    ],
+    "expected_chunk_ids": [
+      "type2_en_031"
+    ],
+    "expected_answer_keywords": [
+      "nerve damage",
+      "neuropathy",
+      "numbness",
+      "loss of sensation"
+    ]
+  },
+  {
+    "question": "How does diabetes increase stroke risk?",
+    "expected_intent": "complications_heart_vessels",
+    "expected_categories": [
+      "complications"
+    ],
+    "expected_chunk_ids": [
+      "type2_en_033"
+    ],
+    "expected_answer_keywords": [
+      "blood vessels",
+      "plaque",
+      "stroke",
+      "heart disease"
+    ]
+  },
+  {
+    "question": "Can diabetes damage blood vessels?",
+    "expected_intent": "complications_heart_vessels",
+    "expected_categories": [
+      "complications"
+    ],
+    "expected_chunk_ids": [
+      "type2_en_033",
+      "complications_en_101"
+    ],
+    "expected_answer_keywords": [
+      "blood vessels",
+      "heart disease",
+      "stroke",
+      "circulation"
+    ]
+  },
+  {
+    "question": "How should diabetic patients take care of their feet?",
+    "expected_intent": "complications_feet",
+    "expected_categories": [
+      "complications"
+    ],
+    "expected_chunk_ids": [
+      "type2_en_034"
+    ],
+    "expected_answer_keywords": [
+      "foot",
+      "ulcers",
+      "infection",
+      "loss of sensation"
+    ]
+  },
+  {
+    "question": "Why are foot wounds risky in diabetes?",
+    "expected_intent": "complications_feet",
+    "expected_categories": [
+      "complications"
+    ],
+    "expected_chunk_ids": [
+      "type2_en_034"
+    ],
+    "expected_answer_keywords": [
+      "poor circulation",
+      "loss of sensation",
+      "infection",
+      "ulcers"
+    ]
+  },
+  {
+    "question": "How much exercise should a beginner with diabetes do?",
+    "expected_intent": "exercise_guidance",
+    "expected_categories": [
+      "exercise",
+      "lifestyle"
+    ],
+    "expected_chunk_ids": [
+      "exercise_en_009",
+      "exercise_en_012"
+    ],
+    "expected_answer_keywords": [
+      "start slowly",
+      "walking",
+      "10 to 15 minutes",
+      "build gradually"
+    ]
+  },
+  {
+    "question": "Is walking good after meals?",
+    "expected_intent": "exercise_guidance",
+    "expected_categories": [
+      "exercise",
+      "lifestyle"
+    ],
+    "expected_chunk_ids": [
+      "exercise_en_007",
+      "exercise_en_013"
+    ],
+    "expected_answer_keywords": [
+      "after meals",
+      "walking",
+      "blood sugar spikes",
+      "post meal"
+    ]
+  },
+  {
+    "question": "What precautions should I take before exercise?",
+    "expected_intent": "exercise_safety",
+    "expected_categories": [
+      "exercise",
+      "lifestyle"
+    ],
+    "expected_chunk_ids": [
+      "exercise_en_008"
+    ],
+    "expected_answer_keywords": [
+      "blood sugar",
+      "low blood sugar",
+      "15 grams",
+      "fast-acting carbohydrate"
+    ]
+  },
+  {
+    "question": "What should I do if I feel shaky during workout?",
+    "expected_intent": "exercise_safety",
+    "expected_categories": [
+      "exercise",
+      "lifestyle"
+    ],
+    "expected_chunk_ids": [
+      "exercise_en_008"
+    ],
+    "expected_answer_keywords": [
+      "stop exercising",
+      "15 grams",
+      "fast-acting carbohydrate",
+      "15 minutes"
+    ]
+  },
+  {
+    "question": "What should a diabetic plate include?",
+    "expected_intent": "nutrition_general",
+    "expected_categories": [
+      "nutrition"
+    ],
+    "expected_chunk_ids": [
+      "type2_en_009",
+      "nutrition_en_103",
+      "nutrition_en_101"
+    ],
+    "expected_answer_keywords": [
+      "vegetables",
+      "protein",
+      "rice or roti",
+      "portion"
+    ]
+  },
+  {
+    "question": "Which foods should diabetics avoid?",
+    "expected_intent": "nutrition_general",
+    "expected_categories": [
+      "nutrition"
+    ],
+    "expected_chunk_ids": [
+      "type2_en_009",
+      "nutrition_en_101",
+      "nutrition_en_103"
+    ],
+    "expected_answer_keywords": [
+      "avoid",
+      "sugar",
+      "fried foods",
+      "portion"
+    ]
+  },
+  {
+    "question": "What should I eat when my sugar is high?",
+    "expected_intent": "nutrition_high_sugar",
+    "expected_categories": [
+      "nutrition"
+    ],
+    "expected_chunk_ids": [
+      "nutrition_en_102",
+      "nutrition_en_104"
+    ],
+    "expected_answer_keywords": [
+      "water",
+      "vegetables",
+      "avoid sugar",
+      "blood sugar"
+    ]
+  },
+  {
+    "question": "Can you suggest a full day diet plan?",
+    "expected_intent": "meal_plan_request",
+    "expected_categories": [
+      "nutrition"
+    ],
+    "expected_chunk_ids": [
+      "nutrition_en_201"
+    ],
+    "expected_answer_keywords": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ]
+  },
+  {
+    "question": "What is a safe night snack for diabetes?",
+    "expected_intent": "nutrition_night_eating",
+    "expected_categories": [
+      "nutrition"
+    ],
+    "expected_chunk_ids": [
+      "nutrition_en_305"
+    ],
+    "expected_answer_keywords": [
+      "light",
+      "milk",
+      "boiled egg",
+      "peanuts"
+    ]
+  },
+  {
+    "question": "How can I choose food at a restaurant?",
+    "expected_intent": "nutrition_eating_out",
+    "expected_categories": [
+      "nutrition"
+    ],
+    "expected_chunk_ids": [
+      "nutrition_en_306"
+    ],
+    "expected_answer_keywords": [
+      "grilled",
+      "vegetables",
+      "avoid fried foods",
+      "small portion"
+    ]
+  },
+  {
+    "question": "How can I control hunger with diabetes?",
+    "expected_intent": "nutrition_hunger_management",
+    "expected_categories": [
+      "nutrition"
+    ],
+    "expected_chunk_ids": [
+      "nutrition_en_307"
+    ],
+    "expected_answer_keywords": [
+      "protein",
+      "vegetables",
+      "regular meals",
+      "do not skip meals"
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+diabetes-backend/ai-service/chroma_db/
+diabetes-backend/ai-service/__pycache__/
+*.pyc
+node_modules/
+.env
+.env.*.local
+dist/
+build/
+.vscode/
+.idea/
+*.log
+*.sql

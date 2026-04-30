@@ -1,0 +1,68 @@
+
+## Common Medicines for Diabetes
+**Description:**  
+Diabetes medicines help the body lower blood sugar in different ways. Some increase insulin, others help the body use it better or reduce sugar made by the liver.
+
+**Keywords:** metformin, insulin, tablets, medicine, diabetes treatment  
+
+### Details:
+- **Metformin:** The first-line medicine for most people with Type 2 Diabetes. It makes your body more sensitive to insulin and reduces sugar production in the liver.
+- **Sulfonylureas** (e.g., Glimepiride, Gliclazide): Stimulate the pancreas to produce more insulin.
+- **DPP-4 inhibitors** (e.g., Sitagliptin, Linagliptin): Help your body release insulin only when needed and prevent sudden sugar spikes after meals.
+- **SGLT2 inhibitors** (e.g., Dapagliflozin, Empagliflozin): Remove extra sugar through urine; also protect the heart and kidneys.
+- **Thiazolidinediones** (e.g., Pioglitazone): Improve insulin sensitivity but can cause weight gain or swelling; used with caution.
+- **Insulin:** Used when oral medicines are not enough or in Type 1 Diabetes.
+
+---
+
+## Insulin Therapy
+**Description:**  
+Insulin is a hormone that lowers blood sugar. When the pancreas can’t make enough, insulin must be injected.
+
+**Keywords:** insulin, injection, storage, dosage  
+
+### Details:
+- **Types of Insulin:**
+  - **Rapid/Short-acting:** Taken before meals (e.g., Lispro, Aspart).
+  - **Intermediate/Long-acting:** Provides all-day control (e.g., NPH, Glargine).
+  - **Premixed:** Combines both for convenience.
+- Insulin dose is decided by the doctor; do not adjust on your own.
+- Store insulin in a refrigerator (2–8 °C); never freeze it.
+- Rotate injection sites (abdomen, thighs, upper arms) to prevent lumps.
+
+---
+
+## Safe Use of Medicines
+**Description:**  
+To get the best results, medicines should be taken on time and as prescribed.
+
+**Keywords:** dose, timing, missed medicine  
+
+### Details:
+- Take medicine at the same time every day.
+- Follow the doctor’s advice on whether to take it before or after meals.
+- If a dose is missed, skip it and continue the next scheduled dose; don’t double.
+- Do not stop or change medicines without medical advice.
+- Report side effects like stomach upset, dizziness, or swelling.
+
+---
+
+## Herbal or Home Remedies
+**Description:**  
+Many local or herbal products claim to cure diabetes, but most are unproven.
+
+**Keywords:** herbal, natural, safety  
+
+### Details:
+- Some herbs may lower sugar but can react with your medicine.
+- Always consult your doctor before trying any supplement.
+- No herbal product can replace prescribed treatment.
+
+---
+
+### Example Q&A:
+**Q:** What does Metformin do?  
+**A:** It helps your body use insulin better and reduces sugar made by the liver.
+
+**Q:** Can I stop insulin if my sugar becomes normal?  
+**A:** Never stop insulin suddenly. Your doctor will decide if and when to reduce the dose.

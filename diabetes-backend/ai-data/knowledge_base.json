@@ -1,0 +1,2749 @@
+
+[
+  {
+    "id": "general_en_001",
+    "category": "basics",
+    "language": "en",
+    "section_title": "What Diabetes Is",
+    "description": "Diabetes is a long-term condition in which the body cannot use blood sugar properly because insulin is missing, not enough, or not working well. This causes sugar to build up in the blood.",
+    "keywords": ["diabetes", "blood sugar", "insulin", "hyperglycemia"],
+    "details": [
+      "Insulin helps sugar move from the blood into cells for energy.",
+      "When insulin is missing or not working well, sugar stays in the bloodstream.",
+      "High blood sugar over time can harm the eyes, kidneys, nerves, heart and blood vessels."
+    ],
+    "qa_pairs": [
+      {
+        "question": "What is diabetes?",
+        "answer": "Diabetes is a condition in which the body cannot control blood sugar properly because insulin is missing, not enough, or not working well."
+      },
+      {
+        "question": "Why is diabetes serious?",
+        "answer": "Diabetes is serious because high blood sugar over time can damage major organs such as the heart, kidneys, eyes and nerves."
+      }
+    ],
+    "retrieval_text": "Diabetes is a long-term condition in which the body cannot use blood sugar properly because insulin is missing, not enough, or not working well. This causes sugar to build up in the blood. Over time, high blood sugar can damage the eyes, kidneys, nerves, heart and blood vessels."
+  },
+  {
+    "id": "general_en_002",
+    "category": "basics",
+    "language": "en",
+    "section_title": "How Insulin Works",
+    "description": "Insulin is a hormone made by the pancreas that helps sugar move from the blood into the body's cells.",
+    "keywords": ["insulin", "pancreas", "blood sugar", "cells"],
+    "details": [
+      "The pancreas releases insulin when blood sugar rises.",
+      "Insulin helps sugar enter cells and be used for energy.",
+      "As blood sugar falls, the pancreas releases less insulin."
+    ],
+    "qa_pairs": [
+      {
+        "question": "What does insulin do?",
+        "answer": "Insulin helps sugar move from the bloodstream into the body's cells so it can be used for energy."
+      }
+    ],
+    "retrieval_text": "Insulin is a hormone made by the pancreas that helps sugar move from the blood into the body's cells. The pancreas releases insulin when blood sugar rises. As blood sugar falls, the pancreas releases less insulin."
+  },
+  {
+    "id": "general_en_003",
+    "category": "basics",
+    "language": "en",
+    "section_title": "What Glucose Does",
+    "description": "Glucose is one of the body's main sources of energy. It comes from food and from the liver.",
+    "keywords": ["glucose", "energy", "liver", "glycogen"],
+    "details": [
+      "Glucose enters the bloodstream after food is digested.",
+      "The liver stores glucose in the form of glycogen.",
+      "The liver can release glucose when blood sugar is low."
+    ],
+    "qa_pairs": [
+      {
+        "question": "What is glucose?",
+        "answer": "Glucose is a type of sugar that the body uses as a main source of energy."
+      },
+      {
+        "question": "Where does glucose come from?",
+        "answer": "Glucose comes from food and from the liver."
+      }
+    ],
+    "retrieval_text": "Glucose is a main source of energy for the body's cells. It comes from food and from the liver. The liver stores glucose as glycogen and can release it when blood sugar is low."
+  },
+  {
+    "id": "general_en_004",
+    "category": "basics",
+    "language": "en",
+    "section_title": "Prediabetes",
+    "description": "Prediabetes means blood sugar is higher than normal but not high enough to be called diabetes. It is a warning sign for future type 2 diabetes.",
+    "keywords": ["prediabetes", "high blood sugar", "risk", "prevention"],
+    "details": [
+      "Prediabetes raises the risk of developing type 2 diabetes.",
+      "Lifestyle changes can delay or prevent progression.",
+      "Early action is important."
+    ],
+    "qa_pairs": [
+      {
+        "question": "What is prediabetes?",
+        "answer": "Prediabetes means blood sugar is above normal but not yet in the diabetes range."
+      },
+      {
+        "question": "Can prediabetes turn into diabetes?",
+        "answer": "Yes. Without treatment or lifestyle changes, prediabetes can progress to type 2 diabetes."
+      }
+    ],
+    "retrieval_text": "Prediabetes means blood sugar is higher than normal but not high enough to be called diabetes. It is a warning sign that type 2 diabetes may develop in the future. Healthy lifestyle changes can delay or prevent that progression."
+  },
+  {
+    "id": "general_en_005",
+    "category": "basics",
+    "language": "en",
+    "section_title": "Gestational Diabetes",
+    "description": "Gestational diabetes develops during pregnancy in some women and usually goes away after birth, but it raises the later risk of type 2 diabetes.",
+    "keywords": ["gestational diabetes", "pregnancy", "type 2 risk"],
+    "details": [
+      "Gestational diabetes happens during pregnancy.",
+      "It usually improves after the baby is born.",
+      "It increases the future risk of type 2 diabetes."
+    ],
+    "qa_pairs": [
+      {
+        "question": "What is gestational diabetes?",
+        "answer": "Gestational diabetes is diabetes that develops during pregnancy."
+      },
+      {
+        "question": "Can gestational diabetes increase later diabetes risk?",
+        "answer": "Yes. People who had gestational diabetes have a higher risk of type 2 diabetes later."
+      }
+    ],
+    "retrieval_text": "Gestational diabetes develops during pregnancy in some women. It usually goes away after the baby is born, but it increases the risk of developing type 2 diabetes later. Blood sugar needs to be monitored carefully during pregnancy."
+  },
+  {
+    "id": "type2_en_001",
+    "category": "type2",
+    "language": "en",
+    "section_title": "What Type 2 Diabetes Is",
+    "description": "Type 2 diabetes happens when the body does not use insulin properly and the pancreas may not make enough insulin over time.",
+    "keywords": ["type 2 diabetes", "insulin resistance", "blood sugar", "pancreas"],
+    "details": [
+      "The body becomes resistant to insulin.",
+      "The pancreas may not make enough insulin over time.",
+      "Sugar builds up in the blood instead of entering cells properly.",
+      "Type 2 diabetes can occur in adults and in younger people."
+    ],
+    "qa_pairs": [
+      {
+        "question": "What is type 2 diabetes?",
+        "answer": "Type 2 diabetes is a condition in which the body does not use insulin properly and blood sugar builds up in the blood."
+      },
+      {
+        "question": "Can young people get type 2 diabetes?",
+        "answer": "Yes. Type 2 diabetes is more common in older adults, but more young people are getting it because of obesity."
+      }
+    ],
+    "retrieval_text": "Type 2 diabetes happens when the body does not use insulin properly and sugar builds up in the blood. Over time, the pancreas may not make enough insulin to keep blood sugar in a healthy range. Type 2 diabetes can affect adults and younger people."
+  },
+  {
+    "id": "type2_en_002",
+    "category": "type2",
+    "language": "en",
+    "section_title": "Type 2 Diabetes Symptoms",
+    "description": "Symptoms of type 2 diabetes usually develop slowly and may go unnoticed for years.",
+    "keywords": ["type 2 symptoms", "thirst", "urination", "fatigue", "blurred vision"],
+    "details": [
+      "Symptoms often come on slowly.",
+      "Common symptoms include thirst, frequent urination and hunger.",
+      "Other symptoms include weight loss, tiredness and blurred vision.",
+      "Slow-healing sores, frequent infections, numbness or tingling, and darkened skin may occur."
+    ],
+    "qa_pairs": [
+      {
+        "question": "What are the symptoms of type 2 diabetes?",
+        "answer": "Symptoms include increased thirst, frequent urination, hunger, tiredness, blurred vision, slow-healing sores, frequent infections, tingling and darkened skin."
+      },
+      {
+        "question": "Can type 2 diabetes be present without obvious symptoms?",
+        "answer": "Yes. Symptoms often develop slowly, so some people have type 2 diabetes for years without knowing it."
+      }
+    ],
+    "retrieval_text": "Type 2 diabetes symptoms usually develop slowly and may go unnoticed for years. Common symptoms include increased thirst, frequent urination, more hunger, tiredness, blurred vision, weight loss, slow-healing sores, frequent infections, tingling in the hands or feet, and darkened skin areas."
+  },
+  {
+    "id": "type2_en_003",
+    "category": "type2",
+    "language": "en",
+    "section_title": "When to See a Doctor",
+    "description": "Medical review is important if symptoms of type 2 diabetes appear or if a person has major risk factors.",
+    "keywords": ["doctor", "symptoms", "type 2 diagnosis", "medical help"],
+    "details": [
+      "A healthcare professional should assess symptoms of diabetes.",
+      "Early diagnosis helps prevent complications.",
+      "Testing is also important for people at higher risk."
+    ],
+    "qa_pairs": [
+      {
+        "question": "When should I see a doctor for possible type 2 diabetes?",
+        "answer": "You should see a healthcare professional if you have symptoms such as thirst, frequent urination, tiredness or blurred vision."
+      }
+    ],
+    "retrieval_text": "A healthcare professional should be seen if symptoms of type 2 diabetes appear. Early diagnosis is important because treatment can help control blood sugar and lower the risk of complications."
+  },
+  {
+    "id": "type2_en_004",
+    "category": "type2",
+    "language": "en",
+    "section_title": "What Causes Type 2 Diabetes",
+    "description": "Type 2 diabetes mainly develops because the body's cells do not respond to insulin properly and the pancreas cannot make enough insulin to keep blood sugar controlled.",
+    "keywords": ["type 2 causes", "insulin resistance", "pancreas", "obesity", "inactivity"],
+    "details": [
+      "Muscle, fat and liver cells may not respond to insulin properly.",
+      "The pancreas may not make enough insulin.",
+      "Excess weight is a major contributor.",
+      "Not moving enough also increases risk."
+    ],
+    "qa_pairs": [
+      {
+        "question": "What causes type 2 diabetes?",
+        "answer": "Type 2 diabetes is mainly caused by insulin resistance and the pancreas not making enough insulin to keep blood sugar controlled."
+      }
+    ],
+    "retrieval_text": "Type 2 diabetes is mainly caused by two problems. The body's cells do not respond to insulin properly, and the pancreas cannot make enough insulin to keep blood sugar in a healthy range. Excess weight and physical inactivity are major contributors."
+  },
+  {
+    "id": "type2_en_005",
+    "category": "type2",
+    "language": "en",
+    "section_title": "Type 2 Diabetes Risk Factors",
+    "description": "Many factors increase the risk of type 2 diabetes, including excess weight, belly fat, inactivity, family history, prediabetes and age.",
+    "keywords": ["type 2 risk factors", "obesity", "family history", "prediabetes", "age", "PCOS"],
+    "details": [
+      "Excess weight and obesity are major risks.",
+      "Belly fat raises the risk further.",
+      "Physical inactivity increases risk.",
+      "Family history, prediabetes and age over 35 increase risk.",
+      "Gestational diabetes and polycystic ovary syndrome also raise risk."
+    ],
+    "qa_pairs": [
+      {
+        "question": "What are the risk factors for type 2 diabetes?",
+        "answer": "Risk factors include excess weight, belly fat, inactivity, family history, prediabetes, age, gestational diabetes and polycystic ovary syndrome."
+      },
+      {
+        "question": "Does family history increase type 2 diabetes risk?",
+        "answer": "Yes. Having a parent or sibling with type 2 diabetes increases the risk."
+      }
+    ],
+    "retrieval_text": "Type 2 diabetes risk factors include excess weight, belly fat, physical inactivity, family history and prediabetes. The risk also rises with age, especially after 35. Gestational diabetes, polycystic ovary syndrome and some blood fat problems can also increase risk."
+  },
+  {
+    "id": "type2_en_006",
+    "category": "type2",
+    "language": "en",
+    "section_title": "How Type 2 Diabetes Is Diagnosed",
+    "description": "Type 2 diabetes is commonly diagnosed using the A1C test, but fasting blood sugar, random blood sugar and oral glucose tolerance tests may also be used.",
+    "keywords": ["type 2 diagnosis", "A1C", "fasting blood sugar", "random blood sugar", "oral glucose tolerance test"],
+    "details": [
+      "An A1C below 5.7% is considered healthy.",
+      "An A1C from 5.7% to 6.4% suggests prediabetes.",
+      "An A1C of 6.5% or higher on two separate tests means diabetes.",
+      "Doctors may also use random blood sugar, fasting blood sugar or oral glucose tolerance tests."
+    ],
+    "qa_pairs": [
+      {
+        "question": "How is type 2 diabetes diagnosed?",
+        "answer": "Type 2 diabetes is often diagnosed with an A1C test, but fasting blood sugar, random blood sugar and oral glucose tolerance tests may also be used."
+      },
+      {
+        "question": "What A1C level means diabetes?",
+        "answer": "An A1C of 6.5% or higher on two separate tests means diabetes."
+      }
+    ],
+    "retrieval_text": "Type 2 diabetes is usually diagnosed using the A1C test, which shows average blood sugar over the past two to three months. An A1C of 6.5% or higher on two separate tests means diabetes. Doctors may also use fasting blood sugar, random blood sugar or an oral glucose tolerance test."
+  },
+  {
+    "id": "type2_en_007",
+    "category": "type2",
+    "language": "en",
+    "section_title": "Who Should Be Screened for Type 2 Diabetes",
+    "description": "Routine screening helps find type 2 diabetes early, especially in adults and people with risk factors.",
+    "keywords": ["screening", "type 2 screening", "prediabetes", "obesity", "gestational diabetes"],
+    "details": [
+      "Adults age 35 or older should have routine testing.",
+      "Younger people who are overweight or obese and have risk factors should also be tested.",
+      "Women who had gestational diabetes should be screened.",
+      "People with prediabetes need follow-up testing."
+    ],
+    "qa_pairs": [
+      {
+        "question": "Who should be screened for type 2 diabetes?",
+        "answer": "Adults age 35 or older should be screened, and younger people with obesity or other risk factors should also be tested."
+      }
+    ],
+    "retrieval_text": "Screening for type 2 diabetes is recommended for adults age 35 or older. Younger people who are overweight or obese and have risk factors should also be tested. Screening is also important for people with prediabetes and those who had gestational diabetes."
+  },
+  {
+    "id": "type2_en_008",
+    "category": "type2",
+    "language": "en",
+    "section_title": "How Type 2 Diabetes Is Managed",
+    "description": "Managing type 2 diabetes usually includes healthy eating, exercise, weight management, blood sugar monitoring and medicine if needed.",
+    "keywords": ["type 2 management", "healthy eating", "exercise", "blood sugar", "education"],
+    "details": [
+      "Lifestyle changes are a major part of treatment.",
+      "Blood sugar monitoring helps guide treatment.",
+      "Some people need diabetes medicines or insulin.",
+      "Diabetes education is an important part of care."
+    ],
+    "qa_pairs": [
+      {
+        "question": "How is type 2 diabetes managed?",
+        "answer": "Type 2 diabetes is managed with healthy eating, regular exercise, weight control, blood sugar monitoring and medicine or insulin if needed."
+      }
+    ],
+    "retrieval_text": "Type 2 diabetes is managed through healthy eating, regular exercise, weight control, blood sugar monitoring and medicine or insulin when needed. Diabetes education is also an important part of care."
+  },
+  {
+    "id": "type2_en_009",
+    "category": "diet",
+    "language": "en",
+    "section_title": "Healthy Eating for Type 2 Diabetes",
+    "description": "There is no single diabetes diet, but healthy eating helps control blood sugar and supports weight management.",
+    "keywords": ["type 2 diet", "fiber", "whole grains", "carbohydrates", "meal plan"],
+    "details": [
+      "Regular meals and healthy snacks can help.",
+      "Smaller portions are often useful.",
+      "High-fiber foods such as fruits, nonstarchy vegetables and whole grains are recommended.",
+      "Refined grains, sweets and excess calories should be limited."
+    ],
+    "qa_pairs": [
+      {
+        "question": "What should a person with type 2 diabetes eat?",
+        "answer": "A person with type 2 diabetes should focus on regular meals, smaller portions, high-fiber foods, fruits, vegetables and whole grains while limiting sweets and refined grains."
+      },
+      {
+        "question": "Is there a special diabetes diet for type 2 diabetes?",
+        "answer": "There is no single diabetes diet, but healthy eating with balanced meals and fewer refined carbohydrates helps manage blood sugar."
+      }
+    ],
+    "retrieval_text": "Healthy eating for type 2 diabetes includes regular meals, smaller portions and more high-fiber foods such as fruits, nonstarchy vegetables and whole grains. Refined grains, sweets and excess calories should be limited to help keep blood sugar more stable."
+  },
+  {
+    "id": "type2_en_010",
+    "category": "exercise",
+    "language": "en",
+    "section_title": "Exercise and Weight Loss in Type 2 Diabetes",
+    "description": "Physical activity improves insulin use and supports weight control. Even modest weight loss can improve blood sugar and other health measures.",
+    "keywords": ["exercise", "weight loss", "aerobic", "strength training", "movement"],
+    "details": [
+      "Aim for at least 150 minutes a week of moderate aerobic activity.",
+      "Strength training at least two times a week is recommended.",
+      "Breaking up long sitting periods helps blood sugar control.",
+      "Losing even 5% of body weight can improve blood sugar and blood pressure."
+    ],
+    "qa_pairs": [
+      {
+        "question": "How much exercise is recommended for type 2 diabetes?",
+        "answer": "At least 150 minutes a week of moderate aerobic activity is recommended, along with strength training at least two times a week."
+      },
+      {
+        "question": "Can weight loss help type 2 diabetes?",
+        "answer": "Yes. Even modest weight loss can improve blood sugar, cholesterol and blood pressure."
+      }
+    ],
+    "retrieval_text": "Exercise helps manage type 2 diabetes by improving how the body uses insulin. At least 150 minutes a week of moderate aerobic activity is recommended, along with strength training two times a week. Even modest weight loss can improve blood sugar, cholesterol and blood pressure."
+  },
+  {
+    "id": "type2_en_011",
+    "category": "glucose monitoring",
+    "language": "en",
+    "section_title": "Checking Blood Sugar in Type 2 Diabetes",
+    "description": "Blood sugar monitoring helps show whether treatment is working and whether glucose stays in the target range.",
+    "keywords": ["glucose monitoring", "blood sugar", "meter", "CGM", "target range"],
+    "details": [
+      "A healthcare team decides how often monitoring is needed.",
+      "Some people use a blood glucose meter.",
+      "Some use continuous glucose monitoring systems.",
+      "Monitoring may be needed more often if insulin is used."
+    ],
+    "qa_pairs": [
+      {
+        "question": "Why should people with type 2 diabetes check blood sugar?",
+        "answer": "Checking blood sugar helps make sure levels stay in the target range and shows whether treatment is working."
+      }
+    ],
+    "retrieval_text": "Blood sugar monitoring helps people with type 2 diabetes see whether treatment is working and whether glucose stays in the target range. Some people use a blood glucose meter, while others use continuous glucose monitoring systems."
+  },
+  {
+    "id": "type2_en_012",
+    "category": "medication awareness",
+    "language": "en",
+    "section_title": "Medicines for Type 2 Diabetes",
+    "description": "Different medicines can lower blood sugar in type 2 diabetes. The choice depends on blood sugar levels, overall health and treatment goals.",
+    "keywords": ["metformin", "sulfonylureas", "GLP-1", "SGLT2", "type 2 medicine"],
+    "details": [
+      "Metformin is often the first medicine prescribed.",
+      "Some medicines help the body make more insulin.",
+      "Some improve insulin use.",
+      "Some slow digestion or help remove glucose through urine."
+    ],
+    "qa_pairs": [
+      {
+        "question": "What is the first medicine commonly used for type 2 diabetes?",
+        "answer": "Metformin is most often the first medicine prescribed for type 2 diabetes."
+      },
+      {
+        "question": "Do all people with type 2 diabetes take the same medicine?",
+        "answer": "No. The best medicine depends on the person's blood sugar levels, overall health and treatment needs."
+      }
+    ],
+    "retrieval_text": "Medicines for type 2 diabetes are used when diet and exercise are not enough to control blood sugar. Metformin is most often the first medicine prescribed. Other medicine groups include sulfonylureas, DPP-4 inhibitors, GLP-1 receptor agonists and SGLT2 inhibitors."
+  },
+  {
+    "id": "type2_en_013",
+    "category": "medication awareness",
+    "language": "en",
+    "section_title": "Insulin Therapy in Type 2 Diabetes",
+    "description": "Some people with type 2 diabetes need insulin when lifestyle changes and other medicines do not control blood sugar well enough.",
+    "keywords": ["insulin", "injection", "type 2 insulin", "hypoglycemia"],
+    "details": [
+      "Insulin may be started sooner in some cases.",
+      "Different insulin types work at different speeds.",
+      "Some insulin is long-acting and some is taken around meals.",
+      "Low blood sugar is an important side effect to watch for."
+    ],
+    "qa_pairs": [
+      {
+        "question": "Do people with type 2 diabetes need insulin?",
+        "answer": "Some people with type 2 diabetes need insulin when other treatments do not control blood sugar well enough."
+      }
+    ],
+    "retrieval_text": "Insulin therapy is sometimes needed in type 2 diabetes when lifestyle changes and other medicines do not control blood sugar well enough. Different insulin types work at different speeds, and low blood sugar is one important side effect."
+  },
+  {
+  "id": "type2_en_014",
+  "category": "complications",
+  "language": "en",
+  "section_title": "Complications of Type 2 Diabetes",
+  "description": "Type 2 diabetes can cause many complications over time if blood sugar is not well controlled.",
+  "keywords": ["complications", "uncontrolled diabetes", "long-term effects", "organs", "damage"],
+  "details": [
+    "Type 2 diabetes can damage the eyes, kidneys, nerves, heart, blood vessels, and feet.",
+    "Different complications happen in different parts of the body.",
+    "Good blood sugar control can lower the risk of many complications."
+  ],
+  "qa_pairs": [
+    {
+      "question": "What complications can happen if diabetes is not controlled?",
+      "answer": "Uncontrolled diabetes can lead to eye disease, kidney damage, nerve damage, heart disease, blood vessel problems, and foot complications."
+    }
+  ],
+  "retrieval_text": "If type 2 diabetes is not controlled, it can lead to complications affecting the eyes, kidneys, nerves, heart, blood vessels, and feet. These problems usually develop over time. Good blood sugar control can lower the risk of many long-term complications."
+},
+  {
+    "id": "type2_en_015",
+    "category": "prevention",
+    "language": "en",
+    "section_title": "Preventing Type 2 Diabetes",
+    "description": "Healthy lifestyle choices can help prevent or delay type 2 diabetes, especially in people with prediabetes.",
+    "keywords": ["type 2 prevention", "healthy food", "exercise", "weight loss", "prediabetes"],
+    "details": [
+      "Healthy eating lowers risk.",
+      "Regular physical activity is important.",
+      "Weight loss can slow prediabetes from becoming type 2 diabetes.",
+      "Avoiding long periods of sitting also helps.",
+      "Some people with prediabetes may be prescribed metformin."
+    ],
+    "qa_pairs": [
+      {
+        "question": "Can type 2 diabetes be prevented?",
+        "answer": "Type 2 diabetes can often be prevented or delayed with healthy eating, regular exercise, weight loss and less sitting."
+      },
+      {
+        "question": "What can I do to lower my risk of type 2 diabetes?",
+        "answer": "You can lower risk by eating healthy foods, being active, losing excess weight and avoiding long periods of sitting."
+      }
+    ],
+    "retrieval_text": "Type 2 diabetes can often be prevented or delayed through healthy lifestyle choices. Healthy eating, regular exercise, weight loss if needed and avoiding long periods of sitting all help lower risk. These changes are especially important for people with prediabetes."
+  },
+  {
+    "id": "type2_en_016",
+    "category": "lifestyle management",
+    "language": "en",
+    "section_title": "Daily Self-Care for Type 2 Diabetes",
+    "description": "Daily self-care lowers the risk of serious diabetes complications and helps people stay on track with treatment.",
+    "keywords": ["self-care", "foot care", "eye exam", "dental care", "blood pressure"],
+    "details": [
+      "Follow the treatment plan and keep regular checkups.",
+      "Take care of the feet and inspect them daily.",
+      "Get regular eye and dental exams.",
+      "Manage blood pressure and cholesterol.",
+      "Avoid tobacco and try to get enough sleep."
+    ],
+    "qa_pairs": [
+      {
+        "question": "What self-care is important in type 2 diabetes?",
+        "answer": "Important self-care includes regular checkups, foot care, eye exams, dental care, healthy eating, activity and managing blood pressure and cholesterol."
+      }
+    ],
+    "retrieval_text": "Daily self-care in type 2 diabetes includes following the treatment plan, checking the feet, getting regular eye and dental exams, staying active, eating well, managing blood pressure and cholesterol, avoiding tobacco and getting enough sleep."
+  },
+  {
+    "id": "type2_en_017",
+    "category": "mental health",
+    "language": "en",
+    "section_title": "Mental Health and Support in Type 2 Diabetes",
+    "description": "Living with type 2 diabetes can be stressful, and emotional support is an important part of care.",
+    "keywords": ["mental health", "support", "anxiety", "depression", "counseling"],
+    "details": [
+      "Type 2 diabetes can feel overwhelming for some people.",
+      "Anxiety and depression are common in people living with diabetes.",
+      "Counseling may help with stress and coping.",
+      "Support groups can provide education and emotional support."
+    ],
+    "qa_pairs": [
+      {
+        "question": "Can type 2 diabetes affect mental health?",
+        "answer": "Yes. Anxiety and depression are common in people living with type 2 diabetes."
+      },
+      {
+        "question": "Can support groups help with type 2 diabetes?",
+        "answer": "Yes. Support groups can provide education, emotional support and practical advice."
+      }
+    ],
+    "retrieval_text": "Type 2 diabetes can affect mental health as well as physical health. Anxiety and depression are common in people living with diabetes. Counseling and support groups can help people cope with the condition and stay on track with self-care."
+  },
+  {
+    "id": "type2_en_018",
+    "category": "glucose monitoring",
+    "language": "en",
+    "section_title": "High and Low Blood Sugar in Type 2 Diabetes",
+    "description": "People with type 2 diabetes should know the signs of both high and low blood sugar because severe cases can become dangerous.",
+    "keywords": ["hyperglycemia", "hypoglycemia", "type 2 emergency", "low blood sugar", "high blood sugar"],
+    "details": [
+      "High blood sugar may cause frequent urination, thirst, dry mouth, tiredness and blurry vision.",
+      "Very high blood sugar can become a medical emergency.",
+      "Low blood sugar may cause sweating, shakiness, weakness, hunger, dizziness and confusion.",
+      "Severe blood sugar problems need quick attention."
+    ],
+    "qa_pairs": [
+      {
+        "question": "What are signs of high blood sugar in type 2 diabetes?",
+        "answer": "Signs include frequent urination, thirst, dry mouth, tiredness, headache and blurred vision."
+      },
+      {
+        "question": "What are signs of low blood sugar?",
+        "answer": "Signs include sweating, shakiness, weakness, hunger, dizziness, blurred vision and confusion."
+      }
+    ],
+    "retrieval_text": "People with type 2 diabetes should know the warning signs of high and low blood sugar. High blood sugar may cause frequent urination, thirst, dry mouth, tiredness and blurred vision. Low blood sugar may cause sweating, shakiness, weakness, hunger, dizziness and confusion. Severe cases can become dangerous and need quick care."
+  }
+  ,
+{
+  "id": "type2_en_019",
+  "category": "type2",
+  "language": "en",
+  "section_title": "A1C Test for Diabetes",
+  "description": "The A1C test measures average blood sugar over the past two to three months. It is one of the most common tests used to diagnose type 2 diabetes and prediabetes.",
+  "keywords": ["A1C", "HbA1c", "diabetes test", "average blood sugar", "prediabetes"],
+  "details": [
+    "The A1C test shows average blood sugar over the past two to three months.",
+    "An A1C below 5.7% is considered normal.",
+    "An A1C from 5.7% to 6.4% suggests prediabetes.",
+    "An A1C of 6.5% or higher on two separate tests means diabetes."
+  ],
+  "qa_pairs": [
+    {
+      "question": "What is the A1C test?",
+      "answer": "The A1C test is a blood test that shows average blood sugar over the past two to three months."
+    },
+    {
+      "question": "What A1C level means diabetes?",
+      "answer": "An A1C of 6.5% or higher on two separate tests means diabetes."
+    }
+  ],
+  "retrieval_text": "The A1C test is commonly used to diagnose type 2 diabetes. It shows the average blood sugar level over the past two to three months. A result below 5.7% is normal, 5.7% to 6.4% means prediabetes, and 6.5% or higher on two separate tests means diabetes."
+},
+{
+  "id": "type2_en_020",
+  "category": "type2",
+  "language": "en",
+  "section_title": "Fasting Blood Sugar Test",
+  "description": "The fasting blood sugar test checks blood glucose after not eating overnight. It is used to diagnose normal blood sugar, prediabetes, or diabetes.",
+  "keywords": ["fasting blood sugar", "fasting glucose", "diabetes test", "prediabetes", "blood glucose"],
+  "details": [
+    "The test is done after not eating overnight.",
+    "A fasting blood sugar below 100 mg/dL is considered normal.",
+    "A result from 100 to 125 mg/dL suggests prediabetes.",
+    "A result of 126 mg/dL or higher on two tests means diabetes."
+  ],
+  "qa_pairs": [
+    {
+      "question": "What is a fasting blood sugar test?",
+      "answer": "It is a test that measures blood sugar after you have not eaten overnight."
+    },
+    {
+      "question": "What fasting blood sugar level means diabetes?",
+      "answer": "A fasting blood sugar of 126 mg/dL or higher on two tests means diabetes."
+    }
+  ],
+  "retrieval_text": "A fasting blood sugar test measures blood glucose after not eating overnight. It is used to help diagnose type 2 diabetes and prediabetes. A result below 100 mg/dL is normal, 100 to 125 mg/dL means prediabetes, and 126 mg/dL or higher on two tests means diabetes."
+},
+{
+  "id": "type2_en_021",
+  "category": "type2",
+  "language": "en",
+  "section_title": "Random Blood Sugar Test",
+  "description": "A random blood sugar test checks blood glucose at any time of the day, regardless of when the person last ate. It can help identify diabetes, especially when symptoms are present.",
+  "keywords": ["random blood sugar", "random glucose", "diabetes diagnosis", "high blood sugar", "symptoms"],
+  "details": [
+    "This test can be done at any time of day.",
+    "It does not require fasting.",
+    "A random blood sugar level of 200 mg/dL or higher suggests diabetes.",
+    "It is especially useful when classic symptoms are present."
+  ],
+  "qa_pairs": [
+    {
+      "question": "What is a random blood sugar test?",
+      "answer": "It is a blood sugar test done at any time of day, without fasting."
+    },
+    {
+      "question": "What random blood sugar level suggests diabetes?",
+      "answer": "A random blood sugar level of 200 mg/dL or higher suggests diabetes, especially if symptoms are present."
+    }
+  ],
+  "retrieval_text": "A random blood sugar test measures blood glucose at any time of day without fasting. It is often used when someone has symptoms of diabetes. A random blood sugar level of 200 mg/dL or higher suggests diabetes, especially if symptoms such as thirst and frequent urination are present."
+},
+{
+  "id": "type2_en_022",
+  "category": "type2",
+  "language": "en",
+  "section_title": "Oral Glucose Tolerance Test",
+  "description": "The oral glucose tolerance test checks how the body handles sugar after drinking a sugary liquid. It can help diagnose diabetes and prediabetes.",
+  "keywords": ["oral glucose tolerance test", "OGTT", "diabetes test", "prediabetes", "blood sugar"],
+  "details": [
+    "The person first fasts for a certain period.",
+    "Then they drink a sugary liquid.",
+    "Blood sugar is measured over the next two hours.",
+    "A two-hour value below 140 mg/dL is normal, 140 to 199 mg/dL means prediabetes, and 200 mg/dL or higher suggests diabetes."
+  ],
+  "qa_pairs": [
+    {
+      "question": "What is an oral glucose tolerance test?",
+      "answer": "It is a test that checks blood sugar before and after drinking a sugary liquid to see how the body handles glucose."
+    },
+    {
+      "question": "What OGTT result means diabetes?",
+      "answer": "A two-hour blood sugar value of 200 mg/dL or higher suggests diabetes."
+    }
+  ],
+  "retrieval_text": "The oral glucose tolerance test checks how the body handles sugar after drinking a sugary liquid. It is used to diagnose diabetes and prediabetes. A two-hour blood sugar below 140 mg/dL is normal, 140 to 199 mg/dL means prediabetes, and 200 mg/dL or higher suggests diabetes."
+},
+{
+  "id": "type2_en_023",
+  "category": "type2",
+  "language": "en",
+  "section_title": "Prediabetes and Diabetes Difference",
+  "description": "Prediabetes means blood sugar is above normal but not yet high enough to be called diabetes. Diabetes means blood sugar has reached a higher level and needs closer management.",
+  "keywords": ["prediabetes", "diabetes", "difference", "blood sugar", "risk"],
+  "details": [
+    "Prediabetes is an early warning stage.",
+    "Diabetes means blood sugar is high enough for a medical diagnosis.",
+    "Prediabetes can progress to type 2 diabetes if not treated.",
+    "Lifestyle changes can delay or prevent progression."
+  ],
+  "qa_pairs": [
+    {
+      "question": "What is the difference between prediabetes and diabetes?",
+      "answer": "Prediabetes means blood sugar is higher than normal but not high enough for diabetes. Diabetes means blood sugar is high enough to meet diagnostic criteria."
+    },
+    {
+      "question": "Can prediabetes turn into diabetes?",
+      "answer": "Yes. Prediabetes can progress to type 2 diabetes if it is not managed with lifestyle changes or medical advice."
+    }
+  ],
+  "retrieval_text": "Prediabetes means blood sugar is higher than normal but not high enough to be called diabetes. Diabetes means blood sugar is high enough to meet diagnostic criteria. Prediabetes is a warning sign because it can progress to type 2 diabetes if it is not managed early."
+},
+{
+  "id": "type2_en_024",
+  "category": "type2",
+  "language": "en",
+  "section_title": "Who Should Be Screened for Diabetes",
+  "description": "Screening helps find diabetes early, even before symptoms become clear. Adults and people with important risk factors should be tested.",
+  "keywords": ["screening", "diabetes test", "risk factors", "prediabetes", "gestational diabetes"],
+  "details": [
+    "Adults age 35 or older should have routine screening.",
+    "Younger people who are overweight or obese and have risk factors should also be tested.",
+    "People with prediabetes should have follow-up testing.",
+    "Women who had gestational diabetes should be screened.",
+    "Children with obesity and strong risk factors may also need screening."
+  ],
+  "qa_pairs": [
+    {
+      "question": "Who should get tested for diabetes?",
+      "answer": "Adults age 35 or older should be screened, and younger people with obesity or other risk factors should also be tested."
+    },
+    {
+      "question": "Should someone with prediabetes be screened again?",
+      "answer": "Yes. People with prediabetes need follow-up testing because they are at higher risk of developing type 2 diabetes."
+    }
+  ],
+  "retrieval_text": "People who should be screened for diabetes include adults age 35 or older, younger people who are overweight or obese and have risk factors, people with prediabetes, and women who had gestational diabetes. Screening helps detect type 2 diabetes early, even before symptoms become obvious."
+}
+,
+{
+  "id": "type2_en_030",
+  "category": "type2",
+  "language": "en",
+  "section_title": "Diabetic Retinopathy (Eye Damage)",
+  "description": "Diabetic retinopathy is an eye complication caused by damage to the small blood vessels in the retina due to high blood sugar.",
+  "keywords": ["retinopathy", "eye damage", "vision loss", "diabetes eyes", "blurred vision"],
+  "details": [
+    "High blood sugar damages tiny blood vessels in the retina.",
+    "Over time, this can cause leakage, swelling, or abnormal blood vessel growth.",
+    "It may lead to vision loss or blindness if untreated."
+  ],
+  "qa_pairs": [
+    {
+      "question": "How does diabetes affect the eyes?",
+      "answer": "Diabetes can damage the small blood vessels in the retina, leading to diabetic retinopathy and possible vision loss."
+    },
+    {
+      "question": "What are symptoms of diabetic retinopathy?",
+      "answer": "Symptoms include blurred vision, floaters, dark spots, and vision loss, especially in later stages."
+    }
+  ],
+  "retrieval_text": "Diabetic retinopathy is caused by damage to blood vessels in the retina due to high blood sugar. Symptoms include blurred vision, floaters, dark spots, and vision loss. People with diabetes should have regular eye exams even if no symptoms are present. Good blood sugar control can help prevent or slow this condition."
+}
+,
+{
+  "id": "type2_en_031",
+  "category": "type2",
+  "language": "en",
+  "section_title": "Diabetic Neuropathy (Nerve Damage)",
+  "description": "Diabetic neuropathy is nerve damage caused by long-term high blood sugar. It often affects sensation in the feet and hands.",
+  "keywords": ["neuropathy", "nerve damage", "tingling", "numbness", "burning pain", "loss of sensation"],
+  "details": [
+    "Long-term high blood sugar can damage nerves.",
+    "It often affects the feet and hands first.",
+    "Common symptoms include tingling, numbness, burning pain, and loss of sensation.",
+    "Reduced feeling increases the risk of unnoticed injuries."
+  ],
+  "qa_pairs": [
+    {
+      "question": "Why do people with diabetes feel tingling in their feet?",
+      "answer": "Tingling in the feet can happen because high blood sugar damages nerves, a condition called diabetic neuropathy."
+    },
+    {
+      "question": "What are symptoms of diabetic neuropathy?",
+      "answer": "Symptoms include tingling, numbness, burning pain, weakness, and loss of sensation, especially in the feet and hands."
+    }
+  ],
+  "retrieval_text": "Diabetic neuropathy is nerve damage caused by long-term high blood sugar. It often affects the feet and hands and can cause tingling, numbness, burning pain, weakness, or loss of sensation. It is one of the main reasons people with diabetes feel tingling in their feet or hands. Good blood sugar control can help prevent or delay nerve damage."
+}
+,
+{
+  "id": "type2_en_032",
+  "category": "type2",
+  "language": "en",
+  "section_title": "Diabetic Nephropathy (Kidney Damage)",
+  "description": "Diabetic nephropathy is kidney damage caused by long-term high blood sugar affecting kidney filtering units.",
+  "keywords": ["nephropathy", "kidney damage", "protein in urine", "kidney disease diabetes"],
+  "details": [
+    "High blood sugar damages small blood vessels in the kidneys.",
+    "This reduces the kidneys' ability to filter waste properly.",
+    "It can lead to chronic kidney disease or kidney failure."
+  ],
+  "qa_pairs": [
+    {
+      "question": "Can diabetes damage the kidneys?",
+      "answer": "Yes. High blood sugar can damage kidney blood vessels, leading to diabetic nephropathy."
+    },
+    {
+      "question": "What are signs of kidney damage in diabetes?",
+      "answer": "Early stages may have no symptoms, but later signs include swelling, fatigue, and protein in urine."
+    }
+  ],
+  "retrieval_text": "Diabetic nephropathy is kidney damage caused by long-term high blood sugar. It damages the small blood vessels in the kidneys and reduces their ability to filter waste. Early stages may not show symptoms, but regular testing can detect it. Good blood sugar and blood pressure control can help prevent or slow kidney damage."
+}
+,
+{
+  "id": "type2_en_033",
+  "category": "type2",
+  "language": "en",
+  "section_title": "Cardiovascular Disease and Blood Vessel Damage",
+  "description": "Type 2 diabetes damages blood vessels and increases the risk of heart disease and stroke.",
+  "keywords": ["cardiovascular", "blood vessels", "heart disease", "stroke", "plaque buildup", "circulation"],
+  "details": [
+    "High blood sugar damages blood vessel walls over time.",
+    "It contributes to plaque buildup and narrowing of arteries.",
+    "This raises the risk of heart attack, stroke, and poor circulation.",
+    "Blood pressure and cholesterol problems make the risk even higher."
+  ],
+  "qa_pairs": [
+    {
+      "question": "How does diabetes affect blood vessels?",
+      "answer": "Diabetes damages blood vessel walls and increases plaque buildup, which can reduce blood flow and raise the risk of heart disease and stroke."
+    },
+    {
+      "question": "Why is heart disease common in people with diabetes?",
+      "answer": "Heart disease is common in diabetes because high blood sugar damages blood vessels and increases artery narrowing and plaque buildup."
+    }
+  ],
+  "retrieval_text": "Type 2 diabetes can damage blood vessels over time. High blood sugar harms blood vessel walls and contributes to plaque buildup, narrowing of arteries, and poor circulation. This is why diabetes increases the risk of heart disease, heart attack, stroke, and other cardiovascular problems."
+}
+,
+{
+  "id": "type2_en_034",
+  "category": "type2",
+  "language": "en",
+  "section_title": "Diabetic Foot Problems",
+  "description": "Diabetic foot problems happen when poor circulation and loss of protective sensation allow small injuries to turn into ulcers or infections.",
+  "keywords": ["foot problems", "foot ulcers", "wounds", "infection", "poor circulation", "amputation"],
+  "details": [
+    "Poor blood flow slows healing in the feet.",
+    "Loss of protective sensation means injuries may go unnoticed.",
+    "Small cuts or pressure areas can become ulcers or infections.",
+    "Severe cases can lead to tissue damage and amputation."
+  ],
+  "qa_pairs": [
+    {
+      "question": "Why do people with diabetes get foot problems?",
+      "answer": "People with diabetes get foot problems because poor circulation slows healing and reduced feeling makes injuries easier to miss."
+    },
+    {
+      "question": "How can diabetic foot problems be prevented?",
+      "answer": "Foot problems can be reduced by daily foot checks, proper footwear, foot hygiene, and good blood sugar control."
+    }
+  ],
+  "retrieval_text": "Diabetic foot problems develop when poor circulation slows healing and reduced protective sensation allows small injuries to be missed. This can lead to ulcers, infections, and in severe cases amputation. Daily foot checks, proper footwear, and good blood sugar control help reduce the risk."
+}
+,
+{
+  "id": "exercise_en_001",
+  "category": "lifestyle",
+  "language": "en",
+  "section_title": "Exercise for Type 2 Diabetes",
+  "description": "Regular physical activity helps control blood sugar, improve insulin sensitivity, and reduce the risk of complications in people with type 2 diabetes.",
+  "keywords": ["exercise", "physical activity", "blood sugar control", "insulin sensitivity", "diabetes lifestyle"],
+  "details": [
+    "Exercise helps muscles use glucose for energy, lowering blood sugar levels.",
+    "Regular activity improves insulin sensitivity, meaning the body uses insulin more effectively.",
+    "Physical activity supports weight management, which is important for diabetes control.",
+    "Exercise reduces the risk of heart disease, which is common in people with diabetes.",
+    "It also improves mood, energy levels, and overall health."
+  ],
+  "qa_pairs": [
+    {
+      "question": "Why is exercise important for diabetes?",
+      "answer": "Exercise helps lower blood sugar, improves insulin sensitivity, supports weight control, and reduces the risk of complications."
+    },
+    {
+      "question": "How does exercise affect blood sugar?",
+      "answer": "Exercise helps muscles use glucose for energy, which reduces the amount of sugar in the blood."
+    }
+  ],
+  "retrieval_text": "Exercise plays a key role in managing type 2 diabetes by lowering blood sugar, improving insulin sensitivity, and supporting weight control. It also reduces the risk of heart disease and improves overall health."
+},
+{
+  "id": "exercise_en_002",
+  "category": "lifestyle",
+  "language": "en",
+  "section_title": "Aerobic Exercise in Type 2 Diabetes",
+  "description": "Aerobic exercise helps lower blood sugar and improve overall health in people with type 2 diabetes.",
+  "keywords": ["aerobic exercise", "how much exercise", "150 minutes per week", "30 minutes a day", "exercise duration", "weekly exercise plan"],
+  "details": [
+    "Aerobic exercise includes activities such as brisk walking, cycling, swimming, jogging, and dancing.",
+    "Most adults with type 2 diabetes should aim for at least 150 minutes of moderate-intensity aerobic activity per week.",
+    "A practical approach is 30 minutes a day for 5 days a week.",
+    "Exercise should be spread across multiple days of the week.",
+    "Avoid long periods without physical activity.",
+    "Regular exercise helps improve blood sugar control, heart health, and weight management."
+  ],
+  "qa_pairs": [
+    {
+      "question": "How much exercise should I do for diabetes?",
+      "answer": "You should aim for at least 150 minutes of moderate exercise per week, such as 30 minutes a day for 5 days."
+    }
+  ],
+  "retrieval_text": "People with type 2 diabetes should do about 150 minutes of aerobic exercise per week. A simple plan is 30 minutes a day for 5 days. This improves blood sugar, heart health, and overall fitness."
+},
+{
+  "id": "exercise_en_003",
+  "category": "lifestyle",
+  "language": "en",
+  "section_title": "Strength Training in Type 2 Diabetes",
+  "description": "Strength training improves muscle mass and insulin sensitivity, helping better glucose control.",
+  "keywords": ["strength training", "resistance exercise", "muscle", "weights", "insulin sensitivity"],
+  "details": [
+    "Strength training includes lifting weights, resistance bands, or bodyweight exercises.",
+    "It increases muscle mass, which improves glucose storage and insulin sensitivity.",
+    "Recommended at least 2–3 times per week on non-consecutive days.",
+    "Exercises should target major muscle groups such as legs, arms, chest, and back.",
+    "Start with light weights and gradually increase intensity.",
+    "Proper form is important to prevent injury.",
+    "Breathing should be controlled; avoid holding breath during lifting."
+  ],
+  "qa_pairs": [
+    {
+      "question": "Why is strength training important for diabetes?",
+      "answer": "It increases muscle mass and improves insulin sensitivity, helping better control blood sugar."
+    },
+    {
+      "question": "How often should strength training be done?",
+      "answer": "At least 2–3 times per week targeting major muscle groups."
+    }
+  ],
+  "retrieval_text": "Strength training helps improve insulin sensitivity and increase muscle mass, which supports better blood sugar control. It should be done 2–3 times per week."
+},
+{
+  "id": "exercise_en_004",
+  "category": "lifestyle",
+  "language": "en",
+  "section_title": "Exercise Safety Guidelines for Diabetes",
+  "description": "Safe exercise practices are important to avoid complications such as hypoglycemia or injury.",
+  "keywords": ["exercise safety", "hypoglycemia", "blood sugar monitoring", "diabetes precautions"],
+  "details": [
+    "Check blood sugar before and after exercise, especially if using insulin or medications.",
+    "Avoid exercise if blood sugar is very high (above 300 mg/dL) or very low (below 70 mg/dL).",
+    "Carry fast-acting carbohydrates such as glucose tablets or juice.",
+    "Stay hydrated before, during, and after exercise.",
+    "Wear proper footwear to prevent foot injuries.",
+    "Warm up before and cool down after exercise.",
+    "Avoid exercising in extreme heat or cold.",
+    "Do not exercise if feeling unwell, dizzy, or fatigued."
+  ],
+  "qa_pairs": [
+    {
+      "question": "What precautions should be taken before exercise?",
+      "answer": "Check blood sugar, stay hydrated, wear proper footwear, and carry fast-acting sugar."
+    },
+    {
+      "question": "When should exercise be avoided?",
+      "answer": "Exercise should be avoided if blood sugar is too high or too low, or if you feel unwell."
+    }
+  ],
+  "retrieval_text": "Exercise safety in diabetes includes checking blood sugar levels, staying hydrated, avoiding extreme conditions, and carrying fast-acting carbohydrates to prevent hypoglycemia."
+},
+{
+  "id": "exercise_en_005",
+  "category": "lifestyle",
+  "language": "en",
+  "section_title": "Exercise Precautions with Diabetic Complications",
+  "description": "Certain complications require modified or restricted exercise to avoid worsening the condition.",
+  "keywords": ["retinopathy", "neuropathy", "nephropathy", "cardiovascular risk", "exercise precautions"],
+  "details": [
+    "Retinopathy: Avoid heavy lifting and high-intensity exercises that increase eye pressure.",
+    "Neuropathy: Avoid high-impact activities; choose low-impact exercises like swimming or cycling.",
+    "Foot problems: Inspect feet daily and avoid exercises that cause injury or pressure.",
+    "Nephropathy: Avoid very intense exercise; consult a doctor before starting.",
+    "Cardiovascular disease: Medical evaluation is recommended before starting vigorous exercise.",
+    "Autonomic neuropathy: Monitor heart rate and blood pressure closely during exercise."
+  ],
+  "qa_pairs": [
+    {
+      "question": "Can people with complications exercise?",
+      "answer": "Yes, but they must modify their exercise based on the type of complication and follow medical advice."
+    },
+    {
+      "question": "What exercise is safe for neuropathy?",
+      "answer": "Low-impact exercises like swimming, cycling, or walking are safer options."
+    }
+  ],
+  "retrieval_text": "Exercise for people with diabetic complications should be modified. Conditions like retinopathy, neuropathy, and cardiovascular disease require specific precautions to avoid worsening health."
+},
+{
+  "id": "exercise_en_006",
+  "category": "lifestyle",
+  "language": "en",
+  "section_title": "Reducing Sedentary Time in Diabetes",
+  "description": "Reducing long periods of sitting helps improve blood sugar control and overall health.",
+  "keywords": ["sedentary behavior", "sitting", "movement", "daily activity", "blood sugar"],
+  "details": [
+    "Avoid sitting for long periods without movement.",
+    "Stand up or walk every 30 minutes.",
+    "Light activities such as stretching or short walks help reduce blood sugar levels.",
+    "Daily movement is important even if structured exercise is done.",
+    "Using stairs instead of elevators can increase activity levels.",
+    "Small frequent movements throughout the day improve metabolism."
+  ],
+  "qa_pairs": [
+    {
+      "question": "Why is reducing sitting time important?",
+      "answer": "Long periods of sitting can increase blood sugar levels and reduce metabolism."
+    },
+    {
+      "question": "How often should I move during the day?",
+      "answer": "It is recommended to move or stand every 30 minutes."
+    }
+  ],
+  "retrieval_text": "Reducing sedentary time by standing or walking every 30 minutes helps control blood sugar and improves overall metabolic health."
+},
+{
+  "id": "exercise_en_007",
+  "category": "lifestyle",
+  "language": "en",
+  "section_title": "Best Time to Exercise for Diabetes",
+  "description": "The timing of exercise plays an important role in blood sugar control and safety.",
+  "keywords": ["when should I exercise", "best time to exercise", "exercise timing", "after meals exercise", "post meal walking", "exercise time diabetes"],
+  "details": [
+    "Exercising after meals is often the best time for people with diabetes.",
+    "Light activity such as walking for 10 to 15 minutes after eating helps reduce blood sugar spikes.",
+    "Avoid exercising on an empty stomach if you are at risk of low blood sugar.",
+    "Exercise timing should be consistent each day for better blood sugar control.",
+    "Avoid exercising during peak insulin action times unless guided by a healthcare provider."
+  ],
+  "qa_pairs": [
+    {
+      "question": "When should I exercise?",
+      "answer": "The best time to exercise is after meals because it helps reduce blood sugar spikes."
+    },
+    {
+      "question": "What is the best time to exercise for diabetes?",
+      "answer": "Exercising after meals, especially with light walking, helps control blood sugar effectively."
+    }
+  ],
+  "retrieval_text": "The best time to exercise for diabetes is after meals. Post-meal activity like walking helps reduce blood sugar spikes and improves glucose control."
+},
+{
+  "id": "exercise_en_013",
+  "category": "lifestyle",
+  "language": "en",
+  "section_title": "Timing of Exercise with Meals and Insulin",
+  "description": "The timing of exercise in relation to meals and insulin affects blood sugar levels and helps prevent complications like hypoglycemia.",
+  "keywords": ["exercise timing", "post-meal exercise", "insulin timing", "blood sugar spikes", "glucose control"],
+  "details": [
+    "Exercising after meals helps reduce post-meal blood sugar spikes.",
+    "Light activity such as walking for 10–15 minutes after eating is highly beneficial.",
+    "Exercising on an empty stomach may increase the risk of low blood sugar, especially in people using insulin.",
+    "If using insulin, avoid injecting into muscles that will be heavily used during exercise.",
+    "Exercise increases insulin sensitivity, so insulin doses may need adjustment.",
+    "Avoid exercising at peak insulin action times to reduce hypoglycemia risk.",
+    "Consistent timing of exercise each day helps maintain stable blood sugar levels."
+  ],
+  "qa_pairs": [
+    {
+      "question": "When is the best time to exercise for diabetes?",
+      "answer": "Exercising after meals is often best because it helps reduce blood sugar spikes."
+    },
+    {
+      "question": "Can exercise affect insulin needs?",
+      "answer": "Yes, exercise increases insulin sensitivity, so insulin doses may need adjustment to avoid low blood sugar."
+    }
+  ],
+  "retrieval_text": "Timing exercise after meals helps reduce blood sugar spikes. Exercise affects insulin sensitivity and timing, so adjustments may be needed to avoid hypoglycemia."
+},
+{
+  "id": "exercise_en_008",
+  "category": "lifestyle",
+  "language": "en",
+  "section_title": "Managing Low Blood Sugar During Exercise",
+  "description": "Exercise can lower blood sugar, so people with diabetes need to know how to recognize and treat hypoglycemia quickly.",
+  "keywords": ["hypoglycemia", "low blood sugar", "sugar drops during exercise", "15 grams sugar", "glucose tablets", "exercise emergency"],
+  "details": [
+    "Low blood sugar usually means blood glucose below 70 mg/dL.",
+    "Symptoms can include sweating, shaking, dizziness, hunger, weakness, confusion, or blurred vision.",
+    "If blood sugar drops during exercise, stop exercising immediately.",
+    "Take 15 grams of fast-acting carbohydrate, such as glucose tablets, fruit juice, or regular sugary drink.",
+    "Wait 15 minutes and recheck blood sugar if possible.",
+    "If blood sugar is still low or symptoms continue, take fast-acting carbohydrate again.",
+    "Do not restart exercise until blood sugar is back in a safer range and symptoms are gone.",
+    "People using insulin or sulfonylureas should be especially careful and carry fast-acting sugar at all times."
+  ],
+  "qa_pairs": [
+    {
+      "question": "What should I do if my sugar drops during workout?",
+      "answer": "Stop exercising immediately, take 15 grams of fast-acting carbohydrate, wait 15 minutes, and recheck your blood sugar if possible."
+    },
+    {
+      "question": "How do I treat low blood sugar during exercise?",
+      "answer": "Treat it with fast-acting carbohydrate such as glucose tablets or juice, then wait 15 minutes and check again before continuing."
+    }
+  ],
+  "retrieval_text": "If blood sugar drops during exercise, stop the activity right away and treat the low sugar. Take 15 grams of fast-acting carbohydrate such as glucose tablets or juice, wait 15 minutes, and recheck blood sugar if possible. Do not continue exercising until symptoms improve and blood sugar is safer."
+},
+
+{
+  "id": "exercise_en_009",
+  "category": "lifestyle",
+  "language": "en",
+  "section_title": "Beginner Exercise Plan for Type 2 Diabetes",
+  "description": "Beginners with type 2 diabetes should start slowly and build a safe, regular exercise routine over time.",
+  "keywords": ["beginner exercise", "start exercise", "new to exercise", "walking plan", "exercise for beginners", "diabetes workout beginner"],
+  "details": [
+    "If you are a beginner, start with short and simple activities such as walking.",
+    "A practical starting point is 10 to 15 minutes of walking after meals, 3 to 4 days a week.",
+    "After 1 to 2 weeks, increase the duration to 15 to 20 minutes if tolerated.",
+    "Once walking feels easier, add light strength exercises such as chair squats, wall push-ups, or resistance band exercises 2 days a week.",
+    "Build gradually toward 30 minutes a day on most days of the week.",
+    "The long-term goal is about 150 minutes of aerobic activity per week plus strength training 2 to 3 times a week.",
+    "Starting slowly reduces injury risk and helps build consistency."
+  ],
+  "qa_pairs": [
+    {
+      "question": "I am a beginner, how do I start exercise with diabetes?",
+      "answer": "Start with 10 to 15 minutes of walking after meals 3 to 4 days a week, then slowly increase time and add light strength exercises."
+    },
+    {
+      "question": "What is a beginner exercise plan for type 2 diabetes?",
+      "answer": "A beginner plan starts with short walks and gradually builds toward 30 minutes a day on most days, plus light strength training."
+    }
+  ],
+  "retrieval_text": "Beginners with type 2 diabetes should start exercise slowly. A good starting plan is 10 to 15 minutes of walking after meals, 3 to 4 days a week, then gradually increasing the duration. Light strength exercises can be added later. The goal is to build up safely toward regular weekly exercise."
+}
+,
+{
+  "id": "exercise_en_010",
+  "category": "lifestyle",
+  "language": "en",
+  "section_title": "Blood Sugar Levels Before Exercise",
+  "description": "Checking blood sugar before exercise helps prevent both low and high blood sugar complications.",
+  "keywords": ["blood sugar before exercise", "glucose threshold", "safe sugar level exercise", "pre exercise glucose", "exercise safety diabetes"],
+  "details": [
+    "If blood sugar is below 70 mg/dL, do not exercise. Treat low blood sugar first.",
+    "If blood sugar is between 70–100 mg/dL, eat a small carbohydrate snack before exercise.",
+    "If blood sugar is between 100–250 mg/dL, it is generally safe to exercise.",
+    "If blood sugar is above 250 mg/dL, check for ketones if possible and be cautious.",
+    "If blood sugar is above 300 mg/dL, avoid exercise until levels improve.",
+    "Monitoring blood sugar helps prevent complications during physical activity."
+  ],
+  "qa_pairs": [
+    {
+      "question": "What blood sugar level is safe before exercise?",
+      "answer": "A level between 100 and 250 mg/dL is generally safe. Below 70 is too low and above 300 is too high for exercise."
+    },
+    {
+      "question": "Should I check sugar before exercise?",
+      "answer": "Yes, checking blood sugar before exercise helps prevent both low and high blood sugar problems."
+    }
+  ],
+  "retrieval_text": "Before exercise, blood sugar should ideally be between 100 and 250 mg/dL. Avoid exercise if sugar is too low or very high. Checking levels helps ensure safety."
+},
+{
+  "id": "exercise_en_011",
+  "category": "lifestyle",
+  "language": "en",
+  "section_title": "Exercise and Diabetes Medications",
+  "description": "Different diabetes medications affect how exercise influences blood sugar levels.",
+  "keywords": ["insulin exercise", "metformin exercise", "sulfonylurea exercise", "medication adjustment exercise", "diabetes drugs activity"],
+  "details": [
+    "People using insulin are at higher risk of low blood sugar during exercise.",
+    "Sulfonylureas can also increase the risk of hypoglycemia.",
+    "Metformin usually does not cause low blood sugar during exercise.",
+    "Insulin doses may need adjustment before exercise.",
+    "Avoid injecting insulin into muscles that will be actively used during exercise.",
+    "Timing of medication and meals should be coordinated with physical activity.",
+    "Always consult a healthcare provider before making medication changes."
+  ],
+  "qa_pairs": [
+    {
+      "question": "Does insulin affect exercise?",
+      "answer": "Yes, insulin can increase the risk of low blood sugar during exercise, so adjustments may be needed."
+    },
+    {
+      "question": "Is exercise safe with diabetes medication?",
+      "answer": "Yes, but some medications like insulin and sulfonylureas require extra caution to avoid low blood sugar."
+    }
+  ],
+  "retrieval_text": "Exercise interacts with diabetes medications. Insulin and some drugs increase hypoglycemia risk, while others like metformin are safer. Adjustments may be needed."
+},
+{
+  "id": "exercise_en_012",
+  "category": "lifestyle",
+  "language": "en",
+  "section_title": "Personalized Exercise Recommendations",
+  "description": "Exercise recommendations should be adapted based on individual health status, fitness level, and diabetes condition.",
+  "keywords": ["personalized exercise", "smart recommendation", "custom plan diabetes", "ai recommendation exercise", "individual exercise plan"],
+  "details": [
+    "Beginners should start with low-intensity activities such as short walks.",
+    "People with complications need modified exercise plans.",
+    "Blood sugar trends should guide exercise timing and intensity.",
+    "Weight, age, and fitness level should be considered when planning exercise.",
+    "Consistency is more important than high intensity.",
+    "Exercise plans should be flexible and adjusted over time.",
+    "Healthcare providers can help create personalized plans."
+  ],
+  "qa_pairs": [
+    {
+      "question": "Can exercise be personalized for diabetes?",
+      "answer": "Yes, exercise should be adjusted based on fitness level, health condition, and blood sugar control."
+    },
+    {
+      "question": "How do I choose the right exercise plan?",
+      "answer": "Start with simple activities, monitor your response, and gradually adjust based on your condition."
+    }
+  ],
+  "retrieval_text": "Exercise for diabetes should be personalized based on individual health, fitness level, and blood sugar patterns. Flexible and consistent plans work best."
+},
+{
+  "id": "nutrition_en_101",
+  "category": "nutrition",
+  "language": "en",
+  "section_title": "How Carbohydrates Affect Blood Sugar",
+  "description": "Carbohydrates have the strongest direct effect on blood sugar, so people with diabetes need to control both the type and the portion of carbohydrate foods.",
+  "keywords": ["carbohydrates", "blood sugar", "rice portion", "roti diabetes", "carb control"],
+  "details": [
+    "Carbohydrates raise blood sugar more directly than protein or fat.",
+    "Large portions of white rice, white bread, noodles, and sweets can cause faster blood sugar rises.",
+    "Choose slower-digesting carbohydrates more often, such as brown rice, oats, whole wheat roti, and legumes.",
+    "For cooked white rice, a practical portion is about 1/2 to 1 cup per meal depending on the rest of the plate.",
+    "Do not eat carbohydrate foods alone when possible.",
+    "Pair rice, roti, or oats with protein such as egg, fish, chicken, or dal and with vegetables such as lau, spinach, beans, or cabbage.",
+    "Rice with fish and vegetables is safer than rice alone because protein and fiber help slow the blood sugar rise.",
+    "Avoid eating two carb-heavy meals too close together without enough fiber or protein."
+  ],
+  "qa_pairs": [
+    {
+      "question": "How much rice can I eat safely?",
+      "answer": "A practical limit is about 1/2 to 1 cup of cooked rice in one meal, and it should be eaten with protein and vegetables."
+    },
+    {
+      "question": "Can I eat rice alone?",
+      "answer": "It is better not to eat rice alone because it can raise blood sugar quickly. Pair it with fish, egg, dal, or vegetables."
+    }
+  ],
+  "retrieval_text": "Carbohydrates directly affect blood sugar, so portion control is very important in diabetes. Large portions of white rice, white bread, noodles, and sweets can raise blood sugar quickly. Slower-digesting choices such as brown rice, oats, whole wheat roti, and legumes are better options. Rice or roti should ideally be eaten with protein and vegetables because this helps slow the rise in blood sugar."
+},
+{
+  "id": "nutrition_en_102",
+  "category": "nutrition",
+  "language": "en",
+  "section_title": "Foods to Avoid or Strictly Limit in Diabetes",
+  "description": "Some foods raise blood sugar very quickly or add excess calories and unhealthy fat, so they should be avoided or kept only for rare small portions.",
+  "keywords": ["foods to avoid", "sweets", "fried foods", "sugary drinks", "white rice"],
+  "details": [
+    "Sugary drinks such as soft drinks, packaged juice, sweet tea, and energy drinks can raise blood sugar very fast and should be avoided.",
+    "Sweets such as roshogolla, mishti, cake, chocolate, halwa, and syrup-based desserts should be limited to very small portions.",
+    "Refined carbohydrate foods such as white bread, bakery items, biscuits, and large servings of noodles can cause quick sugar spikes.",
+    "Large portions of white rice can also raise blood sugar sharply, especially if eaten without vegetables or protein.",
+    "Fried foods such as puri, paratha, singara, samosa, chips, and deep-fried snacks add unhealthy fat and make weight control harder.",
+    "If sweets are eaten, they should be taken in a very small amount after a regular meal, not on an empty stomach.",
+    "These foods should not be everyday foods in a diabetes meal pattern."
+  ],
+  "qa_pairs": [
+    {
+      "question": "Which foods should I avoid for diabetes?",
+      "answer": "Sugary drinks, sweets, fried foods, bakery foods, and large portions of white rice should be avoided or strictly limited."
+    },
+    {
+      "question": "Can I eat sweets sometimes?",
+      "answer": "Yes, but only a very small amount and preferably after a full meal, not on an empty stomach and not every day."
+    }
+  ],
+  "retrieval_text": "People with diabetes should avoid or strictly limit foods that raise blood sugar quickly or add excess unhealthy calories. Sugary drinks, sweets, bakery foods, fried snacks, and large portions of white rice are common examples. These foods can make blood sugar control and weight control more difficult. If a sweet food is eaten, it should be only a very small portion and preferably after a meal rather than by itself."
+},
+{
+  "id": "nutrition_en_103",
+  "category": "nutrition",
+  "language": "en",
+  "section_title": "Ideal Plate Method for Diabetes",
+  "description": "The plate method is a simple way to control portions and build a balanced meal without needing exact calorie counting.",
+  "keywords": ["plate method", "balanced plate", "vegetables", "protein", "carbohydrates"],
+  "details": [
+    "Half of the plate should be filled with non-starchy vegetables.",
+    "Good vegetable choices include lau, spinach, cabbage, cauliflower, beans, cucumber, tomato, and mixed salad.",
+    "One quarter of the plate should be protein such as fish, chicken, egg, or dal.",
+    "One quarter of the plate should be carbohydrate such as rice, whole wheat roti, oats, or other grains.",
+    "A practical rice portion in this method is usually about 1/2 to 1 cup cooked rice.",
+    "If roti is used instead of rice, 1 to 2 medium whole wheat roti can fit into the carbohydrate section.",
+    "Vegetables should be cooked with low oil or served as salad when possible.",
+    "Water is the best drink choice with the meal."
+  ],
+  "qa_pairs": [
+    {
+      "question": "How should I divide my plate for diabetes?",
+      "answer": "Fill half the plate with vegetables, one quarter with protein, and one quarter with carbohydrate such as rice or roti."
+    },
+    {
+      "question": "Can I increase the rice part of the plate?",
+      "answer": "It is better not to increase it because the carbohydrate section should stay about one quarter of the plate for better blood sugar control."
+    }
+  ],
+  "retrieval_text": "The plate method helps people with diabetes build balanced meals and control portions more easily. Half of the plate should contain non-starchy vegetables, one quarter should contain protein, and one quarter should contain carbohydrate foods such as rice or roti. This method helps reduce excess carbohydrate intake and makes it easier to include more fiber and protein in the meal. It is a simple and practical way to improve blood sugar control."
+},
+{
+  "id": "nutrition_en_104",
+  "category": "nutrition",
+  "language": "en",
+  "section_title": "Portion Control for Common Bangladeshi Foods",
+  "description": "Portion control helps prevent blood sugar spikes even when the food itself is not completely forbidden.",
+  "keywords": ["portion control", "rice portion", "roti portion", "dal portion", "fruit portion"],
+  "details": [
+    "A practical portion of cooked rice is about 1/2 to 1 cup in one meal.",
+    "A practical portion of roti is usually 1 to 2 medium whole wheat roti in one meal.",
+    "Dal can usually be taken in a portion of about 1/2 to 1 cup depending on the rest of the meal.",
+    "Vegetables can make up a large part of the meal if they are cooked with low oil.",
+    "A usual fish portion is one medium piece, and egg is commonly one whole egg at a time.",
+    "Fruit should be taken in one small serving at a time, such as one small apple, one small guava, or half a banana.",
+    "Even healthy foods can raise blood sugar if the portion becomes too large.",
+    "It is better not to eat fruit immediately after a large meal if the total carbohydrate load is already high."
+  ],
+  "qa_pairs": [
+    {
+      "question": "How much should I eat in one meal?",
+      "answer": "A practical meal can include about 1/2 to 1 cup rice or 1 to 2 roti, along with protein and plenty of vegetables."
+    },
+    {
+      "question": "Can I eat unlimited vegetables?",
+      "answer": "Vegetables can usually be eaten in larger amounts, especially non-starchy vegetables cooked with low oil."
+    }
+  ],
+  "retrieval_text": "Portion control is one of the most important parts of diabetes nutrition. Even healthy foods can raise blood sugar if the portion is too large. Common practical portions include about 1/2 to 1 cup cooked rice, 1 to 2 medium roti, 1/2 to 1 cup dal, one small fruit serving, and a generous amount of non-starchy vegetables. Using portion control helps make familiar Bangladeshi foods safer for blood sugar management."
+},
+{
+  "id": "nutrition_en_105",
+  "category": "nutrition",
+  "language": "en",
+  "section_title": "Mediterranean-Style Eating for Diabetes",
+  "description": "A Mediterranean-style food pattern can support blood sugar control by focusing on vegetables, legumes, whole grains, fish, and healthy fats.",
+  "keywords": ["Mediterranean diet", "healthy fats", "fish", "vegetables", "whole grains"],
+  "details": [
+    "This eating pattern focuses on vegetables, legumes, whole grains, nuts, seeds, fish, and moderate healthy fats.",
+    "In a Bangladeshi setting, this can include fish, dal, vegetables, salad, oats, brown rice, and whole wheat roti.",
+    "Healthy fats should come from small amounts of oils, nuts, and seeds rather than large amounts of fried food.",
+    "Fish is preferred more often than red meat.",
+    "Fried foods, processed snacks, sugary desserts, and refined carbohydrate foods should be reduced.",
+    "Meals should still follow portion control even when the food quality is good.",
+    "A practical example is brown rice or roti with fish, dal, vegetables, and salad."
+  ],
+  "qa_pairs": [
+    {
+      "question": "Is Mediterranean diet good for diabetes?",
+      "answer": "Yes, a Mediterranean-style eating pattern can be good for diabetes because it emphasizes vegetables, fish, legumes, whole grains, and healthy fats."
+    },
+    {
+      "question": "Can I follow Mediterranean-style eating in Bangladesh?",
+      "answer": "Yes, you can follow the same pattern using local foods such as fish, dal, vegetables, salad, oats, brown rice, and whole wheat roti."
+    }
+  ],
+  "retrieval_text": "A Mediterranean-style eating pattern is often recommended for people with diabetes because it focuses on vegetables, legumes, whole grains, fish, and healthy fats instead of sweets, fried foods, and heavily processed foods. This pattern can be adapted to Bangladeshi food habits by using local foods such as fish, dal, salad, oats, brown rice, and whole wheat roti. It supports blood sugar control, heart health, and better food quality when combined with portion control."
+}
+
+
+
+,
+{
+  "id": "nutrition_en_106",
+  "category": "nutrition",
+  "language": "en",
+  "section_title": "Fruits and Diabetes (Safe Intake Guidelines)",
+  "description": "Fruits contain natural sugar, so portion and timing are important for people with diabetes.",
+  "keywords": ["fruits diabetes", "banana diabetes", "mango diabetes", "fruit portion"],
+  "details": [
+    "Fruits contain natural sugar (fructose), so they should be eaten in controlled portions.",
+    "Safe fruit options include apple, guava, orange, papaya, and berries.",
+    "High-sugar fruits like mango, banana, and grapes should be limited.",
+    "Eat fruit as a separate snack, not immediately after a large meal.",
+    "Avoid fruit juice because it raises blood sugar faster than whole fruit.",
+    "A safe portion is one small fruit or half a medium fruit at a time.",
+    "Do not eat multiple fruits together in one sitting."
+  ],
+  "qa_pairs": [
+    {
+      "question": "Which fruits are safe for diabetes?",
+      "answer": "Fruits like apple, guava, orange, and papaya are safer options when eaten in controlled portions."
+    },
+    {
+      "question": "Can I eat banana or mango?",
+      "answer": "Yes, but in small amounts and not daily, as they contain higher natural sugar."
+    }
+  ],
+  "retrieval_text": "Fruits can be eaten in diabetes but in controlled portions. Safer options include apple, guava, orange, and papaya, while banana and mango should be limited. Fruit juice should be avoided because it raises blood sugar quickly."
+},
+{
+  "id": "nutrition_en_107",
+  "category": "nutrition",
+  "language": "en",
+  "section_title": "Protein Intake in Diabetes",
+  "description": "Protein helps control blood sugar by slowing digestion and reducing spikes.",
+  "keywords": ["protein diabetes", "egg diabetes", "fish diabetes", "dal diabetes"],
+  "details": [
+    "Protein does not raise blood sugar as quickly as carbohydrates.",
+    "Good protein sources include egg, fish, chicken, and dal.",
+    "Adding protein to meals helps reduce blood sugar spikes.",
+    "Protein also helps you feel full for longer.",
+    "Avoid deep-fried protein foods.",
+    "Grilled, boiled, or lightly cooked protein is better.",
+    "Each meal should include some protein source."
+  ],
+  "qa_pairs": [
+    {
+      "question": "Is egg good for diabetes?",
+      "answer": "Yes, eggs are a good protein source and do not raise blood sugar quickly."
+    },
+    {
+      "question": "What should I eat with rice?",
+      "answer": "You should eat rice with protein like fish, egg, or dal and also include vegetables."
+    }
+  ],
+  "retrieval_text": "Protein helps control blood sugar by slowing digestion. Foods like egg, fish, chicken, and dal are good options. Eating protein with rice or roti helps reduce blood sugar spikes and keeps you full for longer."
+},
+{
+  "id": "nutrition_en_108",
+  "category": "nutrition",
+  "language": "en",
+  "section_title": "Healthy Eating Habits for Diabetes",
+  "description": "Daily eating habits play a major role in controlling blood sugar levels.",
+  "keywords": ["eating habits diabetes", "meal timing", "diabetes routine"],
+  "details": [
+    "Do not skip meals as it can cause blood sugar imbalance.",
+    "Eat meals at regular times every day.",
+    "Avoid overeating in one meal.",
+    "Eat slowly and chew food properly.",
+    "Do not eat late at night frequently.",
+    "Drink enough water throughout the day.",
+    "Try to maintain consistent portion sizes daily."
+  ],
+  "qa_pairs": [
+    {
+      "question": "Is skipping meals bad for diabetes?",
+      "answer": "Yes, skipping meals can cause blood sugar fluctuations and should be avoided."
+    },
+    {
+      "question": "Is it okay to eat late at night?",
+      "answer": "Frequent late-night eating is not recommended as it can affect blood sugar control."
+    }
+  ],
+  "retrieval_text": "Healthy eating habits are important for diabetes control. Meals should be taken at regular times, overeating should be avoided, and skipping meals can cause blood sugar imbalance. Eating late at night frequently is also not recommended."
+},
+{
+  "id": "nutrition_en_201",
+  "category": "nutrition",
+  "language": "en",
+  "section_title": "1400 kcal Diabetic Plan (BIRDEM)",
+  "description": "A structured Bangladeshi-style daily meal plan labeled as a 1400 kcal diabetic plan in the source file, with controlled portions across breakfast, snacks, lunch, dinner, and bedtime.",
+  "keywords": ["1400 kcal diabetic plan", "BIRDEM meal plan", "default diabetic meal plan", "Bangladeshi diabetes meal plan", "full day meal plan diabetes"],
+  "details": [
+    "Breakfast:",
+    "• 2 ruti (whole wheat flatbread), total about 60 g",
+    "• 1 egg white, or dal 10 g as alternative",
+    "• 100 g vegetables such as lau, palong, or pumpkin",
+    "Mid-morning snack:",
+    "• 15 g peanut, or 1 piece of fruit",
+    "Lunch:",
+    "• 150 g cooked rice, about 1.25 cup",
+    "• 40 g lean fish or lean meat",
+    "• 100 g vegetables such as lau shak, palong, or data shak",
+    "• 100 g salad with cucumber, tomato, and lemon",
+    "Evening snack:",
+    "• 15 g peanut, or 1 piece of fruit",
+    "Dinner:",
+    "• 2 ruti, total about 60 g, or 1 cup rice",
+    "• 40 g lean fish or lean meat",
+    "• 100 g vegetables",
+    "• 100 g salad with cucumber, tomato, and lemon",
+    "Before bed:",
+    "• 1/2 cup milk"
+  ],
+  "qa_pairs": [
+    {
+      "question": "What is the default diabetic meal plan?",
+      "answer": "A default BIRDEM diabetic meal plan includes 2 ruti, egg white or dal, vegetables, small snacks, controlled rice or ruti, lean fish or meat, salad, and half a cup of milk before bed."
+    },
+    {
+      "question": "What is a 1400 kcal diabetic plan?",
+      "answer": "A 1400 kcal diabetic plan includes controlled meals across the day such as 2 ruti for breakfast, a small peanut or fruit snack, rice with lean fish or meat and vegetables at lunch, and a similar controlled dinner with milk before bed."
+    },
+    {
+      "question": "What should I eat in a full day diabetic meal plan?",
+      "answer": "A full day diabetic meal plan can include breakfast with ruti, egg white, and vegetables, a small snack, rice with lean protein and salad for lunch, another small snack, a controlled dinner, and milk before bed."
+    }
+  ],
+  "retrieval_text": "A 1400 kcal diabetic plan can include 2 ruti with egg white or dal and vegetables for breakfast, a small peanut or fruit snack, controlled rice with lean fish or meat, vegetables, and salad for lunch, another small snack in the evening, dinner with 2 ruti or 1 cup rice plus lean protein and vegetables, and half a cup of milk before bed."
+},
+{
+  "id": "nutrition_en_202",
+  "category": "nutrition",
+  "language": "en",
+  "section_title": "1200 kcal Diabetic Meal Plan",
+  "description": "A lower-calorie Bangladeshi-style diabetic meal plan with controlled portions to support weight control and blood sugar management.",
+  "keywords": ["1200 kcal diabetic plan", "low calorie diabetes meal", "weight loss diabetes diet", "bangladesh diabetic food plan"],
+  "details": [
+    "Breakfast:",
+    "• 2 ruti (about 50–60 g total)",
+    "• 1 egg white or small portion of dal",
+    "• 100 g vegetables (lau, spinach, pumpkin)",
+    "Mid-morning snack:",
+    "• 10–15 g peanut or 1 small fruit",
+    "Lunch:",
+    "• 1 cup cooked rice (about 120 g)",
+    "• 30–40 g lean fish or chicken",
+    "• 100 g vegetables",
+    "• Small salad (cucumber, tomato, lemon)",
+    "Evening snack:",
+    "• 10–15 g peanut or 1 small fruit",
+    "Dinner:",
+    "• 1–2 ruti or 1/2 to 1 cup rice",
+    "• 30–40 g lean fish or chicken",
+    "• 100 g vegetables",
+    "• Salad",
+    "Before bed:",
+    "• 1/2 cup milk (optional)"
+  ],
+  "qa_pairs": [
+    {
+      "question": "What is a 1200 calorie diabetic meal plan?",
+      "answer": "A 1200 calorie diabetic plan includes smaller portions such as 2 ruti at breakfast, controlled rice at lunch, lean protein, vegetables, small snacks, and light dinner."
+    },
+    {
+      "question": "Is 1200 kcal diet good for diabetes?",
+      "answer": "A 1200 kcal diet may be useful for weight loss in diabetes if planned with proper portions of protein, vegetables, and controlled carbohydrates."
+    }
+  ],
+  "retrieval_text": "A 1200 kcal diabetic meal plan includes smaller portions such as 2 ruti with egg white or dal and vegetables for breakfast, a small peanut or fruit snack, 1 cup rice with lean fish or chicken and vegetables for lunch, a light snack in the evening, a controlled dinner with ruti or small rice portion, and optional milk before bed."
+},
+
+
+{
+  "id": "nutrition_en_203",
+  "category": "nutrition",
+  "language": "en",
+  "section_title": "1600 kcal Diabetic Meal Plan",
+  "description": "A moderately higher-calorie Bangladeshi-style diabetic meal plan based on the same structure as standard plans, with increased portions to meet higher energy needs.",
+  "keywords": ["1600 kcal diabetic plan", "moderate calorie diabetes diet", "bangladesh diabetic meal plan", "portion increase diabetes"],
+  "details": [
+    "Breakfast:",
+    "• 2–3 ruti (about 70–90 g total)",
+    "• 1 whole egg or egg white / dal",
+    "• 100–120 g vegetables (lau, spinach, pumpkin)",
+    "Mid-morning snack:",
+    "• 15–20 g peanut or 1 medium fruit",
+    "Lunch:",
+    "• 1.5 cup cooked rice (about 180 g)",
+    "• 50–60 g lean fish or chicken",
+    "• 100–120 g vegetables",
+    "• 100 g salad (cucumber, tomato, lemon)",
+    "Evening snack:",
+    "• 15–20 g peanut or 1 fruit",
+    "Dinner:",
+    "• 2–3 ruti or 1–1.5 cup rice",
+    "• 50–60 g lean fish or chicken",
+    "• 100–120 g vegetables",
+    "• Salad",
+    "Before bed:",
+    "• 1/2 to 1 cup milk"
+  ],
+  "qa_pairs": [
+    {
+      "question": "What is a 1600 calorie diabetic meal plan?",
+      "answer": "A 1600 calorie diabetic plan includes slightly larger portions such as 2–3 ruti at breakfast, 1.5 cup rice at lunch, lean protein, vegetables, snacks, and a balanced dinner with milk."
+    },
+    {
+      "question": "Who should follow a 1600 kcal diabetic diet?",
+      "answer": "A 1600 kcal plan is suitable for people who need more energy than a low-calorie plan but still want controlled blood sugar."
+    }
+  ],
+  "retrieval_text": "A 1600 kcal diabetic meal plan includes 2–3 ruti with egg or dal and vegetables for breakfast, a peanut or fruit snack, 1.5 cup rice with lean fish or chicken and vegetables for lunch, another snack in the evening, a balanced dinner with ruti or rice and protein, and milk before bed."
+},
+{
+  "id": "nutrition_en_204",
+  "category": "nutrition",
+  "language": "en",
+  "section_title": "1800 kcal Diabetic Meal Plan",
+  "description": "A higher-calorie Bangladeshi-style diabetic meal plan with increased portions to support higher energy needs while maintaining blood sugar control.",
+  "keywords": ["1800 kcal diabetic plan", "high calorie diabetes diet", "bangladesh meal plan diabetes", "increase food diabetes"],
+  "details": [
+    "Breakfast:",
+    "• 3 ruti (about 90 g total)",
+    "• 1 whole egg or egg white / dal",
+    "• 120 g vegetables (lau, spinach, pumpkin)",
+    "Mid-morning snack:",
+    "• 20 g peanut or 1 medium fruit",
+    "Lunch:",
+    "• 1.5–2 cup cooked rice (about 200–240 g)",
+    "• 60 g lean fish or chicken",
+    "• 120 g vegetables",
+    "• 100 g salad (cucumber, tomato, lemon)",
+    "Evening snack:",
+    "• 20 g peanut or 1 fruit",
+    "Dinner:",
+    "• 3 ruti or 1.5–2 cup rice",
+    "• 60 g lean fish or chicken",
+    "• 120 g vegetables",
+    "• Salad",
+    "Before bed:",
+    "• 1 cup milk"
+  ],
+  "qa_pairs": [
+    {
+      "question": "What is a 1800 calorie diabetic meal plan?",
+      "answer": "A 1800 calorie diabetic plan includes larger portions such as 3 ruti, up to 2 cups of rice, lean protein, vegetables, snacks, and milk."
+    },
+    {
+      "question": "Who should follow a 1800 kcal diet?",
+      "answer": "A 1800 kcal plan is suitable for people with higher energy needs, such as active individuals, while still controlling portion sizes."
+    }
+  ],
+  "retrieval_text": "A 1800 kcal diabetic meal plan includes 3 ruti with egg or dal and vegetables for breakfast, a peanut or fruit snack, up to 2 cups rice with lean fish or chicken and vegetables for lunch, another snack in the evening, a larger dinner with ruti or rice and protein, and a cup of milk before bed."
+},
+
+{
+  "id": "nutrition_en_205",
+  "category": "nutrition",
+  "language": "en",
+  "section_title": "2000 kcal Diabetic Meal Plan",
+  "description": "A high-calorie Bangladeshi-style diabetic meal plan designed for individuals with higher energy needs while maintaining portion control and blood sugar balance.",
+  "keywords": ["2000 kcal diabetic plan", "high energy diabetes diet", "bangladesh meal plan diabetes", "large portion diabetes"],
+  "details": [
+    "Breakfast:",
+    "• 3–4 ruti (about 100–120 g total)",
+    "• 1 whole egg or egg white / dal",
+    "• 120–150 g vegetables (lau, spinach, pumpkin)",
+    "Mid-morning snack:",
+    "• 20–25 g peanut or 1 medium fruit",
+    "Lunch:",
+    "• 2 cup cooked rice (about 250–300 g)",
+    "• 70–80 g lean fish or chicken",
+    "• 120–150 g vegetables",
+    "• 100 g salad (cucumber, tomato, lemon)",
+    "Evening snack:",
+    "• 20–25 g peanut or 1 fruit",
+    "Dinner:",
+    "• 3–4 ruti or 2 cup rice",
+    "• 70–80 g lean fish or chicken",
+    "• 120–150 g vegetables",
+    "• Salad",
+    "Before bed:",
+    "• 1 cup milk"
+  ],
+  "qa_pairs": [
+    {
+      "question": "What is a 2000 calorie diabetic meal plan?",
+      "answer": "A 2000 calorie diabetic plan includes larger portions such as 3–4 ruti, about 2 cups of rice, lean protein, vegetables, snacks, and milk."
+    },
+    {
+      "question": "Who should follow a 2000 kcal diabetic diet?",
+      "answer": "A 2000 kcal plan is suitable for people with high energy needs such as physically active individuals, while still maintaining portion control."
+    }
+  ],
+  "retrieval_text": "A 2000 kcal diabetic meal plan includes 3–4 ruti with egg or dal and vegetables for breakfast, a peanut or fruit snack, about 2 cups rice with lean fish or chicken and vegetables for lunch, another snack in the evening, a larger dinner with ruti or rice and protein, and a cup of milk before bed."
+}
+,
+{
+  "id": "nutrition_en_301",
+  "category": "nutrition",
+  "language": "en",
+  "section_title": "What to Eat for Breakfast in Diabetes",
+  "description": "Breakfast should include controlled carbohydrates, protein, and fiber to prevent morning blood sugar spikes.",
+  "keywords": ["diabetes breakfast", "what to eat morning diabetes", "breakfast diabetes bangladesh", "morning meal sugar control"],
+  "details": [
+    "Avoid eating only carbohydrates like white bread or large amount of rice in the morning.",
+    "A good breakfast should include roti or small portion of rice with protein and vegetables.",
+    "Examples:",
+    "• 2 ruti + 1 egg (boiled) + vegetables (lau, spinach)",
+    "• 1 cup vegetable khichuri with dal",
+    "• 1 slice whole wheat bread + egg + cucumber",
+    "Avoid sugary tea, biscuits, or fruit juice in breakfast.",
+    "Adding protein helps prevent sudden blood sugar rise after breakfast.",
+    "Do not skip breakfast as it can cause later overeating."
+  ],
+  "qa_pairs": [
+    {
+      "question": "What should I eat for breakfast in diabetes?",
+      "answer": "You can eat 2 ruti with egg and vegetables or a small portion of khichuri with dal and vegetables."
+    },
+    {
+      "question": "Can I eat bread in breakfast?",
+      "answer": "Yes, but choose whole wheat bread and combine it with protein like egg."
+    }
+  ],
+  "retrieval_text": "For breakfast in diabetes, a good option is 2 ruti with egg and vegetables or small portion of khichuri with dal. Avoid sugary tea, biscuits, and fruit juice. Adding protein helps prevent blood sugar spikes."
+},
+{
+  "id": "nutrition_en_302",
+  "category": "nutrition",
+  "language": "en",
+  "section_title": "What to Eat for Lunch in Diabetes",
+  "description": "Lunch should follow portion control with balanced carbohydrates, protein, and vegetables.",
+  "keywords": ["diabetes lunch", "what to eat lunch diabetes", "rice portion diabetes", "bangladesh lunch diabetes"],
+  "details": [
+    "Do not eat large portions of rice alone.",
+    "Use plate method: half vegetables, one quarter protein, one quarter rice.",
+    "Examples:",
+    "• 1 to 1.5 cup rice + fish (40–60 g) + vegetables + salad",
+    "• 2 ruti + chicken curry + vegetables",
+    "• 1 cup rice + dal + mixed vegetables",
+    "Always include protein like fish, chicken, egg, or dal.",
+    "Avoid fried foods and large rice portions.",
+    "Add salad like cucumber and tomato to improve fiber."
+  ],
+  "qa_pairs": [
+    {
+      "question": "What should I eat for lunch in diabetes?",
+      "answer": "You can eat 1 cup rice with fish or chicken, vegetables, and salad or 2 ruti with protein and vegetables."
+    },
+    {
+      "question": "How much rice can I eat at lunch?",
+      "answer": "Usually 1 to 1.5 cup cooked rice is a controlled portion for lunch."
+    }
+  ],
+  "retrieval_text": "For lunch in diabetes, eat about 1 to 1.5 cup rice with fish or chicken, vegetables, and salad, or 2 ruti with protein. Avoid large rice portions and always include vegetables and protein."
+},
+{
+  "id": "nutrition_en_303",
+  "category": "nutrition",
+  "language": "en",
+  "section_title": "What to Eat for Dinner in Diabetes",
+  "description": "Dinner should be lighter than lunch with controlled carbohydrates and enough protein to maintain stable blood sugar overnight.",
+  "keywords": ["diabetes dinner", "night meal diabetes", "what to eat dinner diabetes", "late meal sugar control"],
+  "details": [
+    "Dinner should be lighter than lunch.",
+    "Avoid large portions of rice at night.",
+    "Examples:",
+    "• 2 ruti + fish or chicken + vegetables",
+    "• 1 cup rice + dal + vegetables",
+    "• Vegetable curry + egg + small roti portion",
+    "Avoid fried foods and heavy meals late at night.",
+    "Include vegetables to improve digestion.",
+    "Eat dinner at least 2–3 hours before sleep."
+  ],
+  "qa_pairs": [
+    {
+      "question": "What should I eat for dinner in diabetes?",
+      "answer": "You can eat 2 ruti with fish or chicken and vegetables or a small portion of rice with dal and vegetables."
+    },
+    {
+      "question": "Can I eat rice at night?",
+      "answer": "Yes, but in small portion like 1 cup and with protein and vegetables."
+    }
+  ],
+  "retrieval_text": "Dinner in diabetes should be light, such as 2 ruti with fish or chicken and vegetables or 1 cup rice with dal. Avoid heavy meals and large rice portions at night."
+},
+{
+  "id": "nutrition_en_304",
+  "category": "nutrition",
+  "language": "en",
+  "section_title": "Healthy Snacks for Diabetes",
+  "description": "Snacks should be small, controlled, and prevent sudden hunger without causing sugar spikes.",
+  "keywords": ["diabetes snacks", "healthy snacks diabetes", "evening snack diabetes", "mid snack sugar control"],
+  "details": [
+    "Snacks should be small and not high in sugar.",
+    "Avoid biscuits, sweets, and sugary drinks.",
+    "Examples:",
+    "• 10–15 g peanuts",
+    "• 1 small fruit (apple, guava, orange)",
+    "• Boiled egg",
+    "• Roasted chana",
+    "Do not eat large snacks.",
+    "Snacks should help prevent overeating in next meal.",
+    "Best taken between meals, not late at night."
+  ],
+  "qa_pairs": [
+    {
+      "question": "What snacks are good for diabetes?",
+      "answer": "Peanuts, a small fruit, boiled egg, or roasted chana are good snack options."
+    },
+    {
+      "question": "Can I eat biscuits as snack?",
+      "answer": "It is better to avoid biscuits because they can raise blood sugar quickly."
+    }
+  ],
+  "retrieval_text": "Good snacks for diabetes include peanuts, a small fruit, boiled egg, or roasted chana. Avoid biscuits and sweets. Snacks should be small and taken between meals."
+}
+,
+{
+  "id": "nutrition_en_305",
+  "category": "nutrition",
+  "language": "en",
+  "section_title": "Late Night Eating in Diabetes",
+  "description": "Late-night eating should be limited and carefully chosen to avoid blood sugar spikes during sleep.",
+  "keywords": ["late night eating diabetes", "night snack diabetes", "before bed food diabetes", "sleep sugar control"],
+  "details": [
+    "Avoid heavy meals late at night as they can raise blood sugar during sleep.",
+    "If hungry, choose small and light options only.",
+    "Examples:",
+    "• 1/2 cup milk",
+    "• 1 boiled egg",
+    "• A small handful of peanuts",
+    "Avoid rice, sweets, fried foods, and large meals at night.",
+    "Try to finish dinner at least 2–3 hours before sleep.",
+    "Late-night eating should not become a habit."
+  ],
+  "qa_pairs": [
+    {
+      "question": "Can I eat at night with diabetes?",
+      "answer": "Yes, but only small light foods like milk, egg, or peanuts, and avoid heavy meals."
+    },
+    {
+      "question": "What can I eat before bed?",
+      "answer": "You can take half a cup of milk, a boiled egg, or a small amount of peanuts."
+    }
+  ],
+  "retrieval_text": "Late-night eating in diabetes should be light, such as milk, boiled egg, or peanuts. Avoid rice, sweets, and heavy meals at night, and try to eat dinner at least 2–3 hours before sleep."
+},
+{
+  "id": "nutrition_en_306",
+  "category": "nutrition",
+  "language": "en",
+  "section_title": "Eating Outside with Diabetes",
+  "description": "When eating outside, choose foods carefully to control portion size, oil, and sugar intake.",
+  "keywords": ["restaurant diabetes", "outside food diabetes", "fast food diabetes", "eating out diabetes"],
+  "details": [
+    "Avoid fried foods such as biryani, paratha, fried chicken, and fast food.",
+    "Choose grilled, boiled, or lightly cooked foods instead.",
+    "Examples:",
+    "• Grilled fish or chicken with vegetables",
+    "• Plain rice (small portion) with dal and vegetables",
+    "• Tandoori chicken without extra oil",
+    "Avoid sugary drinks, soft drinks, and desserts.",
+    "Do not overeat even if food is available.",
+    "Try to control portion size and eat slowly."
+  ],
+  "qa_pairs": [
+    {
+      "question": "What should I eat in a restaurant with diabetes?",
+      "answer": "You can choose grilled fish or chicken with vegetables or a small portion of rice with dal and vegetables."
+    },
+    {
+      "question": "Can I eat biryani?",
+      "answer": "It is better to avoid biryani because it is high in oil and large portions of rice."
+    }
+  ],
+  "retrieval_text": "When eating outside with diabetes, choose grilled or lightly cooked foods like fish or chicken with vegetables. Avoid fried foods, biryani, sugary drinks, and large portions."
+},
+{
+  "id": "nutrition_en_307",
+  "category": "nutrition",
+  "language": "en",
+  "section_title": "Managing Hunger in Diabetes",
+  "description": "Frequent hunger can be managed by choosing the right foods and maintaining proper meal timing.",
+  "keywords": ["hunger diabetes", "always hungry diabetes", "control appetite diabetes", "frequent hunger sugar"],
+  "details": [
+    "Do not skip meals as it can increase hunger later.",
+    "Include protein in every meal to stay full longer.",
+    "Add vegetables to meals to increase volume without raising sugar.",
+    "Choose snacks like peanuts, boiled egg, or roasted chana instead of sweets.",
+    "Drink enough water, as dehydration can feel like hunger.",
+    "Avoid eating large amounts of carbohydrates alone.",
+    "Eat at regular intervals to prevent sudden hunger."
+  ],
+  "qa_pairs": [
+    {
+      "question": "Why do I feel hungry all the time?",
+      "answer": "You may feel hungry if meals lack protein or if you skip meals, causing blood sugar fluctuations."
+    },
+    {
+      "question": "How can I control hunger in diabetes?",
+      "answer": "Eat regular meals with protein, include vegetables, and choose healthy snacks like peanuts or boiled egg."
+    }
+  ],
+  "retrieval_text": "Hunger in diabetes can be controlled by eating regular meals with protein, adding vegetables, and choosing snacks like peanuts or boiled egg. Avoid skipping meals and large carbohydrate-only meals."
+}
+,
+{
+  "id": "mental_en_001",
+  "category": "mental_health",
+  "language": "en",
+  "section_title": "Managing Stress in Diabetes",
+  "description": "Stress can directly increase blood sugar levels and affect daily diabetes management.",
+  "keywords": ["diabetes stress", "stress blood sugar", "mental stress diabetes", "stress control diabetes"],
+  "details": [
+    "Stress hormones like cortisol can raise blood sugar levels.",
+    "Stress can lead to poor eating habits and skipping medication.",
+    "Common signs include irritability, fatigue, poor sleep, and overeating.",
+    "Simple ways to manage stress:",
+    "• Take a 10–15 minute walk daily",
+    "• Practice deep breathing for 5 minutes",
+    "• Maintain a regular sleep routine",
+    "• Talk to a family member or friend",
+    "Avoid using food or sweets to cope with stress.",
+    "Regular physical activity helps reduce stress and improve glucose control."
+  ],
+  "qa_pairs": [
+    {
+      "question": "Does stress affect blood sugar?",
+      "answer": "Yes, stress can increase blood sugar due to hormone changes and unhealthy habits."
+    },
+    {
+      "question": "How can I reduce stress with diabetes?",
+      "answer": "You can walk daily, practice deep breathing, sleep properly, and talk to someone you trust."
+    }
+  ],
+  "retrieval_text": "Stress can raise blood sugar levels and affect diabetes control. Managing stress through walking, breathing exercises, proper sleep, and social support can help improve blood sugar stability."
+},
+{
+  "id": "mental_en_002",
+  "category": "mental_health",
+  "language": "en",
+  "section_title": "Diabetes Burnout",
+  "description": "Diabetes burnout is a state of mental exhaustion from continuous self-care and management demands.",
+  "keywords": ["diabetes burnout", "tired of diabetes", "mental fatigue diabetes", "diabetes exhaustion"],
+  "details": [
+    "Burnout happens when managing diabetes feels overwhelming for a long time.",
+    "Common signs:",
+    "• Feeling tired of checking sugar or taking medication",
+    "• Ignoring diet or treatment",
+    "• Feeling frustrated or hopeless",
+    "Burnout can lead to poor blood sugar control.",
+    "Ways to manage burnout:",
+    "• Set small, realistic daily goals",
+    "• Focus on one habit at a time",
+    "• Take short breaks from strict routines (without stopping care)",
+    "• Talk to a doctor or support group",
+    "You do not need to be perfect every day; consistency matters more."
+  ],
+  "qa_pairs": [
+    {
+      "question": "What is diabetes burnout?",
+      "answer": "Diabetes burnout is feeling mentally exhausted from managing diabetes daily."
+    },
+    {
+      "question": "How can I deal with diabetes burnout?",
+      "answer": "Focus on small steps, reduce pressure, and talk to a healthcare provider or support group."
+    }
+  ],
+  "retrieval_text": "Diabetes burnout is mental exhaustion from managing diabetes. It can lead to poor self-care. Managing burnout involves setting small goals, reducing pressure, and seeking support."
+},
+{
+  "id": "mental_en_003",
+  "category": "mental_health",
+  "language": "en",
+  "section_title": "Anxiety and Fear in Diabetes",
+  "description": "People with diabetes may experience anxiety about blood sugar levels, complications, or daily management.",
+  "keywords": ["diabetes anxiety", "fear hypoglycemia", "mental worry diabetes", "diabetes fear"],
+  "details": [
+    "Common fears include low blood sugar, complications, or long-term health problems.",
+    "Symptoms include constant worry, restlessness, and difficulty concentrating.",
+    "Anxiety can affect eating, sleep, and medication adherence.",
+    "Ways to manage anxiety:",
+    "• Check blood sugar regularly to reduce uncertainty",
+    "• Follow a routine for meals and medication",
+    "• Practice breathing exercises",
+    "• Limit overthinking by focusing on daily actions",
+    "Seek professional help if anxiety becomes severe."
+  ],
+  "qa_pairs": [
+    {
+      "question": "Is anxiety common in diabetes?",
+      "answer": "Yes, many people with diabetes feel anxious about blood sugar and complications."
+    },
+    {
+      "question": "How can I reduce anxiety?",
+      "answer": "Maintain a routine, monitor sugar regularly, and practice relaxation techniques."
+    }
+  ],
+  "retrieval_text": "Anxiety is common in diabetes due to fear of complications and blood sugar changes. Managing it involves routine, monitoring, and relaxation techniques."
+},
+{
+  "id": "mental_en_004",
+  "category": "mental_health",
+  "language": "en",
+  "section_title": "Depression and Diabetes",
+  "description": "Depression can affect diabetes self-care and lead to poor blood sugar control.",
+  "keywords": ["depression diabetes", "low mood diabetes", "mental health diabetes", "sadness diabetes"],
+  "details": [
+    "Depression can reduce motivation to follow diet, medication, and exercise.",
+    "Common signs:",
+    "• Feeling sad or hopeless",
+    "• Loss of interest in daily activities",
+    "• Low energy",
+    "• Sleep problems",
+    "Depression can worsen blood sugar control.",
+    "Ways to manage:",
+    "• Stay connected with family and friends",
+    "• Maintain a daily routine",
+    "• Engage in light physical activity",
+    "• Seek professional help if symptoms persist",
+    "Mental health treatment is as important as physical treatment."
+  ],
+  "qa_pairs": [
+    {
+      "question": "Can diabetes cause depression?",
+      "answer": "Yes, managing diabetes can increase the risk of depression."
+    },
+    {
+      "question": "What should I do if I feel depressed?",
+      "answer": "Talk to a doctor, stay active, and stay connected with others."
+    }
+  ],
+  "retrieval_text": "Depression can affect diabetes management and blood sugar control. Managing it includes staying active, maintaining routine, and seeking professional support."
+},
+{
+  "id": "mental_en_005",
+  "category": "mental_health",
+  "language": "en",
+  "section_title": "Importance of Social Support in Diabetes",
+  "description": "Support from family, friends, and community helps improve diabetes management and mental well-being.",
+  "keywords": ["diabetes support", "family support diabetes", "social support health", "mental support diabetes"],
+  "details": [
+    "People with strong support systems manage diabetes better.",
+    "Support can help with diet, medication, and emotional stability.",
+    "Ways to build support:",
+    "• Share your condition with close family",
+    "• Ask for help in meal planning",
+    "• Join support groups or communities",
+    "• Talk openly about challenges",
+    "Avoid isolation as it can worsen mental health.",
+    "Even small support can improve motivation and consistency."
+  ],
+  "qa_pairs": [
+    {
+      "question": "Does family support help in diabetes?",
+      "answer": "Yes, family support can improve motivation and help manage daily routines."
+    },
+    {
+      "question": "How can I get support?",
+      "answer": "You can talk to family, friends, or join a support group."
+    }
+  ],
+  "retrieval_text": "Social support helps improve diabetes management and mental health. Family, friends, and support groups can help maintain routine and motivation."
+},
+{
+  "id": "mental_en_006",
+  "category": "mental_health",
+  "language": "en",
+  "section_title": "What to Do When You Feel Depressed With Diabetes",
+  "description": "A practical first-response plan for low mood, hopelessness, loss of motivation, or emotional heaviness while managing diabetes.",
+  "keywords": ["depressed diabetes", "low mood diabetes", "what to do when depressed", "diabetes hopeless", "sad with diabetes"],
+  "details": [
+    "Do not try to fix everything at once. Start with one small action in the next 10 minutes.",
+    "Choose one immediate step:",
+    "• Drink 1 glass of water",
+    "• Wash your face",
+    "• Sit near sunlight or a window for 5 minutes",
+    "• Eat a simple planned meal if you have skipped food",
+    "• Take your missed medicine if it is due and safe to take",
+    "Use a 3-step reset:",
+    "• Step 1: Stop and sit down",
+    "• Step 2: Take 10 slow breaths",
+    "• Step 3: Do one helpful task only",
+    "Helpful tasks include checking blood sugar, taking a short walk, or messaging one trusted person.",
+    "If low mood lasts most days, affects eating, sleep, medication, or daily function, professional help is needed.",
+    "If you feel at risk of harming yourself or someone else, seek emergency help immediately."
+  ],
+  "qa_pairs": [
+    {
+      "question": "What should I do when I feel depressed because of diabetes?",
+      "answer": "Start with one small action such as water, 10 slow breaths, a simple meal, or a short walk, and ask for help if the low mood keeps interfering with daily life."
+    },
+    {
+      "question": "How can I restart myself when I feel hopeless?",
+      "answer": "Use a 3-step reset: sit down, take 10 slow breaths, and do one helpful task like checking sugar, eating, or messaging someone you trust."
+    }
+  ],
+  "retrieval_text": "When you feel depressed with diabetes, do not try to fix the whole day at once. Start with one small action such as drinking water, taking 10 slow breaths, eating a simple meal, checking blood sugar, or taking a short walk. If low mood keeps affecting sleep, food, medicine, or daily function, get professional help. If there is any risk of harming yourself or others, seek emergency help immediately."
+},
+{
+  "id": "mental_en_007",
+  "category": "mental_health",
+  "language": "en",
+  "section_title": "5-Minute Breathing Meditation for Diabetes Stress or Low Mood",
+  "description": "A very short guided breathing routine to reduce stress, racing thoughts, and emotional overload.",
+  "keywords": ["5 minute meditation diabetes", "breathing exercise diabetes", "stress relief diabetes", "calming exercise"],
+  "details": [
+    "Sit on a chair or bed with both feet on the floor.",
+    "Relax your shoulders and place one hand on your chest and one on your belly if comfortable.",
+    "For 1 minute, just notice your breathing without changing it.",
+    "For the next 3 minutes, breathe in through your nose for 4 counts and breathe out slowly for 6 counts.",
+    "If counting feels stressful, simply make the exhale longer than the inhale.",
+    "If thoughts come, do not fight them. Bring attention back to the next breath.",
+    "For the last 1 minute, say silently with each exhale: calm, slow, steady.",
+    "Use this before meals, before sleep, after checking blood sugar, or when feeling overwhelmed."
+  ],
+  "qa_pairs": [
+    {
+      "question": "What is a simple meditation for diabetes stress?",
+      "answer": "Sit comfortably and breathe in for 4 counts and out for 6 counts for about 3 minutes, then finish with one minute of quiet breathing."
+    },
+    {
+      "question": "Can breathing exercises help when I feel overwhelmed?",
+      "answer": "Yes, slow breathing can help reduce stress and make it easier to calm down and refocus."
+    }
+  ],
+  "retrieval_text": "A simple 5-minute meditation for diabetes stress is to sit down, relax your shoulders, and breathe in for 4 counts and out for 6 counts for about 3 minutes. Finish with one minute of quiet breathing and bring your attention back whenever your mind wanders. This can help when you feel overwhelmed or emotionally overloaded."
+},
+{
+  "id": "mental_en_008",
+  "category": "mental_health",
+  "language": "en",
+  "section_title": "5 to 10 Minute Gentle Yoga or Stretch Routine for Diabetes Mood Support",
+  "description": "A low-intensity movement routine to reduce tension, support mood, and help restart the body when feeling emotionally heavy.",
+  "keywords": ["yoga diabetes stress", "stretching for low mood", "gentle yoga diabetes", "mood support activity"],
+  "details": [
+    "Choose a safe, comfortable space and wear loose clothing.",
+    "Start with neck rolls for 30 seconds each side.",
+    "Do shoulder rolls for 30 seconds forward and 30 seconds backward.",
+    "Raise both arms overhead, breathe in, and lower them slowly while breathing out. Repeat 5 times.",
+    "Do seated or standing side bends for 5 breaths on each side.",
+    "Do a gentle seated forward bend or reach toward knees for 20 to 30 seconds without forcing.",
+    "If comfortable, march slowly in place for 1 minute.",
+    "Finish with 1 minute of slow breathing while sitting quietly.",
+    "Stop if you feel dizzy, weak, chest pain, or unwell.",
+    "This is for calming and gentle activation, not for hard exercise."
+  ],
+  "qa_pairs": [
+    {
+      "question": "What yoga can I do when I feel mentally low?",
+      "answer": "You can do a short gentle routine with neck rolls, shoulder rolls, arm raises, side bends, and slow breathing for 5 to 10 minutes."
+    },
+    {
+      "question": "Can gentle stretching help my mood?",
+      "answer": "Yes, light stretching and slow movement can help reduce tension and make it easier to reset mentally."
+    }
+  ],
+  "retrieval_text": "A gentle 5 to 10 minute yoga routine for low mood can include neck rolls, shoulder rolls, slow arm raises, side bends, a light forward bend, and one minute of slow breathing. It is meant to calm the body and reduce tension, not to be a hard workout."
+},
+
+{
+  "id": "mental_en_011",
+  "category": "mental_health",
+  "language": "en",
+  "section_title": "Feeling Tired of Diabetes or Burned Out",
+  "description": "A support chunk for people who feel mentally exhausted, frustrated, or overwhelmed by daily diabetes management.",
+  "keywords": ["tired of diabetes", "diabetes burnout", "frustrated with diabetes", "overwhelmed diabetes", "exhausted managing diabetes"],
+  "details": [
+    "Feeling tired of diabetes does not mean failure. Diabetes burnout is common.",
+    "Burnout can show up as frustration, avoiding sugar checks, skipping medicine, or feeling like giving up.",
+    "Do not try to fix everything at once.",
+    "Use a 3-step reset:",
+    "• Sit down and pause for 1 minute",
+    "• Take 10 slow breaths",
+    "• Do one helpful action only",
+    "Helpful actions include drinking water, checking blood sugar, eating a planned meal, or taking a short walk.",
+    "Focus on the next step, not the whole week.",
+    "If this feeling keeps returning and affects your daily care, professional support is important."
+  ],
+  "qa_pairs": [
+    {
+      "question": "I feel tired of diabetes. What should I do?",
+      "answer": "Pause, take 10 slow breaths, and do one small helpful action such as drinking water, checking sugar, or taking a short walk."
+    },
+    {
+      "question": "What do I do when diabetes feels overwhelming?",
+      "answer": "Do not try to fix everything at once. Pick one small step only, such as eating, breathing, walking, or checking your blood sugar."
+    }
+  ],
+  "retrieval_text": "If you feel tired, frustrated, or overwhelmed by diabetes, start with one small step instead of trying to fix everything. Sit down, take 10 slow breaths, and do one helpful action such as drinking water, checking blood sugar, eating a planned meal, or taking a short walk. Diabetes burnout is common, and support is important if this keeps affecting your daily care."
+},
+{
+  "id": "mental_en_012",
+  "category": "mental_health",
+  "language": "en",
+  "section_title": "5-Minute Breathing Meditation for Stress or Low Mood",
+  "description": "A short breathing practice that can reduce stress, emotional overload, and mental pressure in people living with diabetes.",
+  "keywords": ["5 minute meditation", "breathing exercise diabetes", "stress relief diabetes", "calming exercise", "low mood breathing"],
+  "details": [
+    "Sit on a chair or bed with your feet supported.",
+    "Relax your shoulders and loosen your jaw.",
+    "Breathe in slowly through your nose for 4 counts.",
+    "Breathe out slowly for 6 counts.",
+    "Repeat this breathing pattern for 5 minutes.",
+    "If thoughts come, bring attention back to the next breath.",
+    "If counting feels difficult, just make the exhale longer than the inhale.",
+    "This can be used before meals, before sleep, or when feeling emotionally overloaded."
+  ],
+  "qa_pairs": [
+    {
+      "question": "Give me a 5 minute meditation for stress.",
+      "answer": "Sit comfortably and breathe in for 4 counts and out for 6 counts for 5 minutes, bringing your attention back to the breath each time your mind wanders."
+    },
+    {
+      "question": "What breathing exercise can calm me down?",
+      "answer": "Use slow breathing with a 4-count inhale and a 6-count exhale for 5 minutes."
+    }
+  ],
+  "retrieval_text": "A simple 5-minute meditation for stress or low mood is to sit comfortably and breathe in for 4 counts and out for 6 counts. Repeat this for 5 minutes and bring your attention back to the breath whenever your mind wanders. This can help reduce stress and emotional overload."
+},
+{
+  "id": "mental_en_013",
+  "category": "mental_health",
+  "language": "en",
+  "section_title": "Grounding Exercise for Anxiety or Emotional Overload",
+  "description": "A simple grounding method to reduce racing thoughts and bring attention back to the present moment.",
+  "keywords": ["grounding exercise", "anxiety diabetes", "overthinking diabetes", "panic reset", "emotional overload"],
+  "details": [
+    "Use the 5-4-3-2-1 grounding method when your thoughts feel out of control.",
+    "Name 5 things you can see.",
+    "Name 4 things you can touch.",
+    "Name 3 things you can hear.",
+    "Name 2 things you can smell.",
+    "Name 1 thing you can taste.",
+    "Do it slowly without rushing.",
+    "This exercise helps shift attention away from panic and back to the present."
+  ],
+  "qa_pairs": [
+    {
+      "question": "What can I do when I feel mentally overwhelmed?",
+      "answer": "Try the 5-4-3-2-1 grounding exercise by naming what you can see, touch, hear, smell, and taste."
+    },
+    {
+      "question": "How can I stop overthinking in the moment?",
+      "answer": "Use a grounding exercise like 5-4-3-2-1 to bring your attention back to the present."
+    }
+  ],
+  "retrieval_text": "When you feel mentally overwhelmed or stuck in overthinking, use the 5-4-3-2-1 grounding exercise. Name 5 things you can see, 4 you can touch, 3 you can hear, 2 you can smell, and 1 you can taste. This helps reduce emotional overload and bring your mind back to the present moment."
+},
+{
+  "id": "mental_en_014",
+  "category": "mental_health",
+  "language": "en",
+  "section_title": "Gentle Yoga or Stretching for Low Mood",
+  "description": "A short gentle movement routine to reduce tension and help restart the body when feeling mentally low or emotionally stuck.",
+  "keywords": ["yoga for low mood", "stretching diabetes stress", "gentle yoga diabetes", "mood movement"],
+  "details": [
+    "Choose a quiet space and wear comfortable clothing.",
+    "Start with slow neck rolls for 30 seconds each side.",
+    "Do shoulder rolls for 30 seconds forward and 30 seconds backward.",
+    "Raise both arms while breathing in, then lower them slowly while breathing out. Repeat 5 times.",
+    "Do gentle side bends for 5 breaths on each side.",
+    "Sit quietly and take slow breaths for 1 minute at the end.",
+    "This is for calming and gentle activation, not hard exercise.",
+    "Stop if you feel dizzy, weak, or unwell."
+  ],
+  "qa_pairs": [
+    {
+      "question": "What yoga can help when I feel low?",
+      "answer": "You can do a short gentle routine with neck rolls, shoulder rolls, arm raises, side bends, and slow breathing."
+    },
+    {
+      "question": "Can stretching help my mood?",
+      "answer": "Yes, gentle stretching can reduce tension and help your mind and body feel more settled."
+    }
+  ],
+  "retrieval_text": "A gentle yoga or stretching routine for low mood can include neck rolls, shoulder rolls, slow arm raises, side bends, and one minute of slow breathing. This kind of light movement can reduce tension and help you feel more settled without turning it into hard exercise."
+},
+{
+  "id": "mental_en_015",
+  "category": "mental_health",
+  "language": "en",
+  "section_title": "Small Reset Activities for Bad Mental Health Days",
+  "description": "Low-effort activities that can help restart the day when motivation is low, mood is heavy, or diabetes care feels too difficult.",
+  "keywords": ["bad mental health day", "small reset activity", "low motivation diabetes", "depressed routine", "restart day"],
+  "details": [
+    "Choose one activity only. Do not make a long to-do list.",
+    "Helpful reset options include:",
+    "• Drink 1 glass of water",
+    "• Wash your face",
+    "• Sit in sunlight for 5 minutes",
+    "• Eat one simple planned meal",
+    "• Take a short walk",
+    "• Write down one next step",
+    "• Message one trusted person",
+    "Body first, task second, thoughts third is a useful rule on difficult days."
+  ],
+  "qa_pairs": [
+    {
+      "question": "What should I do on a bad mental health day?",
+      "answer": "Pick one small reset activity such as water, sunlight, a short walk, a simple meal, or messaging someone you trust."
+    },
+    {
+      "question": "How do I restart my day when I feel mentally low?",
+      "answer": "Start with one very small action only, such as drinking water, washing your face, or taking a short walk."
+    }
+  ],
+  "retrieval_text": "On a bad mental health day, do not try to do everything at once. Choose one small reset activity such as drinking water, sitting in sunlight, eating a simple meal, taking a short walk, or messaging someone you trust. Starting small helps restart the day without extra pressure."
+},
+{
+  "id": "mental_en_016",
+  "category": "mental_health",
+  "language": "en",
+  "section_title": "Feeling Angry, Hateful, or Done With Diabetes",
+  "description": "A support chunk for people who feel angry at diabetes, emotionally fed up, or unable to tolerate the daily burden anymore.",
+  "keywords": ["hate this disease", "angry about diabetes", "done with diabetes", "fed up with diabetes", "frustrated with diabetes", "cannot manage diabetes anymore"],
+  "details": [
+    "Strong anger toward diabetes can happen when daily care feels unfair, repetitive, and exhausting.",
+    "This does not mean the person is weak or failing.",
+    "When anger is high, do not make big decisions immediately.",
+    "Use a 3-step control plan:",
+    "• Step 1: Stop what you are doing and sit down",
+    "• Step 2: Take 10 slow breaths",
+    "• Step 3: Do one safe next step only, such as drinking water, washing your face, or taking a short walk",
+    "Do not skip medicine or meals because of anger.",
+    "If these feelings keep returning, support from a doctor, counselor, or trusted person is important.",
+    "If anger feels dangerous or out of control, get urgent help immediately."
+  ],
+  "qa_pairs": [
+    {
+      "question": "I hate this disease. What should I do?",
+      "answer": "Pause, take 10 slow breaths, and do one safe next step like drinking water, washing your face, or taking a short walk instead of acting from anger."
+    },
+    {
+      "question": "I am done with diabetes. How do I calm down?",
+      "answer": "Sit down, breathe slowly, and focus on one small safe action only. Do not stop food or medicine because of anger."
+    }
+  ],
+  "retrieval_text": "If you feel angry, hateful, or done with diabetes, stop for a moment and do not act from that emotion. Sit down, take 10 slow breaths, and choose one safe next step such as water, washing your face, or a short walk. Do not skip meals or medicine because of anger. If these feelings keep returning or feel dangerous, get support immediately."
+},
+{
+  "id": "mental_en_017",
+  "category": "mental_health",
+  "language": "en",
+  "section_title": "Feeling Tired of Checking Blood Sugar Every Day",
+  "description": "A burnout-focused chunk for people who are mentally exhausted by repeated blood sugar checking and daily diabetes routines.",
+  "keywords": ["tired of checking sugar", "tired of checking blood sugar", "checking sugar every day", "diabetes routine burnout", "fed up with sugar checking", "exhausted from diabetes routine"],
+  "details": [
+    "Feeling tired of checking blood sugar every day is a common sign of diabetes burnout.",
+    "This usually happens when self-care feels repetitive, exhausting, or emotionally heavy.",
+    "Do not try to become perfect again in one day.",
+    "Use a smaller restart plan:",
+    "• Focus on the next sugar check only, not the whole week",
+    "• Pair the check with a fixed routine such as before breakfast or before dinner",
+    "• Reward the action with a small calming step like water, a short walk, or deep breathing",
+    "If burnout is affecting medication, food, or daily functioning, professional help is needed.",
+    "Consistency matters more than perfection."
+  ],
+  "qa_pairs": [
+    {
+      "question": "I am tired of checking sugar every day. What should I do?",
+      "answer": "Treat it as burnout, not failure. Focus on the next sugar check only and pair it with a simple routine like before breakfast or before dinner."
+    },
+    {
+      "question": "What if I feel exhausted by diabetes routine?",
+      "answer": "Reduce pressure and restart with one small step only, such as the next planned sugar check, meal, or medicine."
+    }
+  ],
+  "retrieval_text": "If you feel tired of checking blood sugar every day, it may be diabetes burnout rather than laziness or failure. Do not try to fix the whole routine at once. Focus on the next sugar check only and connect it to a fixed time such as before breakfast or before dinner. Consistency matters more than perfection, and support is important if burnout starts affecting meals, medicine, or daily life."
+},
+{
+  "id": "mental_en_018",
+  "category": "mental_health",
+  "language": "en",
+  "section_title": "Feeling Like Giving Up on Diabetes Care",
+  "description": "A support chunk for moments when a person feels like stopping effort, avoiding self-care, or giving up on treatment routines.",
+  "keywords": ["feel like giving up", "giving up on diabetes", "cannot do this anymore", "want to stop diabetes care", "hopeless diabetes"],
+  "details": [
+    "Feeling like giving up can happen when diabetes feels endless or emotionally draining.",
+    "Do not aim to restart everything at once.",
+    "Choose one stabilizing action first:",
+    "• Drink water",
+    "• Eat one planned meal",
+    "• Take the next scheduled medicine if due",
+    "• Check blood sugar once",
+    "• Message one trusted person",
+    "A bad day does not mean the whole treatment has failed.",
+    "If this feeling becomes frequent or severe, professional support is important.",
+    "If there is any risk of self-harm or harming others, get urgent help immediately."
+  ],
+  "qa_pairs": [
+    {
+      "question": "I feel like giving up on diabetes care. What should I do?",
+      "answer": "Start with one stabilizing action only, such as water, one planned meal, the next medicine dose, one sugar check, or messaging someone you trust."
+    },
+    {
+      "question": "What should I do when I cannot manage diabetes anymore?",
+      "answer": "Do one small safe action first and get support if the feeling keeps returning or starts affecting your daily care."
+    }
+  ],
+  "retrieval_text": "If you feel like giving up on diabetes care, do not try to fix everything at once. Start with one stabilizing action such as drinking water, eating one planned meal, taking the next medicine dose, checking blood sugar once, or messaging someone you trust. If this feeling keeps returning or feels dangerous, seek help immediately."
+}
+
+,
+{
+  "id": "mental_en_019",
+  "category": "mental_health",
+  "language": "en",
+  "section_title": "Hating the Disease or Illness",
+  "description": "A direct support chunk for people who express anger or hatred toward diabetes using words like disease or illness.",
+  "keywords": ["i hate this disease", "i hate this illness", "hate this disease diabetes", "hate this illness diabetes", "angry at disease", "angry at illness"],
+  "details": [
+    "Some people express diabetes distress by saying they hate this disease or hate this illness.",
+    "This usually reflects anger, frustration, and emotional exhaustion rather than a physical complication.",
+    "Do not make big decisions when anger is high.",
+    "Use a short reset:",
+    "• Sit down",
+    "• Take 10 slow breaths",
+    "• Drink water",
+    "• Do one safe next step only",
+    "Safe next steps include eating a planned meal, checking sugar once, washing your face, or taking a short walk.",
+    "If this feeling keeps repeating, support from a doctor, counselor, or trusted person is important."
+  ],
+  "qa_pairs": [
+    {
+      "question": "I hate this disease. What should I do?",
+      "answer": "Pause, take 10 slow breaths, drink water, and do one safe next step like eating, checking sugar once, or taking a short walk."
+    },
+    {
+      "question": "I hate this illness. How do I calm down?",
+      "answer": "Sit down, breathe slowly, and focus on one safe next action only instead of reacting from anger."
+    }
+  ],
+  "retrieval_text": "If you say you hate this disease or hate this illness, it usually means diabetes distress, frustration, or emotional exhaustion. Pause, take 10 slow breaths, drink water, and do one safe next step like eating a planned meal, checking sugar once, washing your face, or taking a short walk. If this keeps happening, get support."
+},
+
+
+{
+  "id": "basic_en_001",
+  "category": "basics",
+  "language": "en",
+  "section_title": "Main Causes of Diabetes",
+  "description": "Common causes and risk factors that lead to the development of diabetes.",
+  "keywords": ["causes of diabetes", "why diabetes happens", "diabetes risk factors", "what causes high blood sugar"],
+  "details": [
+    "Diabetes develops when the body cannot properly use or produce insulin.",
+    "Common causes include:",
+    "• Genetics or family history",
+    "• Being overweight or having excess body fat",
+    "• Lack of physical activity",
+    "• Unhealthy diet high in sugar and processed foods",
+    "• Insulin resistance (body not responding properly to insulin)",
+    "• Damage to insulin-producing cells in the pancreas",
+    "• Hormonal changes (such as during pregnancy in gestational diabetes)",
+    "Risk increases with age, poor lifestyle habits, and certain medical conditions.",
+    "Not all diabetes is preventable, but many cases (especially type 2) are linked to lifestyle factors."
+  ],
+  "qa_pairs": [
+    {
+      "question": "What causes diabetes?",
+      "answer": "Diabetes is caused when the body cannot produce enough insulin or cannot use insulin properly, often due to genetics, poor diet, inactivity, or excess weight."
+    },
+    {
+      "question": "Why do people develop diabetes?",
+      "answer": "People develop diabetes بسبب insulin problems, such as insulin resistance or low insulin production, often influenced by lifestyle and genetic factors."
+    }
+  ],
+  "retrieval_text": "Diabetes occurs بسبب problems with insulin, either when the body does not produce enough or cannot use it effectively. Common causes include genetics, obesity, inactivity, poor diet, and insulin resistance."
+},
+{
+  "id": "basics_en_025",
+  "category": "basics",
+  "language": "en",
+  "section_title": "Main Causes of Diabetes",
+  "description": "Common causes and risk factors that lead to the development of diabetes.",
+  "keywords": ["causes of diabetes", "why diabetes happens", "diabetes risk factors", "what causes high blood sugar"],
+  "details": [
+    "Diabetes develops when the body cannot properly use or produce insulin.",
+    "Common causes include:",
+    "• Genetics or family history",
+    "• Being overweight or having excess body fat",
+    "• Lack of physical activity",
+    "• Unhealthy diet high in sugar and processed foods",
+    "• Insulin resistance, which means the body does not respond properly to insulin",
+    "• Damage to insulin-producing cells in the pancreas",
+    "• Hormonal changes such as during pregnancy in gestational diabetes",
+    "Risk increases with age, poor lifestyle habits, and certain medical conditions.",
+    "Not all diabetes is preventable, but many cases, especially type 2 diabetes, are linked to lifestyle factors."
+  ],
+  "qa_pairs": [
+    {
+      "question": "What causes diabetes?",
+      "answer": "Diabetes happens when the body cannot produce enough insulin or cannot use insulin properly, often due to genetics, poor diet, inactivity, or excess weight."
+    },
+    {
+      "question": "Why do people develop diabetes?",
+      "answer": "People develop diabetes because of insulin problems such as insulin resistance or low insulin production, influenced by lifestyle and genetic factors."
+    }
+  ],
+  "retrieval_text": "Diabetes occurs because of problems with insulin, either when the body does not produce enough or cannot use it effectively. Common causes include genetics, obesity, inactivity, poor diet, and insulin resistance."
+},
+{
+  "id": "basics_en_026",
+  "category": "basics",
+  "language": "en",
+  "section_title": "How Diabetes Works in the Body",
+  "description": "A simple explanation of how insulin and blood sugar work and what goes wrong in diabetes.",
+  "keywords": ["how diabetes works", "insulin function", "blood sugar mechanism", "why sugar increases"],
+  "details": [
+    "When you eat food, it is broken down into glucose, which enters the blood.",
+    "Insulin is a hormone made by the pancreas that helps move glucose from the blood into body cells.",
+    "The cells use glucose for energy.",
+    "In diabetes, one of two main problems happens:",
+    "• The body does not produce enough insulin",
+    "• The body cannot use insulin properly, which is called insulin resistance",
+    "Because of this, glucose stays in the blood instead of entering the cells.",
+    "This causes blood sugar to rise.",
+    "If blood sugar stays high for a long time, it can damage organs such as the eyes, kidneys, nerves, and heart."
+  ],
+  "qa_pairs": [
+    {
+      "question": "How does diabetes happen in the body?",
+      "answer": "Diabetes happens when insulin is not produced enough or does not work properly, so glucose stays in the blood instead of entering the cells."
+    },
+    {
+      "question": "Why does blood sugar increase in diabetes?",
+      "answer": "Blood sugar increases because glucose cannot enter the body cells properly due to lack of insulin or insulin resistance."
+    }
+  ],
+  "retrieval_text": "Diabetes happens when insulin does not work properly or is not produced in enough amount, so glucose remains in the blood instead of entering body cells. This leads to high blood sugar levels."
+}
+,
+{
+  "id": "basics_en_027",
+  "category": "basics",
+  "language": "en",
+  "section_title": "Can Diabetes Be Cured",
+  "description": "A clear explanation of whether diabetes can be cured and how it is usually managed over time.",
+  "keywords": ["can diabetes be cured", "is diabetes curable", "diabetes cure", "can diabetes go away", "diabetes remission"],
+  "details": [
+    "Diabetes is usually a long-term condition and is generally not considered completely curable.",
+    "In many people, diabetes can be controlled well with healthy eating, exercise, weight management, medicine, and regular monitoring.",
+    "Type 1 diabetes cannot be cured because the body no longer makes insulin properly.",
+    "Type 2 diabetes may sometimes go into remission, especially with major weight loss, lifestyle changes, or medical treatment.",
+    "Remission does not mean the disease is permanently gone.",
+    "Blood sugar can rise again if healthy habits are not maintained.",
+    "Even when blood sugar improves, regular checkups are still important.",
+    "The main goal is long-term blood sugar control and prevention of complications."
+  ],
+  "qa_pairs": [
+    {
+      "question": "Can diabetes be cured?",
+      "answer": "Diabetes is usually not completely curable, but it can often be controlled very well. Some people with type 2 diabetes may go into remission, but ongoing care is still important."
+    },
+    {
+      "question": "Can diabetes go away permanently?",
+      "answer": "Diabetes usually does not go away permanently. Type 2 diabetes may improve a lot or go into remission, but blood sugar can rise again later."
+    }
+  ],
+  "retrieval_text": "Diabetes is generally a long-term condition and is not usually completely curable. Type 1 diabetes cannot be cured, while some people with type 2 diabetes may go into remission with major lifestyle changes or treatment. Remission does not mean the disease is permanently gone, so regular monitoring and healthy habits are still necessary."
+},
+{
+  "id": "complications_en_101",
+  "category": "complications",
+  "language": "en",
+  "section_title": "How High Blood Sugar Damages the Body",
+  "description": "A general explanation of how long-term high blood sugar harms blood vessels, nerves, and organs throughout the body.",
+  "keywords": ["how high blood sugar damages the body", "how diabetes damages the body", "high blood sugar organ damage", "why high sugar is dangerous", "body damage from diabetes"],
+  "details": [
+    "High blood sugar damages the body slowly over time.",
+    "Too much sugar in the blood can injure blood vessel walls.",
+    "It can also damage nerves, which affects feeling, movement, and organ function.",
+    "Damaged blood vessels reduce healthy blood flow to important organs.",
+    "This is why diabetes can harm the eyes, kidneys, heart, brain, nerves, and feet.",
+    "Poor blood flow and nerve damage also slow wound healing and increase infection risk.",
+    "The damage usually happens gradually, which is why diabetes may seem silent at first.",
+    "Keeping blood sugar in a healthier range helps reduce the risk of long-term damage."
+  ],
+  "qa_pairs": [
+    {
+      "question": "How does high blood sugar damage the body?",
+      "answer": "High blood sugar damages blood vessels and nerves over time, which can reduce blood flow and harm organs such as the eyes, kidneys, heart, and feet."
+    },
+    {
+      "question": "Why is high blood sugar dangerous for the body?",
+      "answer": "High blood sugar is dangerous because it slowly injures blood vessels and nerves, leading to organ damage and poor healing."
+    }
+  ],
+  "retrieval_text": "High blood sugar damages the body by slowly injuring blood vessels and nerves. Over time this reduces healthy blood flow and harms organs such as the eyes, kidneys, heart, nerves, and feet. This is why long-term uncontrolled diabetes can lead to serious complications throughout the body."
+}
+,
+{
+  "id": "complications_en_002",
+  "category": "complications",
+  "language": "en",
+  "section_title": "What Happens If Diabetes Is Not Treated",
+  "description": "A general overview of what can happen when diabetes is not controlled or left untreated for a long time.",
+  "keywords": ["what happens if diabetes is not treated", "untreated diabetes", "what if diabetes is ignored", "uncontrolled diabetes effects", "diabetes without treatment"],
+  "details": [
+    "If diabetes is not treated, blood sugar usually stays too high for long periods.",
+    "In the short term, a person may feel more thirsty, urinate more often, feel tired, lose weight, or develop blurred vision.",
+    "Over time, untreated diabetes can damage blood vessels and nerves.",
+    "This can lead to complications in the eyes, kidneys, heart, brain, feet, and other parts of the body.",
+    "Untreated diabetes can also cause slow wound healing and increase the risk of infections.",
+    "In severe cases, very high blood sugar can lead to dangerous medical emergencies.",
+    "Some damage develops slowly and may not be obvious at first.",
+    "Early diagnosis and treatment help lower the risk of serious long-term harm."
+  ],
+  "qa_pairs": [
+    {
+      "question": "What happens if diabetes is not treated?",
+      "answer": "If diabetes is not treated, blood sugar stays too high and can gradually damage blood vessels, nerves, and major organs, leading to serious complications."
+    },
+    {
+      "question": "Is untreated diabetes dangerous?",
+      "answer": "Yes. Untreated diabetes is dangerous because it can worsen symptoms, damage organs over time, and sometimes lead to medical emergencies."
+    }
+  ],
+  "retrieval_text": "If diabetes is not treated, blood sugar can remain high and gradually damage blood vessels, nerves, and organs. Untreated diabetes may first cause symptoms such as thirst, frequent urination, tiredness, and blurred vision, and later lead to complications affecting the eyes, kidneys, heart, nerves, and feet. Severe untreated diabetes can also become a medical emergency."
+}
+,
+{
+  "id": "exercise_en_114",
+  "category": "lifestyle",
+  "language": "en",
+  "section_title": "Is Walking Good for Diabetes",
+  "description": "A direct answer about whether walking helps diabetes and why it is one of the safest and most practical exercise options.",
+  "keywords": ["is walking good for diabetes", "walking diabetes", "benefits of walking", "post meal walking", "walking blood sugar"],
+  "details": [
+    "Walking is one of the best and safest exercises for many people with diabetes.",
+    "It helps muscles use glucose for energy, which can lower blood sugar levels.",
+    "Regular walking improves insulin sensitivity, meaning the body uses insulin more effectively.",
+    "Walking can also support weight control, heart health, and overall fitness.",
+    "A simple and practical target is 10 to 15 minutes of walking after meals or about 30 minutes on most days of the week.",
+    "Post-meal walking is especially useful because it can reduce blood sugar spikes after eating.",
+    "Walking is often easier to start than intense exercise, so it is a good option for beginners.",
+    "Comfortable shoes, hydration, and safe pacing are important, especially for people with foot problems or low fitness."
+  ],
+  "qa_pairs": [
+    {
+      "question": "Is walking good for diabetes?",
+      "answer": "Yes. Walking is good for diabetes because it helps lower blood sugar, improves insulin sensitivity, and supports weight and heart health."
+    },
+    {
+      "question": "Can walking reduce blood sugar?",
+      "answer": "Yes. Walking helps muscles use glucose for energy, which can help lower blood sugar, especially after meals."
+    }
+  ],
+  "retrieval_text": "Walking is very good for diabetes because it helps lower blood sugar, improves insulin sensitivity, and supports weight control and heart health. Walking after meals is especially helpful because it can reduce blood sugar spikes. It is one of the safest and most practical exercise options for many people with diabetes."
+},
+{
+  "id": "complications_en_410",
+  "category": "complications",
+  "language": "en",
+  "section_title": "How Diabetes Damages the Eyes (Diabetic Retinopathy)",
+  "description": "High blood sugar damages the small blood vessels in the retina, leading to vision problems.",
+  "keywords": ["eye", "retina", "retinopathy", "vision loss", "blurred vision"],
+  "details": [
+    "High blood sugar damages retinal blood vessels.",
+    "Blood vessels may leak or become blocked.",
+    "Vision may become blurred over time.",
+    "Severe cases can lead to vision loss or blindness."
+  ],
+  "qa_pairs": [
+    {
+      "question": "How does diabetes damage the eyes?",
+      "answer": "Diabetes damages the small blood vessels in the retina, leading to a condition called diabetic retinopathy that can cause vision problems."
+    }
+  ],
+  "retrieval_text": "Diabetes damages the eyes by harming the small blood vessels in the retina. This condition is called diabetic retinopathy. It can cause blurred vision, leaking blood vessels and eventually vision loss if not treated."
+},
+{
+  "id": "complications_en_411",
+  "category": "complications",
+  "language": "en",
+  "section_title": "How Diabetes Causes Nerve Damage (Diabetic Neuropathy)",
+  "description": "High blood sugar damages nerves, especially in the hands and feet, leading to tingling and numbness.",
+  "keywords": ["nerve", "neuropathy", "tingling", "numbness", "burning pain"],
+  "details": [
+    "High blood sugar damages nerve fibers.",
+    "Tingling and numbness often start in the feet.",
+    "Pain or burning sensations may occur.",
+    "Loss of sensation increases risk of injury."
+  ],
+  "qa_pairs": [
+    {
+      "question": "Why do people with diabetes feel tingling in their feet?",
+      "answer": "High blood sugar damages nerves, causing diabetic neuropathy, which leads to tingling, numbness and pain."
+    }
+  ],
+  "retrieval_text": "Diabetes causes nerve damage by harming the nerves over time. This is called diabetic neuropathy. It often causes tingling, numbness and burning pain, especially in the feet and hands."
+},
+{
+  "id": "complications_en_412",
+  "category": "complications",
+  "language": "en",
+  "section_title": "Why Diabetes Increases Heart Disease Risk",
+  "description": "High blood sugar damages blood vessels and increases the risk of heart disease and stroke.",
+  "keywords": ["heart", "cardiovascular", "blood vessels", "stroke", "heart disease"],
+  "details": [
+    "High blood sugar damages blood vessel walls.",
+    "Fatty deposits can build up in arteries.",
+    "Blood flow becomes restricted.",
+    "This increases risk of heart attack and stroke."
+  ],
+  "qa_pairs": [
+    {
+      "question": "Why is heart disease common in people with diabetes?",
+      "answer": "Diabetes damages blood vessels and increases plaque buildup, raising the risk of heart disease and stroke."
+    }
+  ],
+  "retrieval_text": "Diabetes increases the risk of heart disease by damaging blood vessels and promoting plaque buildup. This reduces blood flow and increases the risk of heart attacks and stroke."
+},
+{
+  "id": "complications_en_413",
+  "category": "complications",
+  "language": "en",
+  "section_title": "Why Diabetes Causes Foot Problems",
+  "description": "Diabetes leads to poor blood flow and nerve damage in the feet, increasing risk of ulcers and infection.",
+  "keywords": ["foot", "ulcer", "amputation", "infection", "circulation"],
+  "details": [
+    "Poor blood flow slows healing.",
+    "Nerve damage reduces pain sensation.",
+    "Small injuries may go unnoticed.",
+    "Untreated wounds can become infected and lead to ulcers."
+  ],
+  "qa_pairs": [
+    {
+      "question": "Why do people with diabetes get foot problems?",
+      "answer": "Diabetes causes poor circulation and nerve damage, making it easier for wounds to develop into serious foot problems."
+    }
+  ],
+  "retrieval_text": "Diabetes causes foot problems by reducing blood flow and damaging nerves. This can lead to unnoticed injuries, infections, ulcers and in severe cases, amputation."
+},
+{
+  "id": "complications_en_414",
+  "category": "complications",
+  "language": "en",
+  "section_title": "How Uncontrolled Diabetes Damages the Body",
+  "description": "Long-term high blood sugar damages major organs and systems in the body.",
+  "keywords": ["complications", "organ damage", "long term", "blood vessels", "nerves"],
+  "details": [
+    "Blood vessels become damaged over time.",
+    "Nerves can stop working properly.",
+    "Kidneys, eyes and heart are affected.",
+    "Risk of serious complications increases."
+  ],
+  "qa_pairs": [
+    {
+      "question": "What happens if diabetes is not controlled?",
+      "answer": "Uncontrolled diabetes damages blood vessels and organs, leading to complications in the eyes, kidneys, nerves and heart."
+    }
+  ],
+  "retrieval_text": "Uncontrolled diabetes damages the body over time by harming blood vessels and nerves. This leads to complications affecting the eyes, kidneys, heart and other organs."
+},
+{
+  "id": "nutrition_en_420",
+  "category": "nutrition",
+  "language": "en",
+  "section_title": "Simple Daily Meal Structure for Diabetes",
+  "description": "A simple structured meal pattern helps control blood sugar even without counting calories.",
+  "keywords": ["meal plan", "daily diet", "what to eat", "diabetes food"],
+  "details": [
+    "Breakfast: whole grains (roti/oats) + protein (egg/dal) + vegetables.",
+    "Lunch: rice or roti + vegetables + protein (fish/chicken/dal).",
+    "Dinner: lighter version of lunch with more vegetables.",
+    "Snacks: small portions of fruits, nuts or yogurt between meals.",
+    "Portion control is important even without counting calories."
+  ],
+  "qa_pairs": [
+    {
+      "question": "Give me a meal plan",
+      "answer": "A simple diabetes meal plan includes balanced meals with whole grains, vegetables and protein throughout the day, with portion control."
+    }
+  ],
+  "retrieval_text": "A simple daily meal structure for diabetes includes balanced meals with whole grains, vegetables and protein. Breakfast, lunch and dinner should be evenly spaced, and snacks should be small and healthy. Portion control is important."
+}
+
+,
+{
+  "id": "nutrition_en_421",
+  "category": "nutrition",
+  "language": "en",
+  "section_title": "What to Eat When Blood Sugar is High",
+  "description": "When blood sugar is high, food choices should help bring it down safely.",
+  "keywords": ["high sugar", "hyperglycemia", "what to eat", "reduce sugar"],
+  "details": [
+    "Drink water to stay hydrated.",
+    "Choose low-carb foods like vegetables and protein.",
+    "Avoid sugary drinks and refined carbs.",
+    "Light physical activity like walking can help."
+  ],
+  "qa_pairs": [
+    {
+      "question": "What to eat when sugar is high?",
+      "answer": "Eat low-carb foods like vegetables and protein, drink water, and avoid sugary foods."
+    }
+  ],
+  "retrieval_text": "When blood sugar is high, it is important to choose foods that do not increase it further. Low-carb foods like vegetables and protein are better choices, and sugary foods should be avoided."
+},
+{
+  "id": "exercise_en_420",
+  "category": "exercise",
+  "language": "en",
+  "section_title": "How to Start Exercise Safely with Diabetes",
+  "description": "Beginners should start exercise slowly and increase gradually.",
+  "keywords": ["exercise beginner", "start exercise", "walking", "physical activity"],
+  "details": [
+    "Start with 10–15 minutes of walking.",
+    "Increase duration gradually.",
+    "Check blood sugar before and after exercise.",
+    "Stay consistent rather than intense."
+  ],
+  "qa_pairs": [
+    {
+      "question": "I am a beginner, how to start exercise?",
+      "answer": "Start with short walks and gradually increase time while monitoring blood sugar."
+    }
+  ],
+  "retrieval_text": "People with diabetes should start exercise slowly, such as walking for 10–15 minutes, and gradually increase activity. Monitoring blood sugar helps ensure safety."
+}
+
+
+
+
+]

@@ -1,0 +1,9 @@
+### Test Chatbot (Node → Python)
+### Test Chatbot (Node → Python)
+POST http://localhost:3000/api/v1/chatbot/ask
+Content-Type: application/json
+
+{
+  "message": "What is diabetes?",
+  "lang": "en"
+}

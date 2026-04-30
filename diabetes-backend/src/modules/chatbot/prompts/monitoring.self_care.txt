@@ -1,0 +1,77 @@
+
+
+**Description:**  
+Regular glucose monitoring helps you understand how your food, activity, and medicines affect blood sugar.
+
+**Keywords:** glucose, testing, fasting, post-meal, HbA1c  
+
+### Details:
+- **Fasting blood sugar:** Check in the morning before breakfast; goal < 7.0 mmol/L (126 mg/dL).  
+- **Post-meal (2 hours after eating):** Goal < 10.0 mmol/L (180 mg/dL).  
+- **HbA1c (average 3-month sugar):** Test every 3–6 months; goal < 7%.  
+- Use a glucometer or continuous glucose monitor (CGM) if available.  
+- Record results in your diary or app to track patterns.
+
+---
+
+## Weight, Blood Pressure, and Cholesterol
+**Description:**  
+These numbers affect diabetes control and heart health.
+
+**Keywords:** weight, BMI, blood pressure, cholesterol  
+
+### Details:
+- Weigh yourself once a month; aim for a BMI between 18.5–24.9.  
+- Check blood pressure at least monthly; keep below 130/80 mmHg if possible.  
+- Check cholesterol yearly; high LDL increases heart-attack risk.  
+- Even a 5–7 kg weight loss can improve blood sugar control.
+
+---
+
+## Foot Care
+**Description:**  
+Diabetes can damage nerves and reduce blood flow to the feet, leading to infections or ulcers.
+
+**Keywords:** foot care, ulcers, infection, neuropathy  
+
+### Details:
+- Wash and dry your feet daily; inspect for cuts, redness, or swelling.  
+- Don’t walk barefoot, even at home.  
+- Trim nails carefully; avoid cutting corners too deep.  
+- Wear soft, closed shoes and cotton socks.  
+- If you find wounds or numbness, see a doctor immediately.
+
+---
+
+## Eye and Dental Care
+**Description:**  
+High sugar can damage the eyes and gums.
+
+**Keywords:** retinopathy, eye exam, dental hygiene  
+
+### Details:
+- Have a **retina (eye-back)** exam once a year even if vision feels normal.  
+- Report blurred vision, floaters, or dark spots immediately.  
+- Brush twice daily and visit a dentist every 6 months to prevent gum infections.
+
+---
+
+## Stress, Sleep, and Routine
+**Description:**  
+Emotional health strongly influences sugar levels.
+
+**Keywords:** stress, sleep, lifestyle  
+
+### Details:
+- Sleep 7–8 hours daily; late nights increase sugar and cravings.  
+- Try meditation, breathing, or quiet walks to reduce stress.  
+- Keep meal and exercise timing regular.
+
+---
+
+### Example Q&A:
+**Q:** How often should I check my blood sugar?  
+**A:** At least twice a week for stable diabetes, or daily if adjusting medicine. Always test fasting and 2 hours after meals.  
+
+**Q:** How can I protect my feet?  
+**A:** Keep them clean, dry, and covered; never walk barefoot; report any wound early.
