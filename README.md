@@ -33,6 +33,31 @@ diabetes-backend/
 ├── scripts/ → Data processing & utilities
 ├── migrations/ → Database migration files
 │
+
+
+
+##  App Screenshots
+
+###  Home
+![Home](screenshots/home screen.png)
+
+###  Chatbot
+![Chatbot](screenshots/Chatbot screen.png)
+
+###  Monitoring
+![Monitoring](screenshots/monitoring scrren.png)
+
+### 🧠 Education
+![Education](screenshots/education.png)
+
+###  Tools
+![Tools](screenshots/tools.png)
+
+###  Reminder
+![Reminder](screenshots/reminder screen.png)
+
+###  Lifestyle
+![Lifestyle](screenshots/life style screen.png)
 diasm_front_endv2/
 │
 ├── lib/ → Flutter app (UI, features, API integration)
