@@ -161,7 +161,7 @@ class RegressionTests(unittest.TestCase):
 
     def test_bangla_generation_and_answerability(self):
         def bengali(**payload):
-            return dict(answer='সকালের নাশতায় রুটি, ডিম ও সবজি খেতে পারেন।', evidence_ids=['nutrition_en_301'], answerable=True)
+            return dict(answer=payload['evidence'][0]['text'], evidence_ids=['nutrition_en_301'], answerable=True)
         result = Assistant(self.retriever, bengali, KB).answer('what can i eat for breakfast', 'bn')
         self.assertEqual(result['response_mode'], 'generated')
         self.assertEqual(result['language'], 'bn')
@@ -235,7 +235,7 @@ class RegressionTests(unittest.TestCase):
                 self.assertFalse(contains_internal_terminology(result['answer']))
                 self.assertEqual(result['response_mode'], 'evidence_fallback')
                 self.assertEqual(result['fallback_reason'], 'generation_rejected')
-                self.assertTrue(result['answer'].startswith('For breakfast in diabetes'))
+                self.assertTrue(result['answer'].startswith('For breakfast in diabetes' if language == 'en' else 'ডায়াবেটিসে সকালের নাস্তায়'))
         result = self.assistant.answer('what can i eat for breakfast')
         self.assertFalse(contains_internal_terminology(result['answer']))
         self.assertEqual(result['generation_error_type'], 'ConnectionError')

@@ -173,15 +173,16 @@ class ReviewRepairTests(unittest.TestCase):
         self.assertEqual(result['response_mode'], 'generated')
         self.assertFalse(result['clinical_review_required'])
 
-    def test_protected_english_is_not_mislabeled_as_a_bangla_translation(self):
+    def test_protected_bangla_translation_preserves_safety(self):
         def translated(**payload):
             return dict(answerable=True, answer='বিষণ্ণ হলে পানি পান করুন।',
                         evidence_ids=[r['id'] for r in payload['evidence']])
         result = self.run_case(3, translated, 'bn')
-        self.assertEqual(result['language'], 'en')
+        self.assertEqual(result['language'], 'bn')
         self.assertEqual(result['requested_language'], 'bn')
-        self.assertTrue(result['translation_unavailable'])
-        self.assertIn('seek emergency help immediately', result['answer'])
+        self.assertFalse(result['translation_unavailable'])
+        self.assertIn('অবিলম্বে জরুরি সহায়তা নিন', result['answer'])
+        self.assertIn('পেশাদার সহায়তা নিন', result['answer'])
 
 
 if __name__ == '__main__':

@@ -36,6 +36,57 @@ ALIASES = {
     'chest hurts': 'chest pain',
 }
 
+# Whole-word Bangla forms, including common spelling and case inflections.
+# These extend the shared routes; they do not create a second medical policy.
+ALIASES.update({
+    'সকালের নাস্তায়': 'breakfast', 'সকালের নাশতায়': 'breakfast',
+    'সকালের নাস্তা': 'breakfast', 'নাস্তায়': 'breakfast', 'নাশতায়': 'breakfast',
+    'নাস্তা': 'breakfast', 'নাশতা': 'breakfast',
+    'ডায়াবেটিসে': 'diabetes', 'ডায়াবেটিসের': 'diabetes',
+    'ডায়াবেটিসের': 'diabetes', 'ডায়াবেটিস': 'diabetes',
+    'নিয়ন্ত্রণে': 'control', 'নিয়ন্ত্রণ': 'control', 'নিয়ন্ত্রণ': 'control',
+    'নিয়ন্ত্রণের': 'control', 'কমাতে': 'reduce',
+    'রক্তের সুগার': 'glucose', 'ব্লাড সুগার': 'glucose',
+    'এইচবিএওয়ানসি': 'hba1c', 'এইচবিএ১সি': 'hba1c', 'এওয়ানসি': 'hba1c',
+    'মাত্রা': 'level', 'লক্ষ্য': 'target', 'সীমা': 'limit',
+    'ক্লান্ত লাগছে': 'tired', 'ক্লান্তি': 'tiredness', 'ক্লান্ত': 'tired',
+    'ডাক্তারকে': 'doctor', 'ডাক্তারের': 'doctor', 'ডাক্তার দেখাতে': 'doctor',
+    'চিকিৎসকের': 'doctor', 'ডাক্তার দেখাবো': 'doctor',
+    'শর্করা কমে গেছে': 'low glucose', 'শর্করা কমে যাচ্ছে': 'low glucose',
+    'সুগার কমে যাচ্ছে': 'low glucose', 'হাইপোগ্লাইসেমিয়া': 'low glucose',
+    'খুব বেশি': 'very high', 'অনেক বেশি': 'very high',
+    'বমি': 'vomiting', 'অত্যন্ত দুর্বল': 'severe weakness',
+    'গিলতে পারছে না': 'cannot swallow', 'গিলতে পারি না': 'cannot swallow',
+    'শ্বাস নিতে পারছে না': 'cannot breathe', 'শ্বাস নিতে কষ্ট': 'breathing difficulty',
+    'শ্বাস বন্ধ': 'not breathing', 'সাড়া দিচ্ছে না': 'unresponsive',
+    'খিঁচুনি': 'seizure', 'অজ্ঞান হয়ে গেছে': 'unconscious',
+    'ইনসুলিনের': 'insulin', 'ইন্সুলিন': 'insulin', 'ডোজের': 'dose',
+    'কতটুকু': 'how much', 'কত': 'how much', 'বাড়াব': 'increase',
+    'বাড়াবো': 'increase', 'দ্বিগুণ': 'double',
+    'নেওয়ার নিয়ম': 'usage', 'নেয়ার নিয়ম': 'usage', 'ব্যবহারের নিয়ম': 'usage',
+    'কীভাবে নেব': 'use', 'কিভাবে নেব': 'use',
+    'ব্যবহার': 'use', 'কাঁপছে': 'shaking', 'কাঁপুনি': 'shaking',
+    'পায়ের': 'foot', 'পায়ে': 'foot', 'পায়ে': 'foot', 'ক্ষত': 'wound',
+    'ঘা': 'wound', 'পায়ের ঘা': 'foot wound',
+    'চোখের': 'eyes', 'কিডনির': 'kidney', 'কিডনি': 'kidney',
+    'প্রস্রাবে প্রোটিন': 'protein in urine', 'স্নায়ুর': 'nerve',
+    'ক্ষুধা': 'hunger', 'ক্ষুধার্ত': 'hungry', 'সবসময়': 'always',
+    'বিষণ্ণ': 'depressed', 'হতাশ': 'hopeless', 'মন খারাপ': 'low mood',
+    'ব্যায়াম': 'exercise', 'হাঁটা': 'walking', 'শ্বাসের ব্যায়াম': 'breathing exercise',
+    'খাবার': 'food', 'এড়াব': 'avoid', 'এড়ানো': 'avoid',
+    'দুপুরের খাবার': 'lunch', 'রাতের খাবার': 'dinner',
+    'আমার': 'my', 'এখন': 'right now', 'কেন': 'why',
+    'কীভাবে': 'how', 'কিভাবে': 'how',
+})
+# NFC decomposes some Bengali letters. Canonicalize keys as well as input;
+# otherwise visually identical spellings can fail exact phrase matching.
+ALIASES = {unicodedata.normalize('NFC', k): v for k, v in ALIASES.items()}
+
+
+def response_language(question, requested=None):
+    # Script is a stronger signal than the client's default UI language.
+    return 'bn' if re.search('[\u0980-\u09ff]', question or '') else ('bn' if requested == 'bn' else 'en')
+
 
 def normalize_text(text):
     text = unicodedata.normalize('NFC', (text or '').casefold())
@@ -62,7 +113,7 @@ def asserted(q, phrases):
             prefix = re.split(r'\b(?:but|and|however)\b', q[:match.start()])[-1]
             if re.search(r'\b(?:no|not|never|without|denies|deny)\b(?:\s+\w+){0,4}\s*$', prefix):
                 continue
-            if re.match(r'\s+(?:নেই|নয়|নয়|না)(?:\s|$)', q[match.end():]):
+            if re.match(unicodedata.normalize('NFC', r'\s+(?:নেই|নয়|নয়|না|নন)(?:\s|$)'), q[match.end():]):
                 continue
             return True
     return False

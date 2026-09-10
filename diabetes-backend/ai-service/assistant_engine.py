@@ -5,9 +5,10 @@ import logging
 import time
 
 from assistant_copy import COPY, COPY_EVIDENCE, CLARIFICATIONS, MISSING_EVIDENCE
+from assistant_bangla import translate_evidence
 from assistant_evidence import (VERBATIM_CONTRACT, add_assessment_evidence,
                                 prepare_evidence, symptoms_need_assessment)
-from assistant_policy import TOPICS, contains, detect_intent, normalize_text, safety_decision
+from assistant_policy import TOPICS, contains, detect_intent, normalize_text, safety_decision, response_language
 
 STOP_WORDS = set('what which when why how is are does do can should could i my me a an the to for of with in on and or it have get type diabetes glucose'.split())
 LOGGER = logging.getLogger(__name__)
@@ -111,7 +112,8 @@ def generation_is_usable(output, evidence, intent, language):
     if any(r.get('preserve_text') for r in evidence):
         # Keywords cannot establish that escalation, negation, or causal meaning
         # survived a rewrite. These reviewed passages require exact text fidelity.
-        return (language == 'en' and set(ids) == supplied.keys()
+        return (all(r.get('document_language', 'en') == language for r in evidence)
+                and set(ids) == supplied.keys()
                 and ' '.join(answer.split()) == ' '.join(build_clean_answer(evidence).split()))
     cited = ' '.join(supplied[i]['document'] for i in ids)
     a, source = normalize_text(answer), normalize_text(cited)
@@ -200,7 +202,7 @@ class Assistant:
 
     def answer(self, question, language='en'):
         question = (question or '').strip()
-        language = language if language in ('en', 'bn') else ('bn' if re.search('[\u0980-\u09ff]', question) else 'en')
+        language = response_language(question, language)
         normalized = normalize_text(question)
         intent = safety_decision(question) or detect_intent(question)
         if intent in COPY:
@@ -225,6 +227,10 @@ class Assistant:
         if symptoms_need_assessment(question, intent):
             selected = add_assessment_evidence(selected, self.knowledge)
         selected = [self._prepare(r, intent, question) for r in selected]
+        if language == 'bn':
+            translated = translate_evidence(selected)
+            if translated:
+                selected = translated
         preserve_text = any(r.get('preserve_text') for r in selected)
         payload = dict(question=question, normalized_question=standalone, language=language,
                        evidence=[{'id': r['id'], 'text': r['document'], 'title': r['metadata']['title']} for r in selected],
@@ -232,7 +238,9 @@ class Assistant:
                        answer_contract=VERBATIM_CONTRACT if preserve_text else 'Answer from the supplied evidence.')
         evidence_metadata = {
             'evidence_sources': {r['id']: {'fields': r.get('source_fields', ['retrieval_text']),
-                                          'origin': r.get('evidence_origin', 'retrieved_record')}
+                                          'origin': r.get('evidence_origin', 'retrieved_record'),
+                                          **({'translation': r['translation_source'], 'text_language': 'bn'}
+                                             if r.get('translation_source') else {})}
                                  for r in selected},
         } if preserve_text else {}
         if any(r['id'] == 'exercise_en_008' for r in selected):
@@ -257,8 +265,14 @@ class Assistant:
             # No question, evidence or exception message (which may contain user data).
             LOGGER.warning('Ollama generation failed: %s', generation_diagnostics)
         # Failure details stay in metadata/logs; the user gets only the clean answer.
-        result = self._response(build_clean_answer(selected), intent, 'en', 'evidence_fallback', selected, True,
-                                fallback_reason=fallback_reason, translation_unavailable=language == 'bn',
+        if language == 'bn' and not all(r.get('document_language') == 'bn' for r in selected):
+            # Never label English evidence as a Bangla answer or drop protected
+            # safety qualifications to force a translation through validation.
+            result = self._clarify(intent, 'bn', fallback_reason, True)
+            result.update(translation_unavailable=True, **generation_diagnostics)
+            return result
+        result = self._response(build_clean_answer(selected), intent, language, 'evidence_fallback', selected, True,
+                                fallback_reason=fallback_reason, translation_unavailable=False,
                                 **generation_diagnostics, **evidence_metadata)
         result['requested_language'] = language
         return result
