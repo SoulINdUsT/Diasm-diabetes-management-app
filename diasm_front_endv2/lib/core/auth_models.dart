@@ -30,11 +30,15 @@ class AuthResult {
   final String message;
   final AuthUser user;
   final String accessToken;
+  final String refreshToken;
+  final bool profileCompleted;
 
   const AuthResult({
     required this.message,
     required this.user,
     required this.accessToken,
+    required this.refreshToken,
+    this.profileCompleted = false,
   });
 }
 

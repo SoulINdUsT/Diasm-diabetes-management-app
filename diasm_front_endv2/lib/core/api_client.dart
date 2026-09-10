@@ -1,78 +1,97 @@
-
 import 'package:dio/dio.dart';
-import 'package:flutter/foundation.dart';
 import 'auth_storage.dart';
+import 'session_controller.dart';
 
 class ApiClient {
-  static final ApiClient _instance = ApiClient._internal();
+  static final ApiClient _instance = ApiClient.configured();
   factory ApiClient() => _instance;
-
+  static const defaultBaseUrl = String.fromEnvironment(
+    'API_BASE_URL', defaultValue: 'http://168.144.125.6/api/v1',
+  );
   late final Dio dio;
+  late final SessionController session;
 
-  ApiClient._internal() {
-    dio = Dio(
-      BaseOptions(
-        baseUrl: _resolveBaseUrl(),
-        connectTimeout: const Duration(seconds: 10),
-        receiveTimeout: const Duration(seconds: 10),
-        sendTimeout: const Duration(seconds: 10),
-        responseType: ResponseType.json,
-        headers: const {'Content-Type': 'application/json'},
-      ),
-    );
-
-    dio.interceptors.add(
-      InterceptorsWrapper(
-        onRequest: (options, handler) async {
-          try {
-            final token = await AuthStorage().getAccessToken();
-
-            // Always set/remove Authorization explicitly
-            if (token != null && token.trim().isNotEmpty) {
-              options.headers['Authorization'] = 'Bearer $token';
-            } else {
-              options.headers.remove('Authorization');
-            }
-
-            // Debug (keep for now)
-            debugPrint('➡️ ${options.method} ${options.uri}');
-            debugPrint('➡️ Authorization present? ${options.headers.containsKey("Authorization")}');
-          } catch (_) {
-            options.headers.remove('Authorization');
-          }
-
+  ApiClient.configured({String baseUrl = defaultBaseUrl, AuthStorage? storage,
+      Dio? client, Dio? transport}) {
+    dio = client ?? Dio(_options(baseUrl));
+    session = SessionController(storage: storage ?? AuthStorage(),
+        transport: transport ?? Dio(_options(baseUrl)));
+    dio.interceptors.add(InterceptorsWrapper(
+      onRequest: (options, handler) {
+        if (!_eligible(options)) {
+          options.headers.remove('Authorization');
           handler.next(options);
-        },
-        onResponse: (response, handler) {
-          debugPrint('✅ [${response.statusCode}] ${response.requestOptions.uri}');
-          handler.next(response);
-        },
-        onError: (DioException e, handler) {
-          debugPrint('❌ DIO ERROR ${e.requestOptions.uri}');
-          debugPrint('❌ STATUS: ${e.response?.statusCode}');
-          debugPrint('❌ RESPONSE: ${e.response?.data}');
-          handler.next(e);
-        },
-      ),
-    );
+          return;
+        }
+        final generation = options.extra['sessionGeneration'] ?? session.generation;
+        if (generation != session.generation || session.record == null ||
+            session.status != SessionStatus.authenticated) {
+          handler.reject(DioException(requestOptions: options,
+              type: DioExceptionType.cancel, error: const SessionChanged()));
+          return;
+        }
+        options.extra['sessionGeneration'] = generation;
+        options.headers['Authorization'] = 'Bearer ${session.record!.accessToken}';
+        handler.next(options);
+      },
+      onResponse: (response, handler) {
+        final generation = response.requestOptions.extra['sessionGeneration'];
+        if (generation != null && generation != session.generation) {
+          handler.reject(DioException(requestOptions: response.requestOptions,
+              type: DioExceptionType.cancel, error: const SessionChanged()));
+          return;
+        }
+        handler.next(response);
+      },
+      onError: (error, handler) async {
+        final request = error.requestOptions;
+        if (!_eligible(request) || error.response?.statusCode != 401 ||
+            request.extra['sessionRetried'] == true || request.data is Stream ||
+            request.cancelToken?.isCancelled == true) {
+          handler.next(error);
+          return;
+        }
+        final generation = request.extra['sessionGeneration'];
+        final header = request.headers['Authorization'];
+        if (generation is! int || header is! String || !header.startsWith('Bearer ')) {
+          handler.next(error);
+          return;
+        }
+        try {
+          await session.refreshAccess(header.substring(7), generation);
+          if (!session.isCurrent(generation)) throw const SessionChanged();
+          final retry = request.copyWith(
+            data: request.data is FormData ? (request.data as FormData).clone() : request.data,
+            extra: {...request.extra, 'sessionRetried': true},
+          );
+          handler.resolve(await dio.fetch<dynamic>(retry));
+        } on DioException catch (refreshError) {
+          handler.next(DioException(requestOptions: request,
+              response: refreshError.response, type: refreshError.type,
+              error: refreshError.error));
+        } catch (failure) {
+          handler.next(DioException(requestOptions: request,
+              type: failure is SessionChanged ? DioExceptionType.cancel : DioExceptionType.unknown,
+              error: failure));
+        }
+      },
+    ));
   }
 
-  String _resolveBaseUrl() {
-    const port = 3000;
+  static BaseOptions _options(String baseUrl) => BaseOptions(
+    baseUrl: baseUrl,
+    connectTimeout: const Duration(seconds: 10),
+    receiveTimeout: const Duration(seconds: 10),
+    sendTimeout: const Duration(seconds: 10),
+    responseType: ResponseType.json,
+    headers: const {'Content-Type': 'application/json'},
+  );
 
-    // Flutter Web (Chrome): backend is on same machine
-    if (kIsWeb) {
-      return 'http://localhost:$port/api/v1';
-    }
-
-    // Android emulator:
-     return 'http://10.0.2.2:$port/api/v1';
-
-    // Real device (replace with your PC IP):
-   // const localIp = '192.168.0.104';
-   // return 'http://$localIp:$port/api/v1';
-
-    // Render (when used):
-    // return 'https://diabetes-backend-hdup.onrender.com/api/v1';
+  bool _eligible(RequestOptions request) {
+    final base = Uri.parse(dio.options.baseUrl);
+    if (request.uri.origin != base.origin) return false;
+    final path = request.uri.path.replaceFirst(RegExp(r'/$'), '');
+    return !const ['/auth/login', '/auth/register', '/auth/refresh', '/auth/logout']
+        .any(path.endsWith);
   }
 }

@@ -1,0 +1,2 @@
+# Include only this synthetic test schema; application SQL dumps stay ignored.
+!fixtures/auth-schema.sql

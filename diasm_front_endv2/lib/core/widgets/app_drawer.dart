@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import '../api_client.dart';
 
 class AppDrawer extends StatelessWidget {
   final bool isEnglish;
@@ -74,12 +75,10 @@ const SizedBox(height: 6),
     context.go(route);
   }
 
-  void _logout(BuildContext context) {
+  Future<void> _logout(BuildContext context) async {
     Navigator.pop(context);
 
-    // If you already have signOut logic, call it here.
-    // For demo:
-    context.go("/login");
+    await ApiClient().session.logout();
   }
 }
 

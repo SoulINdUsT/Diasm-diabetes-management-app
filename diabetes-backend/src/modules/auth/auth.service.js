@@ -9,6 +9,8 @@ import {
 } from '../../lib/jwt.js';
 import { sendMail } from '../../lib/mailer.js';
 import crypto from 'crypto';
+import jwt from 'jsonwebtoken';
+import { SessionError } from './auth.errors.js';
 
 const APP_BASE_URL = process.env.APP_BASE_URL || 'http://localhost:3000';
 const REQUIRE_VERIFY = String(process.env.REQUIRE_EMAIL_VERIFICATION || '')
@@ -17,11 +19,38 @@ const REQUIRE_VERIFY = String(process.env.REQUIRE_EMAIL_VERIFICATION || '')
 /** Create a session row with hashed refresh token */
 async function createSession(conn, userId, refreshToken, userAgent, ip) {
   const tokenHash = sha256(refreshToken);
+  // Use the signed expiry for both login and rotation. FROM_UNIXTIME and NOW
+  // use the same database session timezone for the existing DATETIME column.
+  const { exp } = verifyRefreshToken(refreshToken);
+  if (!Number.isSafeInteger(exp)) throw new Error('Refresh token has no valid expiry');
   const sql = `
     INSERT INTO sessions (user_id, refresh_token_hash, user_agent, ip, expires_at, created_at, updated_at)
-    VALUES (?, ?, ?, INET6_ATON(?), DATE_ADD(NOW(), INTERVAL 30 DAY), NOW(), NOW())
+    VALUES (?, ?, ?, INET6_ATON(?), FROM_UNIXTIME(?), NOW(), NOW())
   `;
-  await conn.execute(sql, [userId, tokenHash, userAgent || null, ip || null]);
+  await conn.execute(sql, [userId, tokenHash, userAgent || null, ip || null, exp]);
+}
+
+function readRefreshCredential(refreshToken) {
+  if (typeof refreshToken !== 'string' || !refreshToken.trim()) {
+    throw new SessionError(400, 'REFRESH_TOKEN_REQUIRED', 'A refresh token is required.');
+  }
+  let claims;
+  try {
+    claims = verifyRefreshToken(refreshToken);
+  } catch (error) {
+    if (error instanceof jwt.TokenExpiredError) {
+      throw new SessionError(401, 'REFRESH_TOKEN_EXPIRED', 'Refresh token has expired.');
+    }
+    if (error instanceof jwt.JsonWebTokenError) {
+      throw new SessionError(401, 'REFRESH_TOKEN_INVALID', 'Refresh token is invalid.');
+    }
+    throw error;
+  }
+  if (!claims || !claims.id || typeof claims.jti !== 'string' || !claims.jti ||
+      !Number.isSafeInteger(claims.exp)) {
+    throw new SessionError(401, 'REFRESH_TOKEN_INVALID', 'Refresh token is invalid.');
+  }
+  return claims;
 }
 
 /**
@@ -149,34 +178,49 @@ export async function loginUser({ email, password }, ctx = {}) {
 }
 
 export async function refreshTokens({ refreshToken }, ctx = {}) {
-  if (!refreshToken) throw new Error('Missing refresh token');
-
-  // Verify signature/exp and compute hash
-  verifyRefreshToken(refreshToken); // throws if invalid/expired
+  readRefreshCredential(refreshToken);
   const tokenHash = sha256(refreshToken);
 
   const conn = await pool.getConnection();
+  let transactionStarted = false;
+  let connectionDestroyed = false;
   try {
-    // Confirm server-side session exists and is active
+    await conn.beginTransaction();
+    transactionStarted = true;
+    // InnoDB locking read uses the unique refresh_token_hash index and locks
+    // the joined user too. A competing rotation sees revocation after waiting;
+    // account status/verification cannot change before this transaction commits.
     const [sRows] = await conn.execute(
-      `SELECT s.id, u.id AS user_id, u.email, u.role
+      `SELECT s.id, s.revoked_at, UNIX_TIMESTAMP(s.expires_at) AS expires_at_epoch,
+              u.id AS user_id, u.email, u.role, u.status, u.email_verified_at
          FROM sessions s
          JOIN users u ON u.id = s.user_id
         WHERE s.refresh_token_hash = ?
-          AND s.revoked_at IS NULL
-          AND s.expires_at > NOW()
-        LIMIT 1`,
+        LIMIT 1 FOR UPDATE`,
       [tokenHash]
     );
-    if (!sRows.length) throw new Error('Session not found or expired');
-
+    // The JWT could have expired while waiting for the row lock.
+    const claims = readRefreshCredential(refreshToken);
     const s = sRows[0];
+    if (!s || s.revoked_at || Number(s.expires_at_epoch) <= Math.floor(Date.now() / 1000) ||
+        String(s.user_id) !== String(claims.id)) {
+      throw new SessionError(401, 'REFRESH_SESSION_INVALID', 'Refresh session is invalid or expired.');
+    }
+    if (s.status !== 'active') {
+      throw new SessionError(403, 'ACCOUNT_INACTIVE', 'Account is not active.');
+    }
+    if (REQUIRE_VERIFY && !s.email_verified_at) {
+      throw new SessionError(403, 'EMAIL_VERIFICATION_REQUIRED', 'Please verify your email before continuing.');
+    }
 
-    // Rotate: revoke old session first
-    await conn.execute(
-      `UPDATE sessions SET revoked_at = NOW(), updated_at = NOW() WHERE id = ?`,
+    const [revocation] = await conn.execute(
+      `UPDATE sessions SET revoked_at = NOW(), updated_at = NOW()
+        WHERE id = ? AND revoked_at IS NULL`,
       [s.id]
     );
+    if (revocation.affectedRows !== 1) {
+      throw new SessionError(401, 'REFRESH_SESSION_INVALID', 'Refresh session is invalid or expired.');
+    }
 
     // Issue new tokens
     const newPayload = { id: s.user_id, email: s.email, role: s.role };
@@ -188,14 +232,29 @@ export async function refreshTokens({ refreshToken }, ctx = {}) {
 
     // Store new session
     await createSession(conn, s.user_id, newRefresh, ctx.userAgent, ctx.ip);
+    await conn.commit();
+    transactionStarted = false;
 
     return { user: newPayload, accessToken: newAccess, refreshToken: newRefresh };
+  } catch (error) {
+    if (transactionStarted) {
+      try {
+        await conn.rollback();
+      } catch {
+        // Never return a connection with an uncertain transaction to the pool.
+        connectionDestroyed = true;
+        conn.destroy();
+      }
+    }
+    throw error;
   } finally {
-    conn.release();
+    if (!connectionDestroyed) conn.release();
   }
 }
 
 export async function logout({ refreshToken, all = false }, userId) {
+  // Logout-all remains an internal, authenticated service capability only.
+  const claims = all ? null : readRefreshCredential(refreshToken);
   const conn = await pool.getConnection();
   try {
     if (all) {
@@ -208,12 +267,11 @@ export async function logout({ refreshToken, all = false }, userId) {
       return { revoked: 'all' };
     }
 
-    if (!refreshToken) throw new Error('Missing refresh token');
     const tokenHash = sha256(refreshToken);
     const [res] = await conn.execute(
       `UPDATE sessions SET revoked_at = NOW(), updated_at = NOW()
-        WHERE refresh_token_hash = ? AND revoked_at IS NULL`,
-      [tokenHash]
+        WHERE refresh_token_hash = ? AND user_id = ? AND revoked_at IS NULL`,
+      [tokenHash, claims.id]
     );
     return { revoked: res.affectedRows || 0 };
   } finally {

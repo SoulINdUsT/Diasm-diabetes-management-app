@@ -1,0 +1,133 @@
+[
+  {
+    "question": "what can i do to control my blood sugar",
+    "intent": "glucose_management",
+    "mode": "evidence_fallback",
+    "evidence": "type2_en_008",
+    "forbidden_topics": [
+      "gestational",
+      "remission",
+      "prediabetes"
+    ]
+  },
+  {
+    "question": "if my blood sugar get high what can i do?",
+    "intent": "high_glucose_actions",
+    "mode": "clarification",
+    "evidence": "type2_en_018",
+    "forbidden_topics": [
+      "gestational",
+      "remission",
+      "prediabetes"
+    ]
+  },
+  {
+    "question": "how to manage blood sugar",
+    "intent": "glucose_management",
+    "mode": "evidence_fallback",
+    "evidence": "type2_en_008",
+    "forbidden_topics": [
+      "gestational",
+      "remission",
+      "prediabetes"
+    ]
+  },
+  {
+    "question": "what can i eat for breakfast",
+    "intent": "breakfast_suggestions",
+    "mode": "evidence_fallback",
+    "evidence": "nutrition_en_301",
+    "forbidden_topics": [
+      "gestational",
+      "remission",
+      "prediabetes"
+    ]
+  },
+  {
+    "question": "what type of foods i should avoid",
+    "intent": "foods_to_limit",
+    "mode": "evidence_fallback",
+    "evidence": "nutrition_en_102",
+    "forbidden_topics": [
+      "gestational",
+      "remission",
+      "prediabetes"
+    ]
+  },
+  {
+    "question": "i am feeling tired",
+    "intent": "tiredness_clarification",
+    "mode": "clarification",
+    "evidence": null,
+    "forbidden_topics": [
+      "gestational",
+      "remission",
+      "prediabetes"
+    ]
+  },
+  {
+    "question": "insulin usage rules?",
+    "intent": "insulin_use_safety",
+    "mode": "safety",
+    "evidence": "type2_en_013",
+    "forbidden_topics": [
+      "gestational",
+      "remission",
+      "prediabetes"
+    ]
+  },
+  {
+    "question": "when should i get to doctors?",
+    "intent": "care_seeking",
+    "mode": "clarification",
+    "evidence": "type2_en_003",
+    "forbidden_topics": [
+      "gestational",
+      "remission",
+      "prediabetes"
+    ]
+  },
+  {
+    "question": "hb1ac limit?",
+    "intent": "hba1c_target_clarification",
+    "mode": "clarification",
+    "evidence": null,
+    "forbidden_topics": [
+      "gestational",
+      "remission",
+      "prediabetes"
+    ]
+  },
+  {
+    "question": "what is hb1ac?",
+    "intent": "hba1c_definition",
+    "mode": "evidence_fallback",
+    "evidence": "type2_en_019",
+    "forbidden_topics": [
+      "gestational",
+      "remission",
+      "prediabetes"
+    ]
+  },
+  {
+    "question": "I think my blood sugar is low, what should I do?",
+    "intent": "low_glucose_actions",
+    "mode": "safety",
+    "evidence": "exercise_en_008",
+    "forbidden_topics": [
+      "gestational",
+      "remission",
+      "prediabetes"
+    ]
+  },
+  {
+    "question": "prevention of diabetes",
+    "intent": "prevention_info",
+    "mode": "evidence_fallback",
+    "evidence": "type2_en_015",
+    "forbidden_topics": [
+      "gestational",
+      "remission"
+    ]
+  }
+]

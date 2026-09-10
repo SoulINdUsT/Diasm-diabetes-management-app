@@ -4,9 +4,11 @@ import {
   loginUser,
   verifyEmailToken,
   refreshTokens as refreshTokensSvc,
+  logout as logoutSvc,
   updateUserProfile,
   getUserProfile,        // 👈 NEW
 } from './auth.service.js';
+import { sendSessionError } from './auth.errors.js';
 
 const REQUIRE_VERIFY =
   String(process.env.REQUIRE_EMAIL_VERIFICATION || '').toLowerCase() === 'true';
@@ -74,7 +76,20 @@ export async function refresh(req, res) {
     const t = await refreshTokensSvc({ refreshToken }, ctx);
     return res.json(t);
   } catch (err) {
-    return res.status(401).json({ message: err.message || 'Invalid refresh token' });
+    return sendSessionError(res, err);
+  }
+}
+
+export async function logout(req, res) {
+  try {
+    // Deliberately do not forward `all` or a caller-supplied user ID.
+    // The refresh credential authenticates this single session even when the
+    // access JWT has expired. Missing/already revoked sessions are harmless.
+    const { refreshToken } = req.body || {};
+    await logoutSvc({ refreshToken });
+    return res.status(204).end();
+  } catch (err) {
+    return sendSessionError(res, err);
   }
 }
 

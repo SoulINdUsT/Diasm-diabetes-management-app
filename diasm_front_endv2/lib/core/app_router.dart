@@ -1,5 +1,8 @@
 
 import 'package:go_router/go_router.dart';
+import 'api_client.dart';
+import 'session_controller.dart';
+import '../features/auth/session_gate.dart';
 
 // Feature imports
 import '../features/onboarding/onboarding_screen.dart';
@@ -39,8 +42,11 @@ import '../features/home/daily_wellness_screen.dart';
 
 /// Central app router for DIAsm.
 final GoRouter appRouter = GoRouter(
-  initialLocation: '/onboarding',
+  initialLocation: '/session',
+  refreshListenable: ApiClient().session,
+  redirect: (context, state) => sessionRedirect(ApiClient().session, state.uri.path),
   routes: [
+    GoRoute(path: '/session', builder: (context, state) => SessionGate(session: ApiClient().session)),
     // ---------- Standalone top-level screens ----------
     GoRoute(
       path: '/onboarding',
@@ -186,3 +192,17 @@ GoRoute(
     ),
   ],
 );
+
+String? sessionRedirect(SessionController session, String path) {
+  final public = const ['/onboarding', '/login', '/register'].contains(path);
+  switch (session.status) {
+    case SessionStatus.loading:
+    case SessionStatus.unavailable:
+    case SessionStatus.restricted:
+      return path == '/session' ? null : '/session';
+    case SessionStatus.authenticated:
+      return public || path == '/session' ? '/home' : null;
+    case SessionStatus.signedOut:
+      return public ? null : (session.needsLogin ? '/login' : '/onboarding');
+  }
+}

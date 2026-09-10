@@ -5,7 +5,8 @@ import 'package:go_router/go_router.dart';
 import 'package:flutter/gestures.dart';
 
 import '../../core/auth_repository.dart';
-import '../../core/auth_storage.dart';
+import '../../core/api_client.dart';
+
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -22,7 +23,6 @@ class _LoginScreenState extends State<LoginScreen> {
   bool _obscurePassword = true;
 
   final _authRepo = AuthRepository();
-  final _authStorage = AuthStorage();
 
   @override
   void dispose() {
@@ -43,12 +43,6 @@ class _LoginScreenState extends State<LoginScreen> {
   final result = await _authRepo.login(
     email: _emailController.text,
     password: _passwordController.text,
-  );
-
-  // Save token + email
-  await _authStorage.saveSession(
-    accessToken: result.accessToken,
-    email: result.user.email,
   );
 
   if (!mounted) return;
@@ -157,6 +151,12 @@ class _LoginScreenState extends State<LoginScreen> {
                             ),
                           ),
                           const SizedBox(height: 24),
+
+                          if (ApiClient().session.message != null)
+                            Padding(
+                              padding: const EdgeInsets.only(bottom: 16),
+                              child: Text(ApiClient().session.message!),
+                            ),
 
                           // Email
                           Text(
