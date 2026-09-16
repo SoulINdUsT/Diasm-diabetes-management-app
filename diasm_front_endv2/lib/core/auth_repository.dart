@@ -1,71 +1,28 @@
 // lib/core/auth_repository.dart
-import 'dart:async';
 import 'package:dio/dio.dart';
 
 import 'api_client.dart';
-import 'auth_storage.dart';
-
-/// Simple user model from backend JSON
-class AuthUser {
-  final int id;
-  final String email;
-  final String role;
-
-  AuthUser({
-    required this.id,
-    required this.email,
-    required this.role,
-  });
-
-  factory AuthUser.fromJson(Map<String, dynamic> json) {
-    return AuthUser(
-      id: json['id'] is int
-          ? json['id'] as int
-          : int.tryParse(json['id'].toString()) ?? 0,
-      email: json['email']?.toString() ?? '',
-      role: json['role']?.toString() ?? '',
-    );
-  }
-}
-
-/// Result object for a successful login
-class AuthResult {
-  final String message;
-  final AuthUser user;
-  final String accessToken;
-  final bool profileCompleted;
-
-  AuthResult({
-    required this.message,
-    required this.user,
-    required this.accessToken,
-    required this.profileCompleted,
-  });
-}
-
-/// Custom exception so UI can show nice messages
-class AuthException implements Exception {
-  final String message;
-  const AuthException(this.message);
-
-  @override
-  String toString() => 'AuthException: $message';
-}
+import 'auth_models.dart';
+import 'session_record.dart';
+import 'session_controller.dart';
+export 'auth_models.dart';
 
 /// Repository that talks to the backend auth API
 class AuthRepository {
-  AuthRepository._internal();
+  AuthRepository._internal() : this.withClient(ApiClient());
+  AuthRepository.withClient(ApiClient client) : _dio = client.dio, _session = client.session;
   static final AuthRepository _instance = AuthRepository._internal();
   factory AuthRepository() => _instance;
 
-  final Dio _dio = ApiClient().dio;
-  final AuthStorage _storage = AuthStorage();
+  final Dio _dio;
+  final SessionController _session;
 
   /// Login with email + password
   Future<AuthResult> login({
     required String email,
     required String password,
   }) async {
+    final generation = _session.beginLogin();
     try {
       final Response res = await _dio.post(
         '/auth/login',
@@ -104,26 +61,28 @@ class AuthRepository {
       final user = AuthUser.fromJson(userJson);
       final profileCompleted = (data['profileCompleted'] as bool?) ?? false;
 
-      // ✅ Prevent stale session remnants
-      await _storage.clearSession();
-
-      // save access token
-      await _storage.saveSession(
-        accessToken: token,
-        email: user.email,
-      );
+      final refreshToken = data['refreshToken'];
+      if (refreshToken is! String || refreshToken.trim().isEmpty) {
+        throw const AuthException('Refresh token missing in response.');
+      }
+      await _session.acceptLogin(SessionRecord(
+        accessToken: token, refreshToken: refreshToken, email: user.email,
+      ), generation);
 
       return AuthResult(
         message: data['message']?.toString() ?? 'Login successful.',
         user: user,
         accessToken: token,
+        refreshToken: refreshToken,
         profileCompleted: profileCompleted,
       );
     } on DioException catch (e) {
       final msg = _extractErrorMessage(e);
       throw AuthException(msg);
+    } on AuthException {
+      rethrow;
     } catch (_) {
-      throw const AuthException('Something went wrong. Please try again.');
+      throw const AuthException('Could not complete login. Please try again.');
     }
   }
 
@@ -131,14 +90,12 @@ class AuthRepository {
   ///
   /// IMPORTANT:
   /// - Registration does NOT log the user in (your backend returns token: null)
-  /// - So we clear any previous session to prevent showing old user data.
+  /// - Failed registration must not delete an existing session.
   Future<void> register({
     required String email,
     required String password,
   }) async {
     try {
-      // ✅ ensure no old user session survives a new registration
-      await _storage.clearSession();
 
       final Response res = await _dio.post(
         '/auth/register',

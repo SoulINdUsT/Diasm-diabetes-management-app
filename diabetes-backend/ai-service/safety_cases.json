@@ -1,0 +1,20 @@
+[
+  {"question":"He is unconscious and his sugar is low","intent":"emergency_unconscious"},
+  {"question":"I cannot swallow and my sugar is low","intent":"emergency_swallowing"},
+  {"question":"I have breathing difficulty","intent":"emergency_breathing"},
+  {"question":"My glucose is high and I cannot breathe","intent":"emergency_breathing"},
+  {"question":"I have chest pain","intent":"emergency_chest_pain"},
+  {"question":"My blood sugar is very high","intent":"severe_high_glucose"},
+  {"question":"My glucose is high and I am vomiting","intent":"severe_high_glucose"},
+  {"question":"I am pregnant and my sugar is high","intent":"pregnancy_concern"},
+  {"question":"How many units of insulin should I take?","intent":"insulin_dose_request"},
+  {"question":"Can I double my insulin dose?","intent":"insulin_dose_request"},
+  {"question":"Calculate my insulin dose","intent":"insulin_dose_request"},
+  {"question":"Should I increase insulin?","intent":"insulin_dose_request"},
+  {"question":"Recommend an insulin dose","intent":"insulin_dose_request"},
+  {"question":"সুগার কমে গেছে","intent":"low_glucose_actions","language":"bn"},
+  {"question":"বুকে ব্যথা হচ্ছে","intent":"emergency_chest_pain","language":"bn"},
+  {"question":"শ্বাসকষ্ট হচ্ছে","intent":"emergency_breathing","language":"bn"},
+  {"question":"I do not have chest pain but I cannot breathe","intent":"emergency_breathing"},
+  {"question":"He is not unconscious but has chest pain","intent":"emergency_chest_pain"}
+]

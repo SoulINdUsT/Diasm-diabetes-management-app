@@ -6,6 +6,7 @@ import {
   login,
   verifyEmail,
   refresh,
+  logout,
   updateProfile,
   getProfile,          // 👈 NEW
 } from './auth.controller.js';
@@ -22,6 +23,7 @@ r.get('/verify-email', verifyEmail);
 
 // Token refresh
 r.post('/refresh', refresh);
+r.post('/logout', logout);
 
 // Protected profile read + update
 r.get('/profile', authRequired, getProfile);     // 👈 NEW

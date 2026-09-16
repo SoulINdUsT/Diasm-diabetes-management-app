@@ -5,7 +5,7 @@ import 'dart:convert';
 
 import 'package:diasm_front_endv2/core/api_client.dart';
 import 'package:diasm_front_endv2/core/rightpath_models.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+import 'session_controller.dart';
 
 /// Repository for Daily Wellness Score / Right Path feature.
 class RightPathRepository {
@@ -26,31 +26,28 @@ class RightPathRepository {
   String _fmtDate(DateTime d) =>
       '${d.year.toString().padLeft(4, '0')}-${d.month.toString().padLeft(2, '0')}-${d.day.toString().padLeft(2, '0')}';
 
-  Future<void> _cacheTodayStatus(Map<String, dynamic> jsonMap) async {
-    final prefs = await SharedPreferences.getInstance();
-    final todayKey = _fmtDate(DateTime.now());
-    await prefs.setString(_kTodayCacheKey, jsonEncode(jsonMap));
-    await prefs.setString(_kTodayCacheDateKey, todayKey);
-  }
+  Future<void> _cacheTodayStatus(Map<String, dynamic> jsonMap, int generation) =>
+      _client.session.storage.withUserCache((prefs) async {
+    final session = _client.session;
+    final id = session.record?.userId;
+    if (!session.isCurrent(generation) || session.status != SessionStatus.authenticated || id == null) return;
+    await prefs.setString('${_kTodayCacheKey}_$id', jsonEncode(jsonMap));
+    await prefs.setString('${_kTodayCacheDateKey}_$id', _fmtDate(DateTime.now()));
+  });
 
-  Future<RightPathTodayStatus?> _readCachedTodayStatusIfValid() async {
-    final prefs = await SharedPreferences.getInstance();
-
-    final cachedJson = prefs.getString(_kTodayCacheKey);
-    final cachedDate = prefs.getString(_kTodayCacheDateKey);
-
-    if (cachedJson == null || cachedJson.trim().isEmpty) return null;
-
-    final todayKey = _fmtDate(DateTime.now());
-    if (cachedDate != todayKey) return null; // only valid for "today"
-
+  Future<RightPathTodayStatus?> _readCachedTodayStatusIfValid([int? generation]) =>
+      _client.session.storage.withUserCache((prefs) async {
+    final session = _client.session;
+    final id = session.record?.userId;
+    if ((generation != null && !session.isCurrent(generation)) ||
+        session.status != SessionStatus.authenticated || id == null) return null;
+    final cachedJson = prefs.getString('${_kTodayCacheKey}_$id');
+    final cachedDate = prefs.getString('${_kTodayCacheDateKey}_$id');
+    if (cachedJson == null || cachedDate != _fmtDate(DateTime.now())) return null;
     try {
-      final map = jsonDecode(cachedJson) as Map<String, dynamic>;
-      return RightPathTodayStatus.fromJson(map);
-    } catch (_) {
-      return null;
-    }
-  }
+      return RightPathTodayStatus.fromJson(jsonDecode(cachedJson) as Map<String, dynamic>);
+    } catch (_) { return null; }
+  });
 
 // ---------------- Save today's status ----------------
 
@@ -61,7 +58,8 @@ Future<RightPathTodayStatus> saveTodayStatus({
   required double sleepHours,
   required bool glucoseChecked,
 }) async {
-  final dio = ApiClient().dio;
+  final dio = _client.dio;
+  final generation = _client.session.generation;
 
   final payload = {
     'walkMinutes': walkMinutes,
@@ -93,7 +91,7 @@ Future<RightPathTodayStatus> saveTodayStatus({
   }
 
   // ✅ cache today's data
-  await _cacheTodayStatus(map);
+  await _cacheTodayStatus(map, generation);
 
   return RightPathTodayStatus.fromJson(map);
 }
@@ -101,33 +99,34 @@ Future<RightPathTodayStatus> saveTodayStatus({
 // ---------------- Get today's status ----------------
 
 Future<RightPathTodayStatus?> getTodayStatus() async {
+  final generation = _client.session.generation;
   try {
     final resp = await _client.dio.get('/right-path/today');
     final data = resp.data;
 
     if (data == null) {
-      return await _readCachedTodayStatusIfValid();
+      return await _readCachedTodayStatusIfValid(generation);
     }
 
     if (data is Map<String, dynamic>) {
-      await _cacheTodayStatus(data);
+      await _cacheTodayStatus(data, generation);
       return RightPathTodayStatus.fromJson(data);
     }
 
     if (data is String) {
       final trimmed = data.trim();
       if (trimmed.isEmpty || trimmed == 'null') {
-        return await _readCachedTodayStatusIfValid();
+        return await _readCachedTodayStatusIfValid(generation);
       }
       final map = jsonDecode(trimmed) as Map<String, dynamic>;
-      await _cacheTodayStatus(map);
+      await _cacheTodayStatus(map, generation);
       return RightPathTodayStatus.fromJson(map);
     }
 
-    return await _readCachedTodayStatusIfValid();
+    return await _readCachedTodayStatusIfValid(generation);
   } catch (_) {
     // network / auth / server error → fallback to cache
-    return await _readCachedTodayStatusIfValid();
+    return await _readCachedTodayStatusIfValid(generation);
   }
 }
 

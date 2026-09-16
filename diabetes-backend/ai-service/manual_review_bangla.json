@@ -1,0 +1,879 @@
+{
+  "clinical_validation": false,
+  "cases": [
+    {
+      "question": "ডায়াবেটিস নিয়ন্ত্রণে সকালের নাস্তায় কী খেতে পারি?",
+      "requested_language": "en",
+      "expected_intent": "breakfast_suggestions",
+      "checks": {
+        "intent": true,
+        "language": true,
+        "bangla_text": true,
+        "clean": true,
+        "evidence": true
+      },
+      "result": {
+        "answer": "ডায়াবেটিসে সকালের নাস্তায় ডিম ও সবজির সঙ্গে ২টি রুটি অথবা ডাল দিয়ে অল্প পরিমাণ খিচুড়ি একটি ভালো বিকল্প। চিনি দেওয়া চা, বিস্কুট ও ফলের রস এড়িয়ে চলুন। খাবারে প্রোটিন যোগ করলে রক্তে শর্করা হঠাৎ বেড়ে যাওয়া প্রতিরোধে সাহায্য হয়।",
+        "intent": "breakfast_suggestions",
+        "language": "bn",
+        "requested_language": "bn",
+        "response_mode": "evidence_fallback",
+        "evidence_ids": [
+          "nutrition_en_301"
+        ],
+        "retrieved_ids": [
+          "nutrition_en_301"
+        ],
+        "retrieval_performed": true,
+        "retrieval_attempted": true,
+        "category": "nutrition",
+        "categories": [
+          "nutrition"
+        ],
+        "knowledge_language": "en",
+        "clinical_review_required": true,
+        "fallback_reason": "generation_unavailable",
+        "translation_unavailable": false,
+        "generation_error_type": "ReadTimeout",
+        "generation_elapsed_ms": 8056,
+        "evidence_sources": {
+          "nutrition_en_301": {
+            "fields": [
+              "retrieval_text"
+            ],
+            "origin": "retrieved_record",
+            "translation": "assistant_bangla-v1-unreviewed",
+            "text_language": "bn"
+          }
+        }
+      }
+    },
+    {
+      "question": "সকালের নাশতায় কী খাব?",
+      "requested_language": "en",
+      "expected_intent": "breakfast_suggestions",
+      "checks": {
+        "intent": true,
+        "language": true,
+        "bangla_text": true,
+        "clean": true,
+        "evidence": true
+      },
+      "result": {
+        "answer": "ডায়াবেটিসে সকালের নাস্তায় ডিম ও সবজির সঙ্গে ২টি রুটি অথবা ডাল দিয়ে অল্প পরিমাণ খিচুড়ি একটি ভালো বিকল্প। চিনি দেওয়া চা, বিস্কুট ও ফলের রস এড়িয়ে চলুন। খাবারে প্রোটিন যোগ করলে রক্তে শর্করা হঠাৎ বেড়ে যাওয়া প্রতিরোধে সাহায্য হয়।",
+        "intent": "breakfast_suggestions",
+        "language": "bn",
+        "requested_language": "bn",
+        "response_mode": "evidence_fallback",
+        "evidence_ids": [
+          "nutrition_en_301"
+        ],
+        "retrieved_ids": [
+          "nutrition_en_301"
+        ],
+        "retrieval_performed": true,
+        "retrieval_attempted": true,
+        "category": "nutrition",
+        "categories": [
+          "nutrition"
+        ],
+        "knowledge_language": "en",
+        "clinical_review_required": true,
+        "fallback_reason": "generation_rejected",
+        "translation_unavailable": false,
+        "evidence_sources": {
+          "nutrition_en_301": {
+            "fields": [
+              "retrieval_text"
+            ],
+            "origin": "retrieved_record",
+            "translation": "assistant_bangla-v1-unreviewed",
+            "text_language": "bn"
+          }
+        }
+      }
+    },
+    {
+      "question": "ডায়াবেটিস কীভাবে নিয়ন্ত্রণ করব?",
+      "requested_language": "en",
+      "expected_intent": "glucose_management",
+      "checks": {
+        "intent": true,
+        "language": true,
+        "bangla_text": true,
+        "clean": true,
+        "evidence": true
+      },
+      "result": {
+        "answer": "স্বাস্থ্যকর খাবার, নিয়মিত ব্যায়াম, ওজন নিয়ন্ত্রণ, রক্তে শর্করা পর্যবেক্ষণ এবং প্রয়োজন হলে ওষুধ বা ইনসুলিনের মাধ্যমে টাইপ ২ ডায়াবেটিস নিয়ন্ত্রণ করা হয়। ডায়াবেটিস সম্পর্কে শেখাও যত্নের একটি গুরুত্বপূর্ণ অংশ। টাইপ ২ ডায়াবেটিসে প্রতিদিনের যত্নের মধ্যে রয়েছে চিকিৎসার পরিকল্পনা মেনে চলা, পা পরীক্ষা করা, নিয়মিত চোখ ও দাঁত পরীক্ষা করানো, সক্রিয় থাকা, স্বাস্থ্যকর খাবার খাওয়া, রক্তচাপ ও কোলেস্টেরল নিয়ন্ত্রণে রাখা, তামাক এড়ানো এবং পর্যাপ্ত ঘুমানো।",
+        "intent": "glucose_management",
+        "language": "bn",
+        "requested_language": "bn",
+        "response_mode": "evidence_fallback",
+        "evidence_ids": [
+          "type2_en_008",
+          "type2_en_016"
+        ],
+        "retrieved_ids": [
+          "type2_en_008",
+          "type2_en_016"
+        ],
+        "retrieval_performed": true,
+        "retrieval_attempted": true,
+        "category": "lifestyle management",
+        "categories": [
+          "lifestyle management",
+          "type2"
+        ],
+        "knowledge_language": "en",
+        "clinical_review_required": true,
+        "fallback_reason": "generation_unavailable",
+        "translation_unavailable": false,
+        "generation_error_type": "ReadTimeout",
+        "generation_elapsed_ms": 8024,
+        "evidence_sources": {
+          "type2_en_008": {
+            "fields": [
+              "retrieval_text"
+            ],
+            "origin": "retrieved_record",
+            "translation": "assistant_bangla-v1-unreviewed",
+            "text_language": "bn"
+          },
+          "type2_en_016": {
+            "fields": [
+              "retrieval_text"
+            ],
+            "origin": "retrieved_record",
+            "translation": "assistant_bangla-v1-unreviewed",
+            "text_language": "bn"
+          }
+        }
+      }
+    },
+    {
+      "question": "আমার blood sugar কীভাবে control করব?",
+      "requested_language": "en",
+      "expected_intent": "glucose_management",
+      "checks": {
+        "intent": true,
+        "language": true,
+        "bangla_text": true,
+        "clean": true,
+        "evidence": true
+      },
+      "result": {
+        "answer": "স্বাস্থ্যকর খাবার, নিয়মিত ব্যায়াম, ওজন নিয়ন্ত্রণ, রক্তে শর্করা পর্যবেক্ষণ এবং প্রয়োজন হলে ওষুধ বা ইনসুলিনের মাধ্যমে টাইপ ২ ডায়াবেটিস নিয়ন্ত্রণ করা হয়। ডায়াবেটিস সম্পর্কে শেখাও যত্নের একটি গুরুত্বপূর্ণ অংশ। টাইপ ২ ডায়াবেটিসে প্রতিদিনের যত্নের মধ্যে রয়েছে চিকিৎসার পরিকল্পনা মেনে চলা, পা পরীক্ষা করা, নিয়মিত চোখ ও দাঁত পরীক্ষা করানো, সক্রিয় থাকা, স্বাস্থ্যকর খাবার খাওয়া, রক্তচাপ ও কোলেস্টেরল নিয়ন্ত্রণে রাখা, তামাক এড়ানো এবং পর্যাপ্ত ঘুমানো।",
+        "intent": "glucose_management",
+        "language": "bn",
+        "requested_language": "bn",
+        "response_mode": "evidence_fallback",
+        "evidence_ids": [
+          "type2_en_008",
+          "type2_en_016"
+        ],
+        "retrieved_ids": [
+          "type2_en_008",
+          "type2_en_016"
+        ],
+        "retrieval_performed": true,
+        "retrieval_attempted": true,
+        "category": "lifestyle management",
+        "categories": [
+          "lifestyle management",
+          "type2"
+        ],
+        "knowledge_language": "en",
+        "clinical_review_required": true,
+        "fallback_reason": "generation_unavailable",
+        "translation_unavailable": false,
+        "generation_error_type": "ReadTimeout",
+        "generation_elapsed_ms": 8014,
+        "evidence_sources": {
+          "type2_en_008": {
+            "fields": [
+              "retrieval_text"
+            ],
+            "origin": "retrieved_record",
+            "translation": "assistant_bangla-v1-unreviewed",
+            "text_language": "bn"
+          },
+          "type2_en_016": {
+            "fields": [
+              "retrieval_text"
+            ],
+            "origin": "retrieved_record",
+            "translation": "assistant_bangla-v1-unreviewed",
+            "text_language": "bn"
+          }
+        }
+      }
+    },
+    {
+      "question": "HbA1c কী?",
+      "requested_language": "en",
+      "expected_intent": "hba1c_definition",
+      "checks": {
+        "intent": true,
+        "language": true,
+        "bangla_text": true,
+        "clean": true,
+        "evidence": true
+      },
+      "result": {
+        "answer": "HbA1c বা A1C হলো একটি রক্ত পরীক্ষা, যা গত দুই থেকে তিন মাসের রক্তে শর্করার গড় মাত্রা দেখায়।",
+        "intent": "hba1c_definition",
+        "language": "bn",
+        "requested_language": "bn",
+        "response_mode": "generated",
+        "evidence_ids": [
+          "type2_en_019"
+        ],
+        "retrieved_ids": [
+          "type2_en_019"
+        ],
+        "retrieval_performed": true,
+        "retrieval_attempted": true,
+        "category": "type2",
+        "categories": [
+          "type2"
+        ],
+        "knowledge_language": "en",
+        "clinical_review_required": true,
+        "manual_review_required": true,
+        "evidence_sources": {
+          "type2_en_019": {
+            "fields": [
+              "retrieval_text"
+            ],
+            "origin": "retrieved_record",
+            "translation": "assistant_bangla-v1-unreviewed",
+            "text_language": "bn"
+          }
+        }
+      }
+    },
+    {
+      "question": "এইচবিএ১সি পরীক্ষা কী?",
+      "requested_language": "en",
+      "expected_intent": "hba1c_definition",
+      "checks": {
+        "intent": true,
+        "language": true,
+        "bangla_text": true,
+        "clean": true,
+        "evidence": true
+      },
+      "result": {
+        "answer": "HbA1c বা A1C হলো একটি রক্ত পরীক্ষা, যা গত দুই থেকে তিন মাসের রক্তে শর্করার গড় মাত্রা দেখায়।",
+        "intent": "hba1c_definition",
+        "language": "bn",
+        "requested_language": "bn",
+        "response_mode": "generated",
+        "evidence_ids": [
+          "type2_en_019"
+        ],
+        "retrieved_ids": [
+          "type2_en_019"
+        ],
+        "retrieval_performed": true,
+        "retrieval_attempted": true,
+        "category": "type2",
+        "categories": [
+          "type2"
+        ],
+        "knowledge_language": "en",
+        "clinical_review_required": true,
+        "manual_review_required": true,
+        "evidence_sources": {
+          "type2_en_019": {
+            "fields": [
+              "retrieval_text"
+            ],
+            "origin": "retrieved_record",
+            "translation": "assistant_bangla-v1-unreviewed",
+            "text_language": "bn"
+          }
+        }
+      }
+    },
+    {
+      "question": "HbA1c এর লক্ষ্য কত?",
+      "requested_language": "en",
+      "expected_intent": "hba1c_target_clarification",
+      "checks": {
+        "intent": true,
+        "language": true,
+        "bangla_text": true,
+        "clean": true,
+        "evidence": true
+      },
+      "result": {
+        "answer": "আপনি কি রোগ নির্ণয়ের জন্য ব্যবহৃত HbA1c-এর সীমা জানতে চান, নাকি আপনার ব্যক্তিগত চিকিৎসার লক্ষ্য? রোগ নির্ণয়ের তথ্য ব্যাখ্যা করতে পারি, তবে ব্যক্তিগত লক্ষ্য চিকিৎসকের পরামর্শে ঠিক করতে হবে।",
+        "intent": "hba1c_target_clarification",
+        "language": "bn",
+        "requested_language": "bn",
+        "response_mode": "clarification",
+        "evidence_ids": [],
+        "retrieved_ids": [],
+        "retrieval_performed": false,
+        "retrieval_attempted": false,
+        "category": null,
+        "categories": [],
+        "knowledge_language": "en",
+        "clinical_review_required": true,
+        "safety_copy_version": "focused-repair-v1-unreviewed"
+      }
+    },
+    {
+      "question": "আমার খুব ক্লান্ত লাগছে",
+      "requested_language": "en",
+      "expected_intent": "tiredness_clarification",
+      "checks": {
+        "intent": true,
+        "language": true,
+        "bangla_text": true,
+        "clean": true,
+        "evidence": true
+      },
+      "result": {
+        "answer": "কত দিন ধরে ক্লান্ত লাগছে? এককসহ সাম্প্রতিক শর্করার মাপ বা অন্য কোনো উপসর্গ আছে কি? শুধু ক্লান্তি থেকে এই চ্যাটে কারণ নির্ধারণ করা যায় না। সঙ্গে বুকে ব্যথা, শ্বাসকষ্ট, অজ্ঞান হওয়া বা জেগে থাকতে কষ্ট হলে জরুরি চিকিৎসা সহায়তা নিন।",
+        "intent": "tiredness_clarification",
+        "language": "bn",
+        "requested_language": "bn",
+        "response_mode": "clarification",
+        "evidence_ids": [],
+        "retrieved_ids": [],
+        "retrieval_performed": false,
+        "retrieval_attempted": false,
+        "category": null,
+        "categories": [],
+        "knowledge_language": "en",
+        "clinical_review_required": true,
+        "safety_copy_version": "focused-repair-v1-unreviewed"
+      }
+    },
+    {
+      "question": "কখন ডাক্তারের কাছে যাব?",
+      "requested_language": "en",
+      "expected_intent": "care_seeking",
+      "checks": {
+        "intent": true,
+        "language": true,
+        "bangla_text": true,
+        "clean": true,
+        "evidence": true
+      },
+      "result": {
+        "answer": "আপনি কি ডায়াবেটিসের নিয়মিত ফলো-আপ সম্পর্কে জানতে চান, নাকি এখন কোনো জরুরি উপসর্গ হচ্ছে? বুকে ব্যথা, শ্বাসকষ্ট, অজ্ঞান হওয়া বা জেগে থাকতে কষ্ট হলে এই চ্যাটের জন্য অপেক্ষা না করে এখনই জরুরি চিকিৎসা সহায়তা নিন।",
+        "intent": "care_seeking",
+        "language": "bn",
+        "requested_language": "bn",
+        "response_mode": "clarification",
+        "evidence_ids": [
+          "type2_en_003",
+          "type2_en_018"
+        ],
+        "retrieved_ids": [],
+        "retrieval_performed": false,
+        "retrieval_attempted": false,
+        "category": "glucose monitoring",
+        "categories": [
+          "glucose monitoring",
+          "type2"
+        ],
+        "knowledge_language": "en",
+        "clinical_review_required": true,
+        "safety_copy_version": "focused-repair-v1-unreviewed"
+      }
+    },
+    {
+      "question": "আমার রক্তে শর্করা কমে গেছে",
+      "requested_language": "en",
+      "expected_intent": "low_glucose_actions",
+      "checks": {
+        "intent": true,
+        "language": true,
+        "bangla_text": true,
+        "clean": true,
+        "evidence": true
+      },
+      "result": {
+        "answer": "ব্যক্তি অচেতন হলে বা গিলতে না পারলে জরুরি চিকিৎসা সহায়তা নিন এবং মুখে কিছু দেবেন না। সচেতন ও গিলতে সক্ষম হলে কাজ বা ব্যায়াম থামিয়ে ১৫ গ্রাম দ্রুত শোষিত কার্বোহাইড্রেট, যেমন গ্লুকোজ ট্যাবলেট বা জুস নিন। ১৫ মিনিট অপেক্ষা করে সম্ভব হলে শর্করা আবার মাপুন। শর্করা কম থাকলে বা উপসর্গ চলতে থাকলে দ্রুত শোষিত কার্বোহাইড্রেট আবার নিন। উপসর্গ না কমা ও শর্করা নিরাপদ না হওয়া পর্যন্ত ব্যায়াম শুরু করবেন না। গুরুতর উপসর্গ হলে জরুরি চিকিৎসা সহায়তা নিন।",
+        "intent": "low_glucose_actions",
+        "language": "bn",
+        "requested_language": "bn",
+        "response_mode": "safety",
+        "evidence_ids": [
+          "exercise_en_008"
+        ],
+        "retrieved_ids": [],
+        "retrieval_performed": false,
+        "retrieval_attempted": false,
+        "category": "lifestyle",
+        "categories": [
+          "lifestyle"
+        ],
+        "knowledge_language": "en",
+        "clinical_review_required": true,
+        "safety_copy_version": "focused-repair-v1-unreviewed"
+      }
+    },
+    {
+      "question": "আমার blood sugar কম",
+      "requested_language": "en",
+      "expected_intent": "low_glucose_actions",
+      "checks": {
+        "intent": true,
+        "language": true,
+        "bangla_text": true,
+        "clean": true,
+        "evidence": true
+      },
+      "result": {
+        "answer": "ব্যক্তি অচেতন হলে বা গিলতে না পারলে জরুরি চিকিৎসা সহায়তা নিন এবং মুখে কিছু দেবেন না। সচেতন ও গিলতে সক্ষম হলে কাজ বা ব্যায়াম থামিয়ে ১৫ গ্রাম দ্রুত শোষিত কার্বোহাইড্রেট, যেমন গ্লুকোজ ট্যাবলেট বা জুস নিন। ১৫ মিনিট অপেক্ষা করে সম্ভব হলে শর্করা আবার মাপুন। শর্করা কম থাকলে বা উপসর্গ চলতে থাকলে দ্রুত শোষিত কার্বোহাইড্রেট আবার নিন। উপসর্গ না কমা ও শর্করা নিরাপদ না হওয়া পর্যন্ত ব্যায়াম শুরু করবেন না। গুরুতর উপসর্গ হলে জরুরি চিকিৎসা সহায়তা নিন।",
+        "intent": "low_glucose_actions",
+        "language": "bn",
+        "requested_language": "bn",
+        "response_mode": "safety",
+        "evidence_ids": [
+          "exercise_en_008"
+        ],
+        "retrieved_ids": [],
+        "retrieval_performed": false,
+        "retrieval_attempted": false,
+        "category": "lifestyle",
+        "categories": [
+          "lifestyle"
+        ],
+        "knowledge_language": "en",
+        "clinical_review_required": true,
+        "safety_copy_version": "focused-repair-v1-unreviewed"
+      }
+    },
+    {
+      "question": "ইনসুলিন কত ইউনিট নেব?",
+      "requested_language": "en",
+      "expected_intent": "insulin_dose_request",
+      "checks": {
+        "intent": true,
+        "language": true,
+        "bangla_text": true,
+        "clean": true,
+        "evidence": true
+      },
+      "result": {
+        "answer": "আমি আপনার ইনসুলিনের ডোজ গণনা, সুপারিশ, বাড়ানো বা দ্বিগুণ করার নির্দেশ দিতে পারি না। আপনার নির্ধারিত নির্দেশনা অনুসরণ করুন এবং ডোজের পরামর্শের জন্য ইনসুলিনের চিকিৎসকের সঙ্গে যোগাযোগ করুন। গুরুতর অসুস্থ লাগলে জরুরি চিকিৎসা সহায়তা নিন।",
+        "intent": "insulin_dose_request",
+        "language": "bn",
+        "requested_language": "bn",
+        "response_mode": "safety",
+        "evidence_ids": [],
+        "retrieved_ids": [],
+        "retrieval_performed": false,
+        "retrieval_attempted": false,
+        "category": null,
+        "categories": [],
+        "knowledge_language": "en",
+        "clinical_review_required": true,
+        "safety_copy_version": "focused-repair-v1-unreviewed"
+      }
+    },
+    {
+      "question": "insulin এর ডোজ বাড়াব কি?",
+      "requested_language": "en",
+      "expected_intent": "insulin_dose_request",
+      "checks": {
+        "intent": true,
+        "language": true,
+        "bangla_text": true,
+        "clean": true,
+        "evidence": true
+      },
+      "result": {
+        "answer": "আমি আপনার ইনসুলিনের ডোজ গণনা, সুপারিশ, বাড়ানো বা দ্বিগুণ করার নির্দেশ দিতে পারি না। আপনার নির্ধারিত নির্দেশনা অনুসরণ করুন এবং ডোজের পরামর্শের জন্য ইনসুলিনের চিকিৎসকের সঙ্গে যোগাযোগ করুন। গুরুতর অসুস্থ লাগলে জরুরি চিকিৎসা সহায়তা নিন।",
+        "intent": "insulin_dose_request",
+        "language": "bn",
+        "requested_language": "bn",
+        "response_mode": "safety",
+        "evidence_ids": [],
+        "retrieved_ids": [],
+        "retrieval_performed": false,
+        "retrieval_attempted": false,
+        "category": null,
+        "categories": [],
+        "knowledge_language": "en",
+        "clinical_review_required": true,
+        "safety_copy_version": "focused-repair-v1-unreviewed"
+      }
+    },
+    {
+      "question": "ইনসুলিন ব্যবহারের নিয়ম কী?",
+      "requested_language": "en",
+      "expected_intent": "insulin_use_safety",
+      "checks": {
+        "intent": true,
+        "language": true,
+        "bangla_text": true,
+        "clean": true,
+        "evidence": true
+      },
+      "result": {
+        "answer": "বিভিন্ন ধরনের ইনসুলিন ভিন্ন গতিতে কাজ করে এবং রক্তে শর্করা কমে যাওয়া একটি গুরুত্বপূর্ণ পার্শ্বপ্রতিক্রিয়া। কীভাবে ও কখন ইনসুলিন ব্যবহার করবেন, সে জন্য আপনার নির্ধারিত নির্দেশনা অনুসরণ করুন এবং চিকিৎসক বা ফার্মাসিস্টের কাছে ব্যবহারের পদ্ধতি বুঝে নিন। আমি আপনার ডোজ বেছে নিতে বা পরিবর্তন করতে পারি না।",
+        "intent": "insulin_use_safety",
+        "language": "bn",
+        "requested_language": "bn",
+        "response_mode": "safety",
+        "evidence_ids": [
+          "type2_en_013"
+        ],
+        "retrieved_ids": [],
+        "retrieval_performed": false,
+        "retrieval_attempted": false,
+        "category": "medication awareness",
+        "categories": [
+          "medication awareness"
+        ],
+        "knowledge_language": "en",
+        "clinical_review_required": true,
+        "safety_copy_version": "focused-repair-v1-unreviewed"
+      }
+    },
+    {
+      "question": "ডায়াবেটিসে পায়ের ক্ষত কেন ঝুঁকিপূর্ণ?",
+      "requested_language": "en",
+      "expected_intent": "complications_feet",
+      "checks": {
+        "intent": true,
+        "language": true,
+        "bangla_text": true,
+        "clean": true,
+        "evidence": true
+      },
+      "result": {
+        "answer": "ডায়াবেটিসে রক্তপ্রবাহ কমে যাওয়া ও স্নায়ুর ক্ষতির কারণে পায়ে সমস্যা হয়। এতে আঘাত নজরে না-ও আসতে পারে, সংক্রমণ ও ঘা হতে পারে এবং গুরুতর ক্ষেত্রে অঙ্গচ্ছেদের প্রয়োজন হতে পারে। ডায়াবেটিসে রক্তসঞ্চালন কমে গেলে পায়ের ক্ষত শুকাতে দেরি হয় এবং অনুভূতি কমে যাওয়ায় ছোট আঘাত নজরে না-ও আসতে পারে। এর ফলে ঘা, সংক্রমণ এবং গুরুতর ক্ষেত্রে অঙ্গচ্ছেদের প্রয়োজন হতে পারে। প্রতিদিন পা পরীক্ষা করা, উপযুক্ত জুতা পরা এবং রক্তে শর্করা ভালোভাবে নিয়ন্ত্রণে রাখা ঝুঁকি কমাতে সাহায্য করে।",
+        "intent": "complications_feet",
+        "language": "bn",
+        "requested_language": "bn",
+        "response_mode": "evidence_fallback",
+        "evidence_ids": [
+          "complications_en_413",
+          "type2_en_034"
+        ],
+        "retrieved_ids": [
+          "complications_en_413",
+          "type2_en_034"
+        ],
+        "retrieval_performed": true,
+        "retrieval_attempted": true,
+        "category": "complications",
+        "categories": [
+          "complications",
+          "type2"
+        ],
+        "knowledge_language": "en",
+        "clinical_review_required": true,
+        "fallback_reason": "generation_unavailable",
+        "translation_unavailable": false,
+        "generation_error_type": "ReadTimeout",
+        "generation_elapsed_ms": 8013,
+        "evidence_sources": {
+          "complications_en_413": {
+            "fields": [
+              "retrieval_text"
+            ],
+            "origin": "retrieved_record",
+            "translation": "assistant_bangla-v1-unreviewed",
+            "text_language": "bn"
+          },
+          "type2_en_034": {
+            "fields": [
+              "retrieval_text"
+            ],
+            "origin": "retrieved_record",
+            "translation": "assistant_bangla-v1-unreviewed",
+            "text_language": "bn"
+          }
+        }
+      }
+    },
+    {
+      "question": "আমার বুকে ব্যথা হচ্ছে",
+      "requested_language": "en",
+      "expected_intent": "emergency_chest_pain",
+      "checks": {
+        "intent": true,
+        "language": true,
+        "bangla_text": true,
+        "clean": true,
+        "evidence": true
+      },
+      "result": {
+        "answer": "আপনার বর্ণিত বুকে ব্যথার জন্য এখনই জরুরি চিকিৎসা সহায়তা নিন। এই চ্যাটে এর কারণ নির্ণয় করা যায় না। এখানে ডায়াবেটিসের ব্যাখ্যার জন্য অপেক্ষা করবেন না।",
+        "intent": "emergency_chest_pain",
+        "language": "bn",
+        "requested_language": "bn",
+        "response_mode": "safety",
+        "evidence_ids": [],
+        "retrieved_ids": [],
+        "retrieval_performed": false,
+        "retrieval_attempted": false,
+        "category": null,
+        "categories": [],
+        "knowledge_language": "en",
+        "clinical_review_required": true,
+        "safety_copy_version": "focused-repair-v1-unreviewed"
+      }
+    },
+    {
+      "question": "সে অচেতন এবং সুগার কম",
+      "requested_language": "en",
+      "expected_intent": "emergency_unconscious",
+      "checks": {
+        "intent": true,
+        "language": true,
+        "bangla_text": true,
+        "clean": true,
+        "evidence": true
+      },
+      "result": {
+        "answer": "এখনই জরুরি চিকিৎসা সহায়তা নিন। অচেতন বা সাড়া দিচ্ছেন না এমন ব্যক্তিকে মুখে খাবার বা পানীয় দেবেন না। এই চ্যাটের মূল্যায়নের জন্য অপেক্ষা করবেন না.",
+        "intent": "emergency_unconscious",
+        "language": "bn",
+        "requested_language": "bn",
+        "response_mode": "safety",
+        "evidence_ids": [],
+        "retrieved_ids": [],
+        "retrieval_performed": false,
+        "retrieval_attempted": false,
+        "category": null,
+        "categories": [],
+        "knowledge_language": "en",
+        "clinical_review_required": true,
+        "safety_copy_version": "focused-repair-v1-unreviewed"
+      }
+    },
+    {
+      "question": "আমি গিলতে পারছি না, সুগার কম",
+      "requested_language": "en",
+      "expected_intent": "emergency_swallowing",
+      "checks": {
+        "intent": true,
+        "language": true,
+        "bangla_text": true,
+        "clean": true,
+        "evidence": true
+      },
+      "result": {
+        "answer": "এখনই জরুরি চিকিৎসা সহায়তা নিন। গিলতে পারছেন না এমন ব্যক্তিকে মুখে খাবার বা পানীয় দেবেন না। এই চ্যাটের জন্য অপেক্ষা করবেন না।",
+        "intent": "emergency_swallowing",
+        "language": "bn",
+        "requested_language": "bn",
+        "response_mode": "safety",
+        "evidence_ids": [],
+        "retrieved_ids": [],
+        "retrieval_performed": false,
+        "retrieval_attempted": false,
+        "category": null,
+        "categories": [],
+        "knowledge_language": "en",
+        "clinical_review_required": true,
+        "safety_copy_version": "focused-repair-v1-unreviewed"
+      }
+    },
+    {
+      "question": "আমার শ্বাসকষ্ট হচ্ছে",
+      "requested_language": "en",
+      "expected_intent": "emergency_breathing",
+      "checks": {
+        "intent": true,
+        "language": true,
+        "bangla_text": true,
+        "clean": true,
+        "evidence": true
+      },
+      "result": {
+        "answer": "আপনার বর্ণিত শ্বাসকষ্টের জন্য এখনই জরুরি চিকিৎসা সহায়তা নিন। এই চ্যাটের জন্য অপেক্ষা করবেন না বা খাবার কিংবা শিথিলায়নের ব্যায়াম দিয়ে এটি সামলানোর চেষ্টা করবেন না।",
+        "intent": "emergency_breathing",
+        "language": "bn",
+        "requested_language": "bn",
+        "response_mode": "safety",
+        "evidence_ids": [],
+        "retrieved_ids": [],
+        "retrieval_performed": false,
+        "retrieval_attempted": false,
+        "category": null,
+        "categories": [],
+        "knowledge_language": "en",
+        "clinical_review_required": true,
+        "safety_copy_version": "focused-repair-v1-unreviewed"
+      }
+    },
+    {
+      "question": "আমার মন খারাপ",
+      "requested_language": "en",
+      "expected_intent": "mental_health_depression_hopelessness",
+      "checks": {
+        "intent": true,
+        "language": true,
+        "bangla_text": true,
+        "clean": true,
+        "evidence": true
+      },
+      "result": {
+        "answer": "ডায়াবেটিসের সঙ্গে বিষণ্ণ লাগলে একসঙ্গে পুরো দিনের সবকিছু ঠিক করার চেষ্টা করবেন না। পানি পান করা, ১০ বার ধীরে শ্বাস নেওয়া, সাধারণ খাবার খাওয়া, রক্তে শর্করা মাপা বা অল্প হাঁটার মতো একটি ছোট কাজ দিয়ে শুরু করুন। মন খারাপের কারণে ঘুম, খাওয়া, ওষুধ নেওয়া বা দৈনন্দিন কাজ ব্যাহত হতে থাকলে পেশাদার সহায়তা নিন। নিজের বা অন্যের ক্ষতি করার কোনো ঝুঁকি থাকলে অবিলম্বে জরুরি সহায়তা নিন।",
+        "intent": "mental_health_depression_hopelessness",
+        "language": "bn",
+        "requested_language": "bn",
+        "response_mode": "evidence_fallback",
+        "evidence_ids": [
+          "mental_en_006"
+        ],
+        "retrieved_ids": [
+          "mental_en_006"
+        ],
+        "retrieval_performed": true,
+        "retrieval_attempted": true,
+        "category": "mental_health",
+        "categories": [
+          "mental_health"
+        ],
+        "knowledge_language": "en",
+        "clinical_review_required": true,
+        "fallback_reason": "generation_unavailable",
+        "translation_unavailable": false,
+        "generation_error_type": "ReadTimeout",
+        "generation_elapsed_ms": 8016,
+        "evidence_sources": {
+          "mental_en_006": {
+            "fields": [
+              "retrieval_text"
+            ],
+            "origin": "retrieved_record",
+            "translation": "assistant_bangla-v1-unreviewed",
+            "text_language": "bn"
+          }
+        }
+      }
+    },
+    {
+      "question": "বাংলাদেশের রাজধানী কোথায়?",
+      "requested_language": "en",
+      "expected_intent": "unknown",
+      "checks": {
+        "intent": true,
+        "language": true,
+        "bangla_text": true,
+        "clean": true,
+        "evidence": true
+      },
+      "result": {
+        "answer": "ডায়াবেটিসের কোন প্রশ্ন বা উপসর্গ নিয়ে সহায়তা চান, একটু নির্দিষ্ট করে বলবেন? নিরাপদে উত্তর দেওয়ার মতো প্রাসঙ্গিক তথ্য যথেষ্ট নেই।",
+        "intent": "unknown",
+        "language": "bn",
+        "requested_language": "bn",
+        "response_mode": "clarification",
+        "evidence_ids": [],
+        "retrieved_ids": [],
+        "retrieval_performed": false,
+        "retrieval_attempted": false,
+        "category": null,
+        "categories": [],
+        "knowledge_language": "en",
+        "clinical_review_required": false,
+        "safety_copy_version": null
+      }
+    },
+    {
+      "question": "ডায়াবেটিস নিয়ন্ত্রণে সকালের নাস্তায় কী খেতে পারি?",
+      "requested_language": "bn",
+      "expected_intent": "breakfast_suggestions",
+      "checks": {
+        "intent": true,
+        "language": true,
+        "bangla_text": true,
+        "clean": true,
+        "evidence": true
+      },
+      "result": {
+        "answer": "ডায়াবেটিসে সকালের নাস্তায় ডিম ও সবজির সঙ্গে ২টি রুটি অথবা ডাল দিয়ে অল্প পরিমাণ খিচুড়ি একটি ভালো বিকল্প। চিনি দেওয়া চা, বিস্কুট ও ফলের রস এড়িয়ে চলুন। খাবারে প্রোটিন যোগ করলে রক্তে শর্করা হঠাৎ বেড়ে যাওয়া প্রতিরোধে সাহায্য হয়।",
+        "intent": "breakfast_suggestions",
+        "language": "bn",
+        "requested_language": "bn",
+        "response_mode": "evidence_fallback",
+        "evidence_ids": [
+          "nutrition_en_301"
+        ],
+        "retrieved_ids": [
+          "nutrition_en_301"
+        ],
+        "retrieval_performed": true,
+        "retrieval_attempted": true,
+        "category": "nutrition",
+        "categories": [
+          "nutrition"
+        ],
+        "knowledge_language": "en",
+        "clinical_review_required": true,
+        "fallback_reason": "generation_rejected",
+        "translation_unavailable": false,
+        "evidence_sources": {
+          "nutrition_en_301": {
+            "fields": [
+              "retrieval_text"
+            ],
+            "origin": "retrieved_record",
+            "translation": "assistant_bangla-v1-unreviewed",
+            "text_language": "bn"
+          }
+        }
+      }
+    }
+  ],
+  "passed": 22,
+  "total": 22,
+  "before_live": [
+    {
+      "question": "ডায়াবেটিস নিয়ন্ত্রণে সকালের নাস্তায় কী খেতে পারি?",
+      "client_language": "bn",
+      "result": {
+        "answer": "ডায়াবেটিসের কোন প্রশ্ন বা উপসর্গ নিয়ে সহায়তা চান, একটু নির্দিষ্ট করে বলবেন? নিরাপদে উত্তর দেওয়ার মতো প্রাসঙ্গিক তথ্য যথেষ্ট নেই।",
+        "intent": "unknown",
+        "language": "bn",
+        "requested_language": "bn",
+        "response_mode": "clarification",
+        "evidence_ids": [],
+        "retrieved_ids": [],
+        "retrieval_performed": false,
+        "retrieval_attempted": false,
+        "category": null,
+        "categories": [],
+        "knowledge_language": "en",
+        "clinical_review_required": false,
+        "safety_copy_version": null
+      }
+    },
+    {
+      "question": "ডায়াবেটিস নিয়ন্ত্রণে সকালের নাস্তায় কী খেতে পারি?",
+      "client_language": "en",
+      "result": {
+        "answer": "Could you be more specific about the diabetes question or symptoms you want help with? I do not have enough aligned information to answer this safely.",
+        "intent": "unknown",
+        "language": "en",
+        "requested_language": "en",
+        "response_mode": "clarification",
+        "evidence_ids": [],
+        "retrieved_ids": [],
+        "retrieval_performed": false,
+        "retrieval_attempted": false,
+        "category": null,
+        "categories": [],
+        "knowledge_language": "en",
+        "clinical_review_required": false,
+        "safety_copy_version": null
+      }
+    }
+  ],
+  "execution": "Targeted live POST /ask after local API reload; existing Ollama llama3.1:8b and Chroma. 21 representative questions with language=en plus original question with language=bn.",
+  "limitations": "Unreviewed source-bound display translations; not clinical validation. Other protected passages without a bound translation receive Bangla clarification if a safe complete translation is unavailable."
+}

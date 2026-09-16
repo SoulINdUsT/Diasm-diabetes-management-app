@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'dart:async';
+import 'core/api_client.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
 import 'core/app_router.dart';
@@ -46,8 +48,19 @@ Future<void> main() async {
   runApp(const DIAsmApp());
 }
 
-class DIAsmApp extends StatelessWidget {
+class DIAsmApp extends StatefulWidget {
   const DIAsmApp({super.key});
+
+  @override
+  State<DIAsmApp> createState() => _DIAsmAppState();
+}
+
+class _DIAsmAppState extends State<DIAsmApp> {
+  @override
+  void initState() {
+    super.initState();
+    unawaited(ApiClient().session.restore());
+  }
 
   @override
   Widget build(BuildContext context) {

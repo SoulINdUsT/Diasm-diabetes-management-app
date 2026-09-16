@@ -549,7 +549,9 @@ function findKnowledgeAnswer(message, langPref) {
 // -------- public API
 export async function getAnswer(message, lang = 'en') {
   try {
-    const response = await fetch('http://127.0.0.1:8000/ask', {
+    const AI_SERVICE_URL = process.env.AI_SERVICE_URL || 'http://127.0.0.1:8000';
+
+    const response = await fetch(`${AI_SERVICE_URL.replace(/\/$/, '')}/ask`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -565,6 +567,9 @@ export async function getAnswer(message, lang = 'en') {
     }
 
     const data = await response.json();
+    if (!data || typeof data.answer !== 'string' || !data.answer.trim()) {
+      throw new Error('Invalid AI answer payload');
+    }
 
     return {
       answer: data.answer,
@@ -573,17 +578,43 @@ export async function getAnswer(message, lang = 'en') {
       language: data.language,
       intent: data.intent,
       retrieved_ids: data.retrieved_ids,
+      evidence_ids: data.evidence_ids,
+      response_mode: data.response_mode,
+      retrieval_performed: data.retrieval_performed,
+      retrieval_attempted: data.retrieval_attempted,
+      requested_language: data.requested_language,
+      knowledge_language: data.knowledge_language,
+      clinical_review_required: data.clinical_review_required,
+      safety_copy_version: data.safety_copy_version,
+      fallback_reason: data.fallback_reason,
+      translation_unavailable: data.translation_unavailable,
+      manual_review_required: data.manual_review_required,
+      evidence_sources: data.evidence_sources,
+      generation_error_type: data.generation_error_type,
+      generation_elapsed_ms: data.generation_elapsed_ms,
     };
   } catch (error) {
-    console.error('[chatbot.service] AI service error:', error);
+    // Keep upstream content and request details out of logs and user answers.
+    const errorType = error?.name || 'Error';
+    console.error('[chatbot.service] AI service error:', { error_type: errorType });
 
     return {
-      answer: 'Sorry, the AI assistant is temporarily unavailable. Please try again later.',
+      // Reuse the existing assistant_copy insulin-dose boundary's general urgent
+      // help sentence. A transport outage must not tell an unwell person to wait.
+      answer: 'Sorry, I could not answer right now. If you feel seriously unwell, seek urgent medical help.',
       category: 'error',
       categories: [],
-      language: lang || 'en',
+      language: 'en',
+      requested_language: lang || 'en',
+      translation_unavailable: lang === 'bn',
       intent: 'fallback',
       retrieved_ids: [],
+      evidence_ids: [],
+      response_mode: 'unavailable',
+      retrieval_performed: false,
+      retrieval_attempted: false,
+      clinical_review_required: true,
+      transport_error_type: errorType,
     };
   }
 }

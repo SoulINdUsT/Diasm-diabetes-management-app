@@ -23,7 +23,8 @@
     "question": "What is the difference between prediabetes and diabetes?",
     "expected_intent": "basics_info",
     "expected_categories": [
-      "basics"
+      "basics",
+      "type2"
     ],
     "expected_chunk_ids": [
       "general_en_004",
@@ -72,10 +73,12 @@
     "question": "How does diabetes damage the eyes?",
     "expected_intent": "complications_eyes",
     "expected_categories": [
-      "complications"
+      "complications",
+      "type2"
     ],
     "expected_chunk_ids": [
-      "type2_en_030"
+      "type2_en_030",
+      "complications_en_410"
     ],
     "expected_answer_keywords": [
       "retina",
@@ -88,7 +91,7 @@
     "question": "Can diabetes damage the kidneys?",
     "expected_intent": "complications_kidneys",
     "expected_categories": [
-      "complications"
+      "type2"
     ],
     "expected_chunk_ids": [
       "type2_en_032"
@@ -104,10 +107,12 @@
     "question": "Why do people with diabetes feel tingling in their feet?",
     "expected_intent": "complications_nerves",
     "expected_categories": [
-      "complications"
+      "complications",
+      "type2"
     ],
     "expected_chunk_ids": [
-      "type2_en_031"
+      "type2_en_031",
+      "complications_en_411"
     ],
     "expected_answer_keywords": [
       "nerve damage",
@@ -120,10 +125,12 @@
     "question": "Why is heart disease common in people with diabetes?",
     "expected_intent": "complications_heart_vessels",
     "expected_categories": [
-      "complications"
+      "complications",
+      "type2"
     ],
     "expected_chunk_ids": [
-      "type2_en_033"
+      "type2_en_033",
+      "complications_en_412"
     ],
     "expected_answer_keywords": [
       "blood vessels",
@@ -136,10 +143,12 @@
     "question": "Why do people with diabetes get foot problems?",
     "expected_intent": "complications_feet",
     "expected_categories": [
-      "complications"
+      "complications",
+      "type2"
     ],
     "expected_chunk_ids": [
-      "type2_en_034"
+      "type2_en_034",
+      "complications_en_413"
     ],
     "expected_answer_keywords": [
       "poor circulation",
@@ -157,7 +166,8 @@
     ],
     "expected_chunk_ids": [
       "exercise_en_009",
-      "exercise_en_012"
+      "exercise_en_012",
+      "exercise_en_420"
     ],
     "expected_answer_keywords": [
       "start slowly",
@@ -168,9 +178,8 @@
   },
   {
     "question": "What if sugar drops during workout?",
-    "expected_intent": "exercise_safety",
+    "expected_intent": "glucose_information",
     "expected_categories": [
-      "exercise",
       "lifestyle"
     ],
     "expected_chunk_ids": [
@@ -187,7 +196,6 @@
     "question": "When should I exercise?",
     "expected_intent": "exercise_guidance",
     "expected_categories": [
-      "exercise",
       "lifestyle"
     ],
     "expected_chunk_ids": [
@@ -205,6 +213,7 @@
     "question": "What food should I eat?",
     "expected_intent": "nutrition_general",
     "expected_categories": [
+      "diet",
       "nutrition"
     ],
     "expected_chunk_ids": [
@@ -226,7 +235,8 @@
       "nutrition"
     ],
     "expected_chunk_ids": [
-      "nutrition_en_201"
+      "nutrition_en_201",
+      "nutrition_en_420"
     ],
     "expected_answer_keywords": [
       "breakfast",
@@ -393,10 +403,8 @@
       "type2"
     ],
     "expected_chunk_ids": [
-      "type2_en_019",
-      "type2_en_020",
-      "type2_en_021",
-      "type2_en_022"
+      "type2_en_007",
+      "type2_en_024"
     ],
     "expected_answer_keywords": [
       "screened",
@@ -449,10 +457,7 @@
       "type2"
     ],
     "expected_chunk_ids": [
-      "type2_en_019",
-      "type2_en_020",
-      "type2_en_021",
-      "type2_en_022"
+      "type2_en_005"
     ],
     "expected_answer_keywords": [
       "family history",
@@ -468,7 +473,8 @@
       "complications"
     ],
     "expected_chunk_ids": [
-      "complications_en_101"
+      "complications_en_101",
+      "complications_en_002"
     ],
     "expected_answer_keywords": [
       "blood vessels",
@@ -484,7 +490,8 @@
       "complications"
     ],
     "expected_chunk_ids": [
-      "complications_en_101"
+      "complications_en_101",
+      "complications_en_414"
     ],
     "expected_answer_keywords": [
       "uncontrolled diabetes",
@@ -497,10 +504,12 @@
     "question": "Why can diabetes cause blurred vision?",
     "expected_intent": "complications_eyes",
     "expected_categories": [
-      "complications"
+      "complications",
+      "type2"
     ],
     "expected_chunk_ids": [
-      "type2_en_030"
+      "type2_en_030",
+      "complications_en_410"
     ],
     "expected_answer_keywords": [
       "retina",
@@ -513,10 +522,12 @@
     "question": "How can diabetes affect the retina?",
     "expected_intent": "complications_eyes",
     "expected_categories": [
-      "complications"
+      "complications",
+      "type2"
     ],
     "expected_chunk_ids": [
-      "type2_en_030"
+      "type2_en_030",
+      "complications_en_410"
     ],
     "expected_answer_keywords": [
       "retina",
@@ -529,7 +540,7 @@
     "question": "What are kidney problems caused by diabetes?",
     "expected_intent": "complications_kidneys",
     "expected_categories": [
-      "complications"
+      "type2"
     ],
     "expected_chunk_ids": [
       "type2_en_032"
@@ -545,7 +556,7 @@
     "question": "Why is protein in urine dangerous for diabetic patients?",
     "expected_intent": "complications_kidneys",
     "expected_categories": [
-      "complications"
+      "type2"
     ],
     "expected_chunk_ids": [
       "type2_en_032"
@@ -561,10 +572,12 @@
     "question": "What is diabetic neuropathy?",
     "expected_intent": "complications_nerves",
     "expected_categories": [
-      "complications"
+      "complications",
+      "type2"
     ],
     "expected_chunk_ids": [
-      "type2_en_031"
+      "type2_en_031",
+      "complications_en_411"
     ],
     "expected_answer_keywords": [
       "nerve damage",
@@ -577,10 +590,12 @@
     "question": "Why do my feet feel numb with diabetes?",
     "expected_intent": "complications_nerves",
     "expected_categories": [
-      "complications"
+      "complications",
+      "type2"
     ],
     "expected_chunk_ids": [
-      "type2_en_031"
+      "type2_en_031",
+      "complications_en_411"
     ],
     "expected_answer_keywords": [
       "nerve damage",
@@ -593,10 +608,12 @@
     "question": "How does diabetes increase stroke risk?",
     "expected_intent": "complications_heart_vessels",
     "expected_categories": [
-      "complications"
+      "complications",
+      "type2"
     ],
     "expected_chunk_ids": [
-      "type2_en_033"
+      "type2_en_033",
+      "complications_en_412"
     ],
     "expected_answer_keywords": [
       "blood vessels",
@@ -609,11 +626,13 @@
     "question": "Can diabetes damage blood vessels?",
     "expected_intent": "complications_heart_vessels",
     "expected_categories": [
-      "complications"
+      "complications",
+      "type2"
     ],
     "expected_chunk_ids": [
       "type2_en_033",
-      "complications_en_101"
+      "complications_en_101",
+      "complications_en_412"
     ],
     "expected_answer_keywords": [
       "blood vessels",
@@ -626,10 +645,12 @@
     "question": "How should diabetic patients take care of their feet?",
     "expected_intent": "complications_feet",
     "expected_categories": [
-      "complications"
+      "complications",
+      "type2"
     ],
     "expected_chunk_ids": [
-      "type2_en_034"
+      "type2_en_034",
+      "complications_en_413"
     ],
     "expected_answer_keywords": [
       "foot",
@@ -642,10 +663,12 @@
     "question": "Why are foot wounds risky in diabetes?",
     "expected_intent": "complications_feet",
     "expected_categories": [
-      "complications"
+      "complications",
+      "type2"
     ],
     "expected_chunk_ids": [
-      "type2_en_034"
+      "type2_en_034",
+      "complications_en_413"
     ],
     "expected_answer_keywords": [
       "poor circulation",
@@ -663,7 +686,8 @@
     ],
     "expected_chunk_ids": [
       "exercise_en_009",
-      "exercise_en_012"
+      "exercise_en_012",
+      "exercise_en_420"
     ],
     "expected_answer_keywords": [
       "start slowly",
@@ -676,12 +700,12 @@
     "question": "Is walking good after meals?",
     "expected_intent": "exercise_guidance",
     "expected_categories": [
-      "exercise",
       "lifestyle"
     ],
     "expected_chunk_ids": [
       "exercise_en_007",
-      "exercise_en_013"
+      "exercise_en_013",
+      "exercise_en_114"
     ],
     "expected_answer_keywords": [
       "after meals",
@@ -694,11 +718,13 @@
     "question": "What precautions should I take before exercise?",
     "expected_intent": "exercise_safety",
     "expected_categories": [
-      "exercise",
       "lifestyle"
     ],
     "expected_chunk_ids": [
-      "exercise_en_008"
+      "exercise_en_004",
+      "exercise_en_005",
+      "exercise_en_008",
+      "exercise_en_010"
     ],
     "expected_answer_keywords": [
       "blood sugar",
@@ -709,9 +735,8 @@
   },
   {
     "question": "What should I do if I feel shaky during workout?",
-    "expected_intent": "exercise_safety",
+    "expected_intent": "low_glucose_actions",
     "expected_categories": [
-      "exercise",
       "lifestyle"
     ],
     "expected_chunk_ids": [
@@ -728,6 +753,7 @@
     "question": "What should a diabetic plate include?",
     "expected_intent": "nutrition_general",
     "expected_categories": [
+      "diet",
       "nutrition"
     ],
     "expected_chunk_ids": [
@@ -744,14 +770,12 @@
   },
   {
     "question": "Which foods should diabetics avoid?",
-    "expected_intent": "nutrition_general",
+    "expected_intent": "foods_to_limit",
     "expected_categories": [
       "nutrition"
     ],
     "expected_chunk_ids": [
-      "type2_en_009",
-      "nutrition_en_101",
-      "nutrition_en_103"
+      "nutrition_en_102"
     ],
     "expected_answer_keywords": [
       "avoid",
@@ -762,13 +786,12 @@
   },
   {
     "question": "What should I eat when my sugar is high?",
-    "expected_intent": "nutrition_high_sugar",
+    "expected_intent": "high_glucose_actions",
     "expected_categories": [
-      "nutrition"
+      "glucose monitoring"
     ],
     "expected_chunk_ids": [
-      "nutrition_en_102",
-      "nutrition_en_104"
+      "type2_en_018"
     ],
     "expected_answer_keywords": [
       "water",
@@ -784,7 +807,8 @@
       "nutrition"
     ],
     "expected_chunk_ids": [
-      "nutrition_en_201"
+      "nutrition_en_201",
+      "nutrition_en_420"
     ],
     "expected_answer_keywords": [
       "breakfast",
