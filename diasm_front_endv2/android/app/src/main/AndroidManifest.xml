@@ -6,7 +6,7 @@
     <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
 
 
-    
+
   <!-- Required for Android 13+ -->
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 <!-- Optional but recommended -->
@@ -14,9 +14,30 @@
 <!-- Optional: re-schedule after reboot (if you want repeating reminders to survive reboot) -->
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
+    <uses-feature
+    android:name="android.hardware.bluetooth_le"
+    android:required="false" />
 
+<uses-permission
+    android:name="android.permission.BLUETOOTH"
+    android:maxSdkVersion="30" />
+
+<uses-permission
+    android:name="android.permission.BLUETOOTH_ADMIN"
+    android:maxSdkVersion="30" />
+
+<uses-permission
+    android:name="android.permission.ACCESS_FINE_LOCATION"
+    android:maxSdkVersion="30" />
+
+<uses-permission
+    android:name="android.permission.BLUETOOTH_SCAN"
+    android:usesPermissionFlags="neverForLocation" />
+
+<uses-permission
+    android:name="android.permission.BLUETOOTH_CONNECT" />
     <application
-        
+
     android:label="Diasm"
     android:name="${applicationName}"
     android:icon="@mipmap/ic_launcher"

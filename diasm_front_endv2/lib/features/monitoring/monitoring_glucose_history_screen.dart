@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import '../../core/monitoring_repository.dart';
 
-class MonitoringGlucoseHistoryScreen extends StatefulWidget {
-  static const routeName = "/monitoring/glucose-history";
+class MonitoringGlucoseHistoryScreen
+    extends StatefulWidget {
+  static const routeName =
+      "/monitoring/glucose-history";
 
   final bool isEnglish;
   const MonitoringGlucoseHistoryScreen({
@@ -11,13 +13,18 @@ class MonitoringGlucoseHistoryScreen extends StatefulWidget {
   });
 
   @override
-  State<MonitoringGlucoseHistoryScreen> createState() =>
+  State<MonitoringGlucoseHistoryScreen>
+  createState() =>
       _MonitoringGlucoseHistoryScreenState();
 }
 
 class _MonitoringGlucoseHistoryScreenState
-    extends State<MonitoringGlucoseHistoryScreen> {
-  final _repo = MonitoringRepository(); // factory -> singleton
+    extends
+        State<
+          MonitoringGlucoseHistoryScreen
+        > {
+  final _repo =
+      MonitoringRepository(); // factory -> singleton
 
   bool _loading = true;
   String? _error;
@@ -36,13 +43,21 @@ class _MonitoringGlucoseHistoryScreenState
   ];
 
   String _fmtDate(DateTime d) {
-    final y = d.year.toString().padLeft(4, '0');
-    final m = d.month.toString().padLeft(2, '0');
-    final day = d.day.toString().padLeft(2, '0');
+    final y = d.year.toString().padLeft(
+      4,
+      '0',
+    );
+    final m = d.month
+        .toString()
+        .padLeft(2, '0');
+    final day = d.day
+        .toString()
+        .padLeft(2, '0');
     return '$y-$m-$day';
   }
 
-  String _normKind(String k) => k.trim().toLowerCase();
+  String _normKind(String k) =>
+      k.trim().toLowerCase();
 
   @override
   void initState() {
@@ -50,10 +65,15 @@ class _MonitoringGlucoseHistoryScreenState
     _load();
   }
 
-  List<dynamic> _extractRows(Map<String, dynamic> res) {
-    if (res['rows'] is List) return res['rows'] as List;
-    if (res['items'] is List) return res['items'] as List;
-    if (res['data'] is List) return res['data'] as List;
+  List<dynamic> _extractRows(
+    Map<String, dynamic> res,
+  ) {
+    if (res['rows'] is List)
+      return res['rows'] as List;
+    if (res['items'] is List)
+      return res['items'] as List;
+    if (res['data'] is List)
+      return res['data'] as List;
     return const [];
   }
 
@@ -65,24 +85,44 @@ class _MonitoringGlucoseHistoryScreenState
 
     try {
       final now = DateTime.now();
-      final from = now.subtract(const Duration(days: 30));
-
-      final res = await _repo.listGlucose(
-        page: 1,
-        limit: 500,
-        from: _fmtDate(from),
-        to: _fmtDate(now),
+      final from = now.subtract(
+        const Duration(days: 30),
       );
+
+      final res = await _repo
+          .listGlucose(
+            page: 1,
+            limit: 500,
+            from: _fmtDate(from),
+            to: _fmtDate(now),
+          );
 
       final raw = _extractRows(res);
 
-      final logs = raw
-          .whereType<Map>()
-          .map((e) => GlucoseLog.fromJson(
-                e.map((k, v) => MapEntry(k.toString(), v)),
-              ))
-          .toList()
-        ..sort((a, b) => b.measuredAt.compareTo(a.measuredAt));
+      final logs =
+          raw
+              .whereType<Map>()
+              .map(
+                (e) =>
+                    GlucoseLog.fromJson(
+                      e.map(
+                        (
+                          k,
+                          v,
+                        ) => MapEntry(
+                          k.toString(),
+                          v,
+                        ),
+                      ),
+                    ),
+              )
+              .toList()
+            ..sort(
+              (a, b) => b.measuredAt
+                  .compareTo(
+                    a.measuredAt,
+                  ),
+            );
 
       setState(() {
         _logs = logs;
@@ -102,61 +142,112 @@ class _MonitoringGlucoseHistoryScreenState
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(isEnglish ? "Glucose Details" : "গ্লুকোজ বিস্তারিত"),
+        title: Text(
+          isEnglish
+              ? "Glucose Details"
+              : "গ্লুকোজ বিস্তারিত",
+        ),
       ),
       body: _loading
-          ? const Center(child: CircularProgressIndicator())
+          ? const Center(
+              child:
+                  CircularProgressIndicator(),
+            )
           : _error != null
-              ? Center(
-                  child: Padding(
-                    padding: const EdgeInsets.all(16),
-                    child: Text(_error!, textAlign: TextAlign.center),
-                  ),
-                )
-              : RefreshIndicator(
-                  onRefresh: _load,
-                  child: ListView(
-                    padding: const EdgeInsets.all(12),
-                    children: [
-                      Text(
-                        isEnglish
-                            ? "Category-wise History (Last 30 days)"
-                            : "ধরণ অনুযায়ী ইতিহাস (শেষ ৩০ দিন)",
-                        style: const TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w700,
-                        ),
-                      ),
-                      const SizedBox(height: 12),
-
-                      ..._kinds.map((kind) {
-                        final items = _logs
-                            .where((e) =>
-                                _normKind(e.kind) == _normKind(kind))
-                            .toList()
-                          ..sort((a, b) =>
-                              b.measuredAt.compareTo(a.measuredAt));
-
-                        if (items.isEmpty) return const SizedBox.shrink();
-
-                        final avg = items
-                                .map((e) => e.valueMgdl)
-                                .fold<double>(0, (a, b) => a + b) /
-                            items.length;
-
-                        final latest = items.first.valueMgdl;
-
-                        return _kindCard(
-                          kind: kind,
-                          isEnglish: isEnglish,
-                          avg: avg,
-                          latest: latest,
-                          items: items.take(10).toList(),
-                        );
-                      }),
-                    ],
-                  ),
+          ? Center(
+              child: Padding(
+                padding:
+                    const EdgeInsets.all(
+                      16,
+                    ),
+                child: Text(
+                  _error!,
+                  textAlign:
+                      TextAlign.center,
                 ),
+              ),
+            )
+          : RefreshIndicator(
+              onRefresh: _load,
+              child: ListView(
+                padding:
+                    const EdgeInsets.all(
+                      12,
+                    ),
+                children: [
+                  Text(
+                    isEnglish
+                        ? "Category-wise History (Last 30 days)"
+                        : "ধরণ অনুযায়ী ইতিহাস (শেষ ৩০ দিন)",
+                    style:
+                        const TextStyle(
+                          fontSize: 16,
+                          fontWeight:
+                              FontWeight
+                                  .w700,
+                        ),
+                  ),
+                  const SizedBox(
+                    height: 12,
+                  ),
+
+                  ..._kinds.map((kind) {
+                    final items =
+                        _logs
+                            .where(
+                              (e) =>
+                                  _normKind(
+                                    e.kind,
+                                  ) ==
+                                  _normKind(
+                                    kind,
+                                  ),
+                            )
+                            .toList()
+                          ..sort(
+                            (a, b) => b
+                                .measuredAt
+                                .compareTo(
+                                  a.measuredAt,
+                                ),
+                          );
+
+                    if (items.isEmpty)
+                      return const SizedBox.shrink();
+
+                    final avg =
+                        items
+                            .map(
+                              (e) => e
+                                  .valueMgdl,
+                            )
+                            .fold<
+                              double
+                            >(
+                              0,
+                              (a, b) =>
+                                  a + b,
+                            ) /
+                        items.length;
+
+                    final latest = items
+                        .first
+                        .valueMgdl;
+
+                    return _kindCard(
+                      kind: kind,
+                      isEnglish:
+                          isEnglish,
+                      avg: avg,
+                      latest: latest,
+                      items: items
+                          .take(10)
+                          .toList(),
+                    );
+                  }),
+                ],
+              ),
+            ),
     );
   }
 
@@ -188,31 +279,52 @@ class _MonitoringGlucoseHistoryScreenState
     }
 
     return Card(
-      margin: const EdgeInsets.only(bottom: 12),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+      margin: const EdgeInsets.only(
+        bottom: 12,
+      ),
+      shape: RoundedRectangleBorder(
+        borderRadius:
+            BorderRadius.circular(14),
+      ),
       child: Padding(
-        padding: const EdgeInsets.all(12),
+        padding: const EdgeInsets.all(
+          12,
+        ),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment:
+              CrossAxisAlignment.start,
           children: [
             Text(
               kindLabel(kind),
               style: const TextStyle(
                 fontSize: 15,
-                fontWeight: FontWeight.w700,
+                fontWeight:
+                    FontWeight.w700,
               ),
             ),
             const SizedBox(height: 8),
             Row(
               children: [
                 _miniStat(
-                  title: isEnglish ? "Average" : "গড়",
-                  value: avg.toStringAsFixed(0),
+                  title: isEnglish
+                      ? "Average"
+                      : "গড়",
+                  value: avg
+                      .toStringAsFixed(
+                        0,
+                      ),
                 ),
-                const SizedBox(width: 8),
+                const SizedBox(
+                  width: 8,
+                ),
                 _miniStat(
-                  title: isEnglish ? "Latest" : "সর্বশেষ",
-                  value: latest.toStringAsFixed(0),
+                  title: isEnglish
+                      ? "Latest"
+                      : "সর্বশেষ",
+                  value: latest
+                      .toStringAsFixed(
+                        0,
+                      ),
                 ),
               ],
             ),
@@ -220,21 +332,30 @@ class _MonitoringGlucoseHistoryScreenState
 
             ...items.map((e) {
               return Padding(
-                padding: const EdgeInsets.symmetric(vertical: 4),
+                padding:
+                    const EdgeInsets.symmetric(
+                      vertical: 4,
+                    ),
                 child: Row(
                   children: [
                     Expanded(
                       child: Text(
                         "${e.measuredAt.year}-${e.measuredAt.month.toString().padLeft(2, '0')}-${e.measuredAt.day.toString().padLeft(2, '0')}  "
                         "${e.measuredAt.hour.toString().padLeft(2, '0')}:${e.measuredAt.minute.toString().padLeft(2, '0')}",
-                        style: const TextStyle(fontSize: 12),
+                        style:
+                            const TextStyle(
+                              fontSize:
+                                  12,
+                            ),
                       ),
                     ),
                     Text(
                       "${e.valueMgdl.toStringAsFixed(0)} mg/dL",
                       style: const TextStyle(
                         fontSize: 13,
-                        fontWeight: FontWeight.w700,
+                        fontWeight:
+                            FontWeight
+                                .w700,
                       ),
                     ),
                   ],
@@ -247,25 +368,39 @@ class _MonitoringGlucoseHistoryScreenState
     );
   }
 
-  Widget _miniStat({required String title, required String value}) {
+  Widget _miniStat({
+    required String title,
+    required String value,
+  }) {
     return Expanded(
       child: Container(
-        padding: const EdgeInsets.all(10),
+        padding: const EdgeInsets.all(
+          10,
+        ),
         decoration: BoxDecoration(
           color: Colors.grey.shade100,
-          borderRadius: BorderRadius.circular(10),
+          borderRadius:
+              BorderRadius.circular(10),
         ),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment:
+              CrossAxisAlignment.start,
           children: [
-            Text(title,
-                style:
-                    const TextStyle(fontSize: 12, color: Colors.black54)),
+            Text(
+              title,
+              style: const TextStyle(
+                fontSize: 12,
+                color: Colors.black54,
+              ),
+            ),
             const SizedBox(height: 4),
             Text(
               value,
               style: const TextStyle(
-                  fontSize: 18, fontWeight: FontWeight.w800),
+                fontSize: 18,
+                fontWeight:
+                    FontWeight.w800,
+              ),
             ),
           ],
         ),
@@ -288,12 +423,26 @@ class GlucoseLog {
     required this.valueMgdl,
   });
 
-  factory GlucoseLog.fromJson(Map<String, dynamic> json) {
+  factory GlucoseLog.fromJson(
+    Map<String, dynamic> json,
+  ) {
     return GlucoseLog(
-      id: int.tryParse(json["id"].toString()) ?? 0,
-      measuredAt: DateTime.parse(json["measured_at"].toString()),
-      kind: (json["kind"] ?? "RBS").toString(),
-      valueMgdl: double.tryParse(json["value_mgdl"].toString()) ?? 0.0,
+      id:
+          int.tryParse(
+            json["id"].toString(),
+          ) ??
+          0,
+      measuredAt: DateTime.parse(
+        json["measured_at"].toString(),
+      ).toLocal(),
+      kind: (json["kind"] ?? "RBS")
+          .toString(),
+      valueMgdl:
+          double.tryParse(
+            json["value_mgdl"]
+                .toString(),
+          ) ??
+          0.0,
     );
   }
 }
